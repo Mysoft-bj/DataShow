@@ -1,0 +1,5 @@
+F:\资料\H5源码\创新报告\FineSourceV2.0\V2.0\FineSource\FineSource\FineSource\bin\DataShow.Manage.dll
+F:\资料\H5源码\创新报告\FineSourceV2.0\V2.0\FineSource\FineSource\FineSource\bin\DataShow.Manage.pdb
+F:\资料\H5源码\创新报告\FineSourceV2.0\V2.0\FineSource\FineSource\FineSource.Manage\obj\Debug\DataShow.Manage.csprojResolveAssemblyReference.cache
+F:\资料\H5源码\创新报告\FineSourceV2.0\V2.0\FineSource\FineSource\FineSource.Manage\obj\Debug\DataShow.Manage.dll
+F:\资料\H5源码\创新报告\FineSourceV2.0\V2.0\FineSource\FineSource\FineSource.Manage\obj\Debug\DataShow.Manage.pdb

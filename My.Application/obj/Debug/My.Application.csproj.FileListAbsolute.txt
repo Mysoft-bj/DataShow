@@ -1,0 +1,5 @@
+C:\TFS\极客项目\FineSource\FineSource\bin\My.Application.dll
+C:\TFS\极客项目\FineSource\My.Application\obj\Debug\My.Application.csprojResolveAssemblyReference.cache
+C:\TFS\极客项目\FineSource\My.Application\obj\Debug\My.Application.dll
+C:\TFS\极客项目\FineSource\My.Application\obj\Debug\My.Application.pdb
+C:\TFS\极客项目\FineSource\FineSource\bin\My.Application.pdb

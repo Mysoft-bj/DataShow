@@ -1,0 +1,5 @@
+C:\TFS\极客项目\FineSource\My.Mvc\obj\Debug\My.Mvc.csprojResolveAssemblyReference.cache
+C:\TFS\极客项目\FineSource\My.Mvc\obj\Debug\My.Mvc.dll
+C:\TFS\极客项目\FineSource\My.Mvc\obj\Debug\My.Mvc.pdb
+C:\TFS\极客项目\FineSource\FineSource\bin\zh-Hans\My.Mvc.dll
+C:\TFS\极客项目\FineSource\FineSource\bin\zh-Hans\My.Mvc.pdb

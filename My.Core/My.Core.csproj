@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0C9BBCC4-CE39-454A-9308-C25DF1FD7F7A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>My.Core</RootNamespace>
+    <AssemblyName>My.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\FineSource\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.Core">
+      <HintPath>..\packages\Castle.Core.3.3.3\lib\net45\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Windsor">
+      <HintPath>..\packages\Castle.Windsor.3.3.0\lib\net45\Castle.Windsor.dll</HintPath>
+    </Reference>
+    <Reference Include="EmitMapper">
+      <HintPath>..\packages\EmitMapper.1.0.0\lib\EmitMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.5\lib\net45-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.7.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\YangmyBlog\bin\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="StackExchange.Redis">
+      <HintPath>..\packages\StackExchange.Redis.1.0.488\lib\net45\StackExchange.Redis.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Linq.Dynamic">
+      <HintPath>..\packages\System.Linq.Dynamic.1.0.6\lib\net40\System.Linq.Dynamic.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attribute\IndexAttribute.cs" />
+    <Compile Include="Attribute\SortableAttribute.cs" />
+    <Compile Include="Data\Mysql\MysqlDataBaseManager.cs" />
+    <Compile Include="Data\Sql\SqlDataBaseManager.cs" />
+    <Compile Include="Data\Sql\SqlDataBase.cs" />
+    <Compile Include="Dependency\IOCManager.cs" />
+    <Compile Include="Dependency\ISingletonDependency.cs" />
+    <Compile Include="Dependency\ITransientDependency.cs" />
+    <Compile Include="Dependency\Watcher.cs" />
+    <Compile Include="Entity\EntityGenerator.cs" />
+    <Compile Include="Entity\SqlServerType.cs" />
+    <Compile Include="Extensions\CollectionExtensions.cs" />
+    <Compile Include="Extensions\DictionaryExtensions.cs" />
+    <Compile Include="Extensions\GuidExtensions.cs" />
+    <Compile Include="Extensions\LinqExtensions.cs" />
+    <Compile Include="Extensions\ObjectExtensions.cs" />
+    <Compile Include="Extensions\PagerExtensions.cs" />
+    <Compile Include="Extensions\ReflectingExtensions.cs" />
+    <Compile Include="Extensions\RepositoryExtension.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Extensions\StringFieldNameSortingExtension.cs" />
+    <Compile Include="Extensions\TreeNode.cs" />
+    <Compile Include="Helper\AssemblyHelper.cs" />
+    <Compile Include="Helper\BigInteger.cs" />
+    <Compile Include="Helper\ConvertHelper .cs" />
+    <Compile Include="Helper\EmailHelper.cs" />
+    <Compile Include="Helper\EnumHelper.cs" />
+    <Compile Include="Helper\HttpHelper.cs" />
+    <Compile Include="Helper\ImageHelper.cs" />
+    <Compile Include="Helper\JSONHelper.cs" />
+    <Compile Include="Helper\MapperHelper.cs" />
+    <Compile Include="Helper\MediaHelper.cs" />
+    <Compile Include="Helper\MetaDataHelper.cs" />
+    <Compile Include="Data\Mysql\MySqlDataBase.cs" />
+    <Compile Include="Helper\PinYin.cs" />
+    <Compile Include="Helper\RedisHelper.cs" />
+    <Compile Include="Helper\ReflectionHelper.cs" />
+    <Compile Include="Helper\RegexHelper.cs" />
+    <Compile Include="Helper\Repository.cs" />
+    <Compile Include="Helper\ResourceHelper.cs" />
+    <Compile Include="Helper\RSAHelper.cs" />
+    <Compile Include="Helper\SystemInfoHelper.cs" />
+    <Compile Include="Helper\TypeDescriptionProvider.cs" />
+    <Compile Include="Helper\TypeHelper.cs" />
+    <Compile Include="Helper\UtilsHelper.cs" />
+    <Compile Include="Helper\ValidateHelper.cs" />
+    <Compile Include="Helper\VerifyCodeHelper.cs" />
+    <Compile Include="Helper\ZipHelper.cs" />
+    <Compile Include="Installer\ApplicationAuthorize.cs" />
+    <Compile Include="Installer\DefaultInstaller.cs" />
+    <Compile Include="Interface\IEntity.cs" />
+    <Compile Include="Interface\IMyDB.cs" />
+    <Compile Include="Interface\IRepository.cs" />
+    <Compile Include="Interface\ISoftDelete.cs" />
+    <Compile Include="Interface\StateEnum.cs" />
+    <Compile Include="IO\FileHelper.cs" />
+    <Compile Include="IO\PathHelper.cs" />
+    <Compile Include="Logger\Logger.cs" />
+    <Compile Include="PageListModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SiteInfo.cs" />
+    <Compile Include="Specification\AndSpecification.cs" />
+    <Compile Include="Specification\CompositeSpecification.cs" />
+    <Compile Include="Specification\DirectSpecification.cs" />
+    <Compile Include="Specification\ExpressionBuilder.cs" />
+    <Compile Include="Specification\ISpecification.cs" />
+    <Compile Include="Specification\NotSpecification.cs" />
+    <Compile Include="Specification\OrSpecification.cs" />
+    <Compile Include="Specification\ParametersRebinder.cs" />
+    <Compile Include="Specification\Specification.cs" />
+    <Compile Include="Specification\TrueSpecification.cs" />
+    <Compile Include="SqlConn.cs" />
+    <Compile Include="Sql\AliasAttribute.cs" />
+    <Compile Include="Sql\AnsiString.cs" />
+    <Compile Include="Sql\AutoSelectHelper.cs" />
+    <Compile Include="Sql\Base62.cs" />
+    <Compile Include="Sql\Cache.cs" />
+    <Compile Include="Sql\ColumnInfo.cs" />
+    <Compile Include="Sql\ColumnTypeAttribute.cs" />
+    <Compile Include="Sql\ComputedColumnAttribute.cs" />
+    <Compile Include="Sql\Database.cs" />
+    <Compile Include="Sql\DatabaseFactory.cs" />
+    <Compile Include="Sql\DatabaseFactoryConfig.cs" />
+    <Compile Include="Sql\DatabaseType.cs" />
+    <Compile Include="Sql\DatabaseTypes\FirebirdDatabaseType.cs" />
+    <Compile Include="Sql\DatabaseTypes\MySqlDatabaseType.cs" />
+    <Compile Include="Sql\DatabaseTypes\OracleDatabaseType.cs" />
+    <Compile Include="Sql\DatabaseTypes\OracleManagedDatabaseType.cs" />
+    <Compile Include="Sql\DatabaseTypes\PostgreSQLDatabaseType.cs" />
+    <Compile Include="Sql\DatabaseTypes\SQLiteDatabaseType.cs" />
+    <Compile Include="Sql\DatabaseTypes\SqlServer2008DatabaseType.cs" />
+    <Compile Include="Sql\DatabaseTypes\SqlServer2012DatabaseType.cs" />
+    <Compile Include="Sql\DatabaseTypes\SqlServerCEDatabaseType.cs" />
+    <Compile Include="Sql\DatabaseTypes\SqlServerDatabaseType.cs" />
+    <Compile Include="Sql\DefaultMapper.cs" />
+    <Compile Include="Sql\DeleteContext.cs" />
+    <Compile Include="Sql\EnumMapper.cs" />
+    <Compile Include="Sql\ExpandoColumn.cs" />
+    <Compile Include="Sql\ExplicitColumnsAttribute.cs" />
+    <Compile Include="Sql\ExpressionExtensions.cs" />
+    <Compile Include="Sql\Expressions\DefaultSqlExpression.cs" />
+    <Compile Include="Sql\Expressions\ExpressionVisitor.cs" />
+    <Compile Include="Sql\Expressions\FirebirdSqlExpression.cs" />
+    <Compile Include="Sql\Expressions\ParameterRebinder.cs" />
+    <Compile Include="Sql\Expressions\PartialEvaluator.cs" />
+    <Compile Include="Sql\Expressions\PredicateBuilder.cs" />
+    <Compile Include="Sql\Expressions\S.cs" />
+    <Compile Include="Sql\Expressions\SqlExpression.cs" />
+    <Compile Include="Sql\FluentMappings\ColumnConfigurationBuilder.cs" />
+    <Compile Include="Sql\FluentMappings\ColumnDefinition.cs" />
+    <Compile Include="Sql\FluentMappings\ConventionExtensions.cs" />
+    <Compile Include="Sql\FluentMappings\ConventionScanner.cs" />
+    <Compile Include="Sql\FluentMappings\ConventionScannerSettings.cs" />
+    <Compile Include="Sql\FluentMappings\FluentMappingConfiguration.cs" />
+    <Compile Include="Sql\FluentMappings\FluentMappingsPocoData.cs" />
+    <Compile Include="Sql\FluentMappings\IColumnsBuilderConventions.cs" />
+    <Compile Include="Sql\FluentMappings\IConventionScanner.cs" />
+    <Compile Include="Sql\FluentMappings\IMap.cs" />
+    <Compile Include="Sql\FluentMappings\Inflector.cs" />
+    <Compile Include="Sql\FluentMappings\Map.cs" />
+    <Compile Include="Sql\FluentMappings\Mappings.cs" />
+    <Compile Include="Sql\FluentMappings\PropertyBuilderConventions.cs" />
+    <Compile Include="Sql\FluentMappings\PropertyHelper.cs" />
+    <Compile Include="Sql\FluentMappings\TypeDefinition.cs" />
+    <Compile Include="Sql\HashCodeCombiner.cs" />
+    <Compile Include="Sql\IDatabase.cs" />
+    <Compile Include="Sql\IDatabaseQuery.cs" />
+    <Compile Include="Sql\IMapper.cs" />
+    <Compile Include="Sql\InsertContext.cs" />
+    <Compile Include="Sql\Linq\ComplexSqlBuilder.cs" />
+    <Compile Include="Sql\Linq\DeleteQueryProvider.cs" />
+    <Compile Include="Sql\Linq\ISimpleQueryProviderExpression.cs" />
+    <Compile Include="Sql\Linq\JoinData.cs" />
+    <Compile Include="Sql\Linq\SimpleQueryProvider.cs" />
+    <Compile Include="Sql\Linq\UpdateQueryProvider.cs" />
+    <Compile Include="Sql\MappingFactory.cs" />
+    <Compile Include="Sql\MultiPocoFactory.cs" />
+    <Compile Include="Sql\Page.cs" />
+    <Compile Include="Sql\PagingHelper.cs" />
+    <Compile Include="Sql\ParameterHelper.cs" />
+    <Compile Include="Sql\PocoColumn.cs" />
+    <Compile Include="Sql\PocoData.cs" />
+    <Compile Include="Sql\PocoDataFactory.cs" />
+    <Compile Include="Sql\PocoExpando.cs" />
+    <Compile Include="Sql\ReflectionUtils.cs" />
+    <Compile Include="Sql\RelationExtensions.cs" />
+    <Compile Include="Sql\ResultColumnAttribute.cs" />
+    <Compile Include="Sql\Singleton.cs" />
+    <Compile Include="Sql\Snapshotter.cs" />
+    <Compile Include="Sql\Sql.cs" />
+    <Compile Include="Sql\SqlBuilder.cs" />
+    <Compile Include="Sql\SqlBulkCopyHelper.cs" />
+    <Compile Include="Sql\SqlExtensions.cs" />
+    <Compile Include="Sql\StringExtensions.cs" />
+    <Compile Include="Sql\TableInfo.cs" />
+    <Compile Include="Sql\ThreadSafeDictionary.cs" />
+    <Compile Include="Sql\Transaction.cs" />
+    <Compile Include="Sql\Tuple.cs" />
+    <Compile Include="Sql\TypeHelpers.cs" />
+    <Compile Include="Sql\UpdateContext.cs" />
+    <Compile Include="Sql\VersionColumnAttribute.cs" />
+    <Compile Include="Sql\VersionExceptionHandling.cs" />
+    <Compile Include="UnitOfWork\IUnitOfWork.cs" />
+    <Compile Include="UnitOfWork\UnitOfWorkAttribute.cs" />
+    <Compile Include="UnitOfWork\UnitOfWorkInterceptor.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Logger\log4net.xml" />
+    <Content Include="Sql\NPoco.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Security\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

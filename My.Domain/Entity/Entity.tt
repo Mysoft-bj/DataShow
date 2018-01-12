@@ -1,0 +1,71 @@
+<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ include file="T4Toolbox.tt" #>
+<#@ Assembly name="$(SolutionDir)\SolutionPlatform\Bin\My.Core.dll" #>
+
+   
+<#
+
+//数据库连接字符串
+string connectionString = "server=10.5.10.75\\SQL2008R2_BJ;uid=team_bj;pwd=95938;database=SolutionPlatform;";
+
+//命名空间
+string ns="My.Domain"; 
+
+//表名数组 
+string[] tableNames=new string[]{
+
+"Solution","Solution_SystemModule","Solution_Tag","Solution_Customer","SolutionRequirement",
+"SolutionComment","Solution_Producer","SystemModule_Tag","Dict","Customer","Document"
+
+};
+
+//生成文件
+
+foreach(string tableName in tableNames){
+	if(string.IsNullOrEmpty(tableName)) 
+		continue;
+	EntityTemplate tempalte=new EntityTemplate(connectionString,ns,tableName);
+	tempalte.RenderToFile(tableName + ".cs");
+}
+
+
+ #>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<#+
+
+
+public class EntityTemplate : Template
+{		
+	string tableName;
+	string connectionString;
+	string nameSpace;
+	public EntityTemplate( string connectionString,string ns, string tableName){
+		this.tableName=tableName;
+		this.connectionString=connectionString;
+		this.nameSpace=ns;
+	}
+	
+	public override string TransformText()
+	{  
+		var gen=new My.Core.EntityGenerator(this. connectionString,this.nameSpace,this.tableName);
+		return gen.Generate();
+      // return this.GenerationEnvironment.ToString();
+	}
+}
+#>

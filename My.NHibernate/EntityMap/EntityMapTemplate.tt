@@ -1,0 +1,29 @@
+﻿<#@ import namespace="System.Collections.Generic" #>
+<#@ assembly name="$(TargetPath)" #>
+<#@ include file="T4Toolbox.tt" #>
+<#+
+public class EntityMapTemplate : Template
+{	
+	Type _type;
+	public EntityMapTemplate( Type type){
+	_type=type;
+		
+	}
+
+	public override string TransformText()
+	{
+#>
+//t4模版自动生成的nhibernate类映射，by zhulin
+
+using FluentNHibernate.Mapping;
+
+namespace  Dynamic.EntityMapping
+{	
+<#= My.NHibernate.NFMapGenerate.GenerateClass(_type) #>	
+}
+
+<#+  
+  return this.GenerationEnvironment.ToString();
+	}	
+}
+#>
