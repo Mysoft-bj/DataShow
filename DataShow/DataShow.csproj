@@ -1,0 +1,760 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BCA5E277-AD9A-410D-B979-B23C2AACFABF}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataShow</RootNamespace>
+    <AssemblyName>DataShow</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <IncludeIisSettings>false</IncludeIisSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FineSource.Manage, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\FineSource.Manage.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="My.Application, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\My.Application.dll</HintPath>
+    </Reference>
+    <Reference Include="My.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\My.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="My.Domain, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\My.Domain.dll</HintPath>
+    </Reference>
+    <Reference Include="My.Mvc, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\My.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.7.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RouteDebug">
+      <HintPath>..\packages\RouteDebug.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Mvc.FixedDisplayModes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.FixedDisplayModes.1.0.0\lib\net40\Microsoft.Web.Mvc.FixedDisplayModes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.30506.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.30506.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.30506.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.30506.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.2\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.30506.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.3.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.3.0\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\Charts\ChartsController.cs" />
+    <Compile Include="Controllers\Home\HomeController.cs" />
+    <Compile Include="Controllers\Login\LoginController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\charts\div.css" />
+    <Content Include="css\charts\title.css" />
+    <Content Include="css\common\animate.css" />
+    <Content Include="css\common\animations.css" />
+    <Content Include="css\common\Footer.css" />
+    <Content Include="css\common\Public.css" />
+    <Content Include="css\common\NavigationMenu.css" />
+    <Content Include="css\common\reset.css" />
+    <Content Include="css\fonts\font-awesome.min.css" />
+    <Content Include="css\fonts\fontawesome-webfont.svg" />
+    <Content Include="css\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="css\hplus\animate.css" />
+    <Content Include="css\hplus\font-awesome.css" />
+    <Content Include="css\hplus\font-awesome.min.css" />
+    <Content Include="css\hplus\style.css" />
+    <Content Include="css\Index\index.css" />
+    <Content Include="css\login\Register.css" />
+    <Content Include="css\login\login.css" />
+    <Content Include="data\data.txt" />
+    <Content Include="images\background\background2.jpg" />
+    <Content Include="images\background\background3.gif" />
+    <Content Include="images\background\background3.jpg" />
+    <Content Include="images\background\background4.gif" />
+    <Content Include="images\background\background4.jpg" />
+    <Content Include="images\background\index_bg1.jpg" />
+    <Content Include="images\background\index_bg2.jpg" />
+    <Content Include="images\background\index_bg3.jpg" />
+    <Content Include="images\background\background1.jpg" />
+    <Content Include="images\background\logo1.png" />
+    <Content Include="images\common\social\aboutme.png" />
+    <Content Include="images\common\social\amazon.png" />
+    <Content Include="images\common\social\behance.png" />
+    <Content Include="images\common\social\blogger.png" />
+    <Content Include="images\common\social\deviantart.png" />
+    <Content Include="images\common\social\dribbble.png" />
+    <Content Include="images\common\social\dropbox.png" />
+    <Content Include="images\common\social\evernote.png" />
+    <Content Include="images\common\social\facebook.png" />
+    <Content Include="images\common\social\flickr.png" />
+    <Content Include="images\common\social\forrst.png" />
+    <Content Include="images\common\social\foursquare.png" />
+    <Content Include="images\common\social\github.png" />
+    <Content Include="images\common\social\googleplus.png" />
+    <Content Include="images\common\social\gravatar.png" />
+    <Content Include="images\common\social\instagram.png" />
+    <Content Include="images\common\social\jolicloud.png" />
+    <Content Include="images\common\social\klout.png" />
+    <Content Include="images\common\social\last-fm.png" />
+    <Content Include="images\common\social\linkedin.png" />
+    <Content Include="images\common\social\myspace.png" />
+    <Content Include="images\common\social\picasa.png" />
+    <Content Include="images\common\social\pintrest.png" />
+    <Content Include="images\common\social\quora.png" />
+    <Content Include="images\common\social\reddit.png" />
+    <Content Include="images\common\social\rss.png" />
+    <Content Include="images\common\social\skype.png" />
+    <Content Include="images\common\social\spotify.png" />
+    <Content Include="images\common\social\stumbleupon.png" />
+    <Content Include="images\common\social\tumblr.png" />
+    <Content Include="images\common\social\twitter.png" />
+    <Content Include="images\common\social\vimeo.png" />
+    <Content Include="images\common\social\vk.png" />
+    <Content Include="images\common\social\wordpress.png" />
+    <Content Include="images\common\social\xing.png" />
+    <Content Include="images\common\social\yahoo.png" />
+    <Content Include="images\common\social\youtube.png" />
+    <Content Include="images\common\social\使用必读.txt" />
+    <Content Include="images\common\social\演示地址.txt" />
+    <Content Include="images\index_bj.jpg" />
+    <Content Include="images\login\bg\login-background1.jpg" />
+    <Content Include="images\login\bg\login-background2.jpg" />
+    <Content Include="images\login\bg\login-background3.jpg" />
+    <Content Include="images\login\bg\login-background4.jpg" />
+    <Content Include="images\login\bg\login-background5.jpg" />
+    <Content Include="images\login\bg\login-background.jpg" />
+    <Content Include="images\login\locked.png" />
+    <Content Include="images\login\user.png" />
+    <Content Include="js\charts\china.js" />
+    <Content Include="js\charts\dark.js" />
+    <Content Include="js\charts\div1.js" />
+    <Content Include="js\charts\echarts.min.js" />
+    <Content Include="js\charts\load.js" />
+    <Content Include="js\charts\macarons.js" />
+    <Content Include="js\charts\vintage.js" />
+    <Content Include="js\common\excanvas.min.js" />
+    <Content Include="js\common\respond.min.js" />
+    <Content Include="Global.asax" />
+    <Content Include="js\address.js" />
+    <Content Include="js\common\zepto.min.js" />
+    <Content Include="js\common\zepto.js" />
+    <Content Include="js\html5.js" />
+    <Content Include="js\index\index.js" />
+    <Content Include="js\index\index_bg.js" />
+    <Content Include="js\jquery-1.11.0.min.js" />
+    <Content Include="js\jquery.countup.js" />
+    <Content Include="js\jquery.waypoints.min.js" />
+    <Content Include="js\knockout.js" />
+    <Content Include="js\login\login.js" />
+    <Content Include="js\my.js" />
+    <Content Include="js\pager.js" />
+    <Content Include="js\require.js" />
+    <Content Include="js\requireconfig.js" />
+    <Content Include="js\touch\touch.js" />
+    <Content Include="lib\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="lib\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="lib\bootstrap\css\bootstrap.css" />
+    <Content Include="lib\bootstrap\css\bootstrap.min.css" />
+    <Content Include="lib\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="lib\bootstrap\js\bootstrap.js" />
+    <Content Include="lib\bootstrap\js\bootstrap.min.js" />
+    <Content Include="lib\bootstrap\js\npm.js" />
+    <Content Include="lib\Font-Awesome-3.2.1\.gitignore" />
+    <Content Include="lib\Font-Awesome-3.2.1\css\font-awesome-ie7.css" />
+    <Content Include="lib\Font-Awesome-3.2.1\css\font-awesome-ie7.min.css" />
+    <Content Include="lib\Font-Awesome-3.2.1\css\font-awesome.css" />
+    <Content Include="lib\Font-Awesome-3.2.1\css\font-awesome.min.css" />
+    <Content Include="lib\Font-Awesome-3.2.1\font\fontawesome-webfont.svg" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\css\prettify.css" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\css\pygments.css" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\font-awesome\font\fontawesome-webfont.svg" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\ico\favicon.ico" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\img\contribution-sample.png" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\img\fort_awesome.jpg" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\img\glyphicons-halflings-white.png" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\img\glyphicons-halflings.png" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\js\backbone.min.js" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\js\bootstrap-2.3.1.min.js" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\js\bootstrap-222.min.js" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\js\jquery-1.7.1.min.js" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\js\prettify.min.js" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\js\site.js" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\js\underscore.min.js" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\js\ZeroClipboard-1.1.7.min.js" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\js\ZeroClipboard-1.1.7.swf" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\cheatsheet.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\community.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\design.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\examples.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\get-started.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\icons.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\index.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\license.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\test.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\whats-new.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\ads\carbon-dark-vertical.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\ads\carbon-light-horizontal.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\ads\carbon-light-vertical.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\brand-license.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\cheatsheet.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\community.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\community\getting-support.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\community\project-milestones.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\community\reporting-bugs.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\community\requesting-new-icons.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\community\submitting-pull-requests.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\examples.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\examples\animated-spinner.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\examples\bordered-pulled.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\examples\bulleted-lists.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\examples\button-dropdowns.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\examples\button-groups.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\examples\buttons.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\examples\custom.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\examples\form-inputs.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\examples\inline-icons.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\examples\larger-icons.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\examples\navigation.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\examples\new.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\examples\rotated-flipped.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\examples\stacked.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\footer.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\get-started.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\icons.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\icons\brand.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\icons\currency.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\icons\directional.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\icons\medical.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\icons\new.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\icons\text-editor.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\icons\video-player.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\icons\web-application.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\jumbotron-slider.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\jumbotron.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\license.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\navbar.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\stripe-ad.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\stripe-social.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\tell-me-thanks.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\tests\rotated-flipped-inside-anchor.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\tests\rotated-flipped-inside-btn.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\tests\rotated-flipped.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\tests\stacked-inside-anchor.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\tests\stacked.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\thanks-to.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\whats-new.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\why.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_layouts\base.html" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_layouts\icon.html" />
+    <Content Include="lib\icheck\demo\css\banner.jpg" />
+    <Content Include="lib\icheck\demo\css\custom.css" />
+    <Content Include="lib\icheck\demo\css\icheck.png" />
+    <Content Include="lib\icheck\demo\css\ie\arrow-bottom.png" />
+    <Content Include="lib\icheck\demo\css\ie\arrow-top.png" />
+    <Content Include="lib\icheck\demo\css\ie\header-line.png" />
+    <Content Include="lib\icheck\demo\css\ie\icon-fork.png" />
+    <Content Include="lib\icheck\demo\css\ie\icon-github.png" />
+    <Content Include="lib\icheck\demo\css\ie\icon-lab.png" />
+    <Content Include="lib\icheck\demo\css\ie\icon-options.png" />
+    <Content Include="lib\icheck\demo\css\ie\icon-star.png" />
+    <Content Include="lib\icheck\demo\css\montserrat-bold.svg" />
+    <Content Include="lib\icheck\demo\css\montserrat-regular.svg" />
+    <Content Include="lib\icheck\demo\css\normalize.css" />
+    <Content Include="lib\icheck\demo\index.html" />
+    <Content Include="lib\icheck\demo\js\custom.js" />
+    <Content Include="lib\icheck\demo\js\custom.min.js" />
+    <Content Include="lib\icheck\demo\js\jquery.js" />
+    <Content Include="lib\icheck\demo\js\zepto.js" />
+    <Content Include="lib\icheck\icheck.js" />
+    <Content Include="lib\icheck\icheck.min.js" />
+    <Content Include="lib\icheck\skins\all.css" />
+    <Content Include="lib\icheck\skins\flat\aero%402x.png" />
+    <Content Include="lib\icheck\skins\flat\aero.css" />
+    <Content Include="lib\icheck\skins\flat\aero.png" />
+    <Content Include="lib\icheck\skins\flat\blue%402x.png" />
+    <Content Include="lib\icheck\skins\flat\blue.css" />
+    <Content Include="lib\icheck\skins\flat\blue.png" />
+    <Content Include="lib\icheck\skins\flat\flat%402x.png" />
+    <Content Include="lib\icheck\skins\flat\flat.css" />
+    <Content Include="lib\icheck\skins\flat\flat.png" />
+    <Content Include="lib\icheck\skins\flat\green%402x.png" />
+    <Content Include="lib\icheck\skins\flat\green.css" />
+    <Content Include="lib\icheck\skins\flat\green.png" />
+    <Content Include="lib\icheck\skins\flat\grey%402x.png" />
+    <Content Include="lib\icheck\skins\flat\grey.css" />
+    <Content Include="lib\icheck\skins\flat\grey.png" />
+    <Content Include="lib\icheck\skins\flat\orange%402x.png" />
+    <Content Include="lib\icheck\skins\flat\orange.css" />
+    <Content Include="lib\icheck\skins\flat\orange.png" />
+    <Content Include="lib\icheck\skins\flat\pink%402x.png" />
+    <Content Include="lib\icheck\skins\flat\pink.css" />
+    <Content Include="lib\icheck\skins\flat\pink.png" />
+    <Content Include="lib\icheck\skins\flat\purple%402x.png" />
+    <Content Include="lib\icheck\skins\flat\purple.css" />
+    <Content Include="lib\icheck\skins\flat\purple.png" />
+    <Content Include="lib\icheck\skins\flat\red%402x.png" />
+    <Content Include="lib\icheck\skins\flat\red.css" />
+    <Content Include="lib\icheck\skins\flat\red.png" />
+    <Content Include="lib\icheck\skins\flat\yellow%402x.png" />
+    <Content Include="lib\icheck\skins\flat\yellow.css" />
+    <Content Include="lib\icheck\skins\flat\yellow.png" />
+    <Content Include="lib\icheck\skins\flat\_all.css" />
+    <Content Include="lib\icheck\skins\futurico\futurico%402x.png" />
+    <Content Include="lib\icheck\skins\futurico\futurico.css" />
+    <Content Include="lib\icheck\skins\futurico\futurico.png" />
+    <Content Include="lib\icheck\skins\line\aero.css" />
+    <Content Include="lib\icheck\skins\line\blue.css" />
+    <Content Include="lib\icheck\skins\line\green.css" />
+    <Content Include="lib\icheck\skins\line\grey.css" />
+    <Content Include="lib\icheck\skins\line\line%402x.png" />
+    <Content Include="lib\icheck\skins\line\line.css" />
+    <Content Include="lib\icheck\skins\line\line.png" />
+    <Content Include="lib\icheck\skins\line\orange.css" />
+    <Content Include="lib\icheck\skins\line\pink.css" />
+    <Content Include="lib\icheck\skins\line\purple.css" />
+    <Content Include="lib\icheck\skins\line\red.css" />
+    <Content Include="lib\icheck\skins\line\yellow.css" />
+    <Content Include="lib\icheck\skins\line\_all.css" />
+    <Content Include="lib\icheck\skins\minimal\aero%402x.png" />
+    <Content Include="lib\icheck\skins\minimal\aero.css" />
+    <Content Include="lib\icheck\skins\minimal\aero.png" />
+    <Content Include="lib\icheck\skins\minimal\blue%402x.png" />
+    <Content Include="lib\icheck\skins\minimal\blue.css" />
+    <Content Include="lib\icheck\skins\minimal\blue.png" />
+    <Content Include="lib\icheck\skins\minimal\green%402x.png" />
+    <Content Include="lib\icheck\skins\minimal\green.css" />
+    <Content Include="lib\icheck\skins\minimal\green.png" />
+    <Content Include="lib\icheck\skins\minimal\grey%402x.png" />
+    <Content Include="lib\icheck\skins\minimal\grey.css" />
+    <Content Include="lib\icheck\skins\minimal\grey.png" />
+    <Content Include="lib\icheck\skins\minimal\minimal%402x.png" />
+    <Content Include="lib\icheck\skins\minimal\minimal.css" />
+    <Content Include="lib\icheck\skins\minimal\minimal.png" />
+    <Content Include="lib\icheck\skins\minimal\orange%402x.png" />
+    <Content Include="lib\icheck\skins\minimal\orange.css" />
+    <Content Include="lib\icheck\skins\minimal\orange.png" />
+    <Content Include="lib\icheck\skins\minimal\pink%402x.png" />
+    <Content Include="lib\icheck\skins\minimal\pink.css" />
+    <Content Include="lib\icheck\skins\minimal\pink.png" />
+    <Content Include="lib\icheck\skins\minimal\purple%402x.png" />
+    <Content Include="lib\icheck\skins\minimal\purple.css" />
+    <Content Include="lib\icheck\skins\minimal\purple.png" />
+    <Content Include="lib\icheck\skins\minimal\red%402x.png" />
+    <Content Include="lib\icheck\skins\minimal\red.css" />
+    <Content Include="lib\icheck\skins\minimal\red.png" />
+    <Content Include="lib\icheck\skins\minimal\yellow%402x.png" />
+    <Content Include="lib\icheck\skins\minimal\yellow.css" />
+    <Content Include="lib\icheck\skins\minimal\yellow.png" />
+    <Content Include="lib\icheck\skins\minimal\_all.css" />
+    <Content Include="lib\icheck\skins\polaris\polaris%402x.png" />
+    <Content Include="lib\icheck\skins\polaris\polaris.css" />
+    <Content Include="lib\icheck\skins\polaris\polaris.png" />
+    <Content Include="lib\icheck\skins\square\aero%402x.png" />
+    <Content Include="lib\icheck\skins\square\aero.css" />
+    <Content Include="lib\icheck\skins\square\aero.png" />
+    <Content Include="lib\icheck\skins\square\blue%402x.png" />
+    <Content Include="lib\icheck\skins\square\blue.css" />
+    <Content Include="lib\icheck\skins\square\blue.png" />
+    <Content Include="lib\icheck\skins\square\green%402x.png" />
+    <Content Include="lib\icheck\skins\square\green.css" />
+    <Content Include="lib\icheck\skins\square\green.png" />
+    <Content Include="lib\icheck\skins\square\grey%402x.png" />
+    <Content Include="lib\icheck\skins\square\grey.css" />
+    <Content Include="lib\icheck\skins\square\grey.png" />
+    <Content Include="lib\icheck\skins\square\orange%402x.png" />
+    <Content Include="lib\icheck\skins\square\orange.css" />
+    <Content Include="lib\icheck\skins\square\orange.png" />
+    <Content Include="lib\icheck\skins\square\pink%402x.png" />
+    <Content Include="lib\icheck\skins\square\pink.css" />
+    <Content Include="lib\icheck\skins\square\pink.png" />
+    <Content Include="lib\icheck\skins\square\purple%402x.png" />
+    <Content Include="lib\icheck\skins\square\purple.css" />
+    <Content Include="lib\icheck\skins\square\purple.png" />
+    <Content Include="lib\icheck\skins\square\red%402x.png" />
+    <Content Include="lib\icheck\skins\square\red.css" />
+    <Content Include="lib\icheck\skins\square\red.png" />
+    <Content Include="lib\icheck\skins\square\square%402x.png" />
+    <Content Include="lib\icheck\skins\square\square.css" />
+    <Content Include="lib\icheck\skins\square\square.png" />
+    <Content Include="lib\icheck\skins\square\yellow%402x.png" />
+    <Content Include="lib\icheck\skins\square\yellow.css" />
+    <Content Include="lib\icheck\skins\square\yellow.png" />
+    <Content Include="lib\icheck\skins\square\_all.css" />
+    <Content Include="lib\jquery-validation\additional-methods.js" />
+    <Content Include="lib\jquery-validation\additional-methods.min.js" />
+    <Content Include="lib\jquery-validation\jquery.validate.js" />
+    <Content Include="lib\jquery-validation\jquery.validate.min.js" />
+    <Content Include="lib\jquery-validation\messages_cn.js" />
+    <Content Include="lib\jquery\jquery.js" />
+    <Content Include="lib\jquery\jquery.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Areas\Manage\css\" />
+    <Folder Include="Areas\Manage\images\" />
+    <Folder Include="Areas\Manage\js\" />
+    <Folder Include="Areas\Manage\lib\" />
+    <Folder Include="bin\" />
+    <Folder Include="Content\" />
+    <Folder Include="css\components\" />
+    <Folder Include="css\plugins\" />
+    <Folder Include="Scripts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\common\social\Thumbs.db" />
+    <Content Include="images\common\social\获得更多模板.url" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Login\Login.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_Layout_NavigationMenu.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_Layout_Footer.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lib\bootstrap\css\bootstrap-theme.css.map" />
+    <Content Include="lib\bootstrap\css\bootstrap-theme.min.css.map" />
+    <Content Include="lib\bootstrap\css\bootstrap.css.map" />
+    <Content Include="lib\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="lib\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="lib\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="lib\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="lib\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\fonts\fontawesome-webfont.eot" />
+    <Content Include="css\fonts\fontawesome-webfont.ttf" />
+    <Content Include="css\fonts\fontawesome-webfont.woff" />
+    <Content Include="css\fonts\fontawesome-webfont.woff2" />
+    <Content Include="css\fonts\FontAwesome.otf" />
+    <Content Include="css\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="css\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="css\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="css\fonts\glyphicons-halflings-regular.woff2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lib\jquery\jquery.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lib\icheck\.gitignore" />
+    <Content Include="lib\icheck\bower.json" />
+    <Content Include="lib\icheck\CHANGELOG.md" />
+    <Content Include="lib\icheck\demo\css\custom.styl" />
+    <Content Include="lib\icheck\demo\css\montserrat-bold.eot" />
+    <Content Include="lib\icheck\demo\css\montserrat-bold.ttf" />
+    <Content Include="lib\icheck\demo\css\montserrat-bold.woff" />
+    <Content Include="lib\icheck\demo\css\montserrat-regular.eot" />
+    <Content Include="lib\icheck\demo\css\montserrat-regular.ttf" />
+    <Content Include="lib\icheck\demo\css\montserrat-regular.woff" />
+    <Content Include="lib\icheck\icheck.jquery.json" />
+    <Content Include="lib\icheck\README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Login\RegisterSucess.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Manage\Views\_ViewStart.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Manage\Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Manage\Views\Login\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Manage\Views\Shared\_Layout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Manage\Views\Shared\Error.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Manage\Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Manage\Views\UserManage\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lib\Font-Awesome-3.2.1\.ruby-version" />
+    <Content Include="lib\Font-Awesome-3.2.1\composer.json" />
+    <Content Include="lib\Font-Awesome-3.2.1\CONTRIBUTING.md" />
+    <Content Include="lib\Font-Awesome-3.2.1\font\fontawesome-webfont.eot" />
+    <Content Include="lib\Font-Awesome-3.2.1\font\fontawesome-webfont.ttf" />
+    <Content Include="lib\Font-Awesome-3.2.1\font\fontawesome-webfont.woff" />
+    <Content Include="lib\Font-Awesome-3.2.1\font\FontAwesome.otf" />
+    <Content Include="lib\Font-Awesome-3.2.1\Gemfile" />
+    <Content Include="lib\Font-Awesome-3.2.1\Gemfile.lock" />
+    <Content Include="lib\Font-Awesome-3.2.1\less\bootstrap.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\less\core.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\less\extras.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\less\font-awesome-ie7.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\less\font-awesome.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\less\icons.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\less\mixins.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\less\path.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\less\variables.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\package.json" />
+    <Content Include="lib\Font-Awesome-3.2.1\README.md" />
+    <Content Include="lib\Font-Awesome-3.2.1\scss\font-awesome-ie7.scss" />
+    <Content Include="lib\Font-Awesome-3.2.1\scss\font-awesome.scss" />
+    <Content Include="lib\Font-Awesome-3.2.1\scss\_bootstrap.scss" />
+    <Content Include="lib\Font-Awesome-3.2.1\scss\_core.scss" />
+    <Content Include="lib\Font-Awesome-3.2.1\scss\_extras.scss" />
+    <Content Include="lib\Font-Awesome-3.2.1\scss\_icons.scss" />
+    <Content Include="lib\Font-Awesome-3.2.1\scss\_mixins.scss" />
+    <Content Include="lib\Font-Awesome-3.2.1\scss\_path.scss" />
+    <Content Include="lib\Font-Awesome-3.2.1\scss\_variables.scss" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\font-awesome\font\fontawesome-webfont.eot" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\font-awesome\font\fontawesome-webfont.ttf" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\font-awesome\font\fontawesome-webfont.woff" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\font-awesome\font\FontAwesome.otf" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\font-awesome\less\bootstrap.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\font-awesome\less\core.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\font-awesome\less\extras.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\font-awesome\less\font-awesome-ie7.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\font-awesome\less\font-awesome.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\font-awesome\less\icons.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\font-awesome\less\mixins.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\font-awesome\less\path.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\font-awesome\less\variables.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\font-awesome\scss\font-awesome-ie7.scss" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\font-awesome\scss\font-awesome.scss" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\font-awesome\scss\_bootstrap.scss" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\font-awesome\scss\_core.scss" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\font-awesome\scss\_extras.scss" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\font-awesome\scss\_icons.scss" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\font-awesome\scss\_mixins.scss" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\font-awesome\scss\_path.scss" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\font-awesome\scss\_variables.scss" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\img\icon-flag.pdf" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\less\bootstrap-2.3.2\accordion.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\less\bootstrap-2.3.2\alerts.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\less\bootstrap-2.3.2\bootstrap.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\less\bootstrap-2.3.2\breadcrumbs.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\less\bootstrap-2.3.2\button-groups.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\less\bootstrap-2.3.2\buttons.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\less\bootstrap-2.3.2\carousel.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\less\bootstrap-2.3.2\close.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\less\bootstrap-2.3.2\code.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\less\bootstrap-2.3.2\component-animations.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\less\bootstrap-2.3.2\dropdowns.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\less\bootstrap-2.3.2\forms.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\less\bootstrap-2.3.2\grid.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\less\bootstrap-2.3.2\hero-unit.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\less\bootstrap-2.3.2\labels-badges.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\less\bootstrap-2.3.2\layouts.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\less\bootstrap-2.3.2\media.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\less\bootstrap-2.3.2\mixins.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\less\bootstrap-2.3.2\modals.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\less\bootstrap-2.3.2\navbar.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\less\bootstrap-2.3.2\navs.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\less\bootstrap-2.3.2\pager.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\less\bootstrap-2.3.2\pagination.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\less\bootstrap-2.3.2\popovers.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\less\bootstrap-2.3.2\progress-bars.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\less\bootstrap-2.3.2\reset.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\less\bootstrap-2.3.2\responsive-1200px-min.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\less\bootstrap-2.3.2\responsive-767px-max.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\less\bootstrap-2.3.2\responsive-768px-979px.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\less\bootstrap-2.3.2\responsive-navbar.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\less\bootstrap-2.3.2\responsive-utilities.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\less\bootstrap-2.3.2\responsive.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\less\bootstrap-2.3.2\scaffolding.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\less\bootstrap-2.3.2\sprites.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\less\bootstrap-2.3.2\tables.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\less\bootstrap-2.3.2\thumbnails.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\less\bootstrap-2.3.2\tooltip.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\less\bootstrap-2.3.2\type.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\less\bootstrap-2.3.2\utilities.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\less\bootstrap-2.3.2\variables.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\less\bootstrap-2.3.2\wells.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\less\lazy.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\less\mixins.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\less\responsive-1200px-min.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\less\responsive-767px-max.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\less\responsive-768px-979px.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\less\responsive-navbar.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\less\responsive.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\less\site.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\less\sticky-footer.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\assets\less\variables.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\CNAME" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\icons.yml" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\Makefile" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_includes\license-code.less" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_plugins\icon_page_generator.rb" />
+    <Content Include="lib\Font-Awesome-3.2.1\src\_plugins\site.rb" />
+    <Content Include="lib\Font-Awesome-3.2.1\_config.yml" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2060</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:2060/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

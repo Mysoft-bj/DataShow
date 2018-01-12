@@ -1,0 +1,33 @@
+﻿@{
+    Layout = "";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>注册成功</title>
+    <meta name="keywords" content="优资平台">
+    <meta name="description" content="优秀资源平台">
+    @Html.CssFile("/css/login/login.css")
+    @Html.JsFile("/lib/jquery/jquery.min.js")
+    @Html.CssFile("/lib/bootstrap/css/bootstrap.css")
+    @Html.JsFile("/lib/bootstrap/js/bootstrap.min.js")
+    @Html.CssFile("/lib/bootstrap/css/bootstrap.css")
+    <!--[if lt IE 9]>
+    <meta http-equiv="refresh" content="0;ie.html" />
+    <![endif]-->
+    <script>
+        if (window.top !== window.self) {
+            window.top.location = window.location;
+        }
+    </script>
+</head>
+<body class="signin">
+    <div class="register_tip">
+            <p><span>恭喜你</span><strong>@ViewBag.usercode</strong>注册成功</p>
+            <a class="btn btn-success btn-block" href="/login">现在去登录</a>
+    </div>
+</body>
+</html>

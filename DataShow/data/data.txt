@@ -1,0 +1,15 @@
+﻿{SaleRanking:[{"name":"广渠金茂府","value":1880},{"name":"金茂珑悦-一期","value":1047},{"name":"金茂梅溪湖-一期","value":838}],
+DiffAgeBuy:[{"name":"30后","value":37},{"name":"40后","value":111},{"name":"50后","value":418},{"name":"60后","value":1200},{"name":"70后","value":1945},{"name":"80后","value":2069},{"name":"90后","value":391},{"name":"00后","value":77},{"name":"10后","value":17}],
+TwoDiffAge:[{name:'eldest',value:4},{name:'oldest',value:106}],
+MostCstGjjl:[{"name":"方兴北京","value":48},{"name":"方兴丽江","value":36},{"name":"方兴丽江","value":28},{"name":"方兴丽江","value":26},{"name":"方兴丽江","value":21}],
+DiffProductCnt:[{"name":"住宅别墅","value":43},{"name":"别墅","value":60},{"name":"商业别墅","value":16},{"name":"住宅","value":4062},{"name":"酒店式公寓","value":1728}],
+MaxProductCnt:[{"name":"住宅别墅","max":5000},{"name":"别墅","max":5000},{"name":"商业别墅","max":5000},{"name":"住宅","max":5000},{"name":"酒店式公寓","max":5000}],
+MediaOppCnt:[{"name":"户外广告","value":19116},{"name":"报纸","value":5556},{"name":"电视","value":3502},{"name":"活动展会","value":2436},{"name":"网络","value":2095}],
+DiffMonthDealCnt:[{"name":"1月","value":378},{"name":"2月","value":141},{"name":"3月","value":424},{"name":"4月","value":745},{"name":"5月","value":744},{"name":"6月","value":850},{"name":"7月","value":192},{"name":"8月","value":120},{"name":"9月","value":276},{"name":"10月","value":315},{"name":"11月","value":1089},{"name":"12月","value":635}],
+RemovalRate:[{"name":"","value":54.18}],
+AchievedProjectCount:[{"name":"北京市","value":3},{"name":"长沙市","value":3},{"name":"朝阳市","value":3},{"name":"海口市","value":1},{"name":"丽江市","value":4},{"name":"南京市","value":2},{"name":"青岛市","value":1},{"name":"上海市","value":6},{"name":"重庆市","value":2}],
+Constellations:[{"name":"天秤座","value":605},{"name":"处女座","value":546},{"name":"狮子座","value":554},{"name":"双子座","value":472},{"name":"射手座","value":597},{"name":"白羊座","value":505},{"name":"水瓶座","value":534},{"name":"巨蟹座","value":507},{"name":"魔羯座","value":592},{"name":"天蝎座","value":643},{"name":"双鱼座","value":526},{"name":"金牛座","value":435}],
+AvgWomenPercentage:[{ "name": "other", "value": 56.85},{"name":"平均","value":43.15}],
+MostWomenPercentage:[{ "name": "other", "value": 28.33},{"name":"上海","value":71.67}],
+LeastWomenPercentage:[{ "name": "other", "value": 86.64},{"name":"贵阳","value":13.36}]
+}

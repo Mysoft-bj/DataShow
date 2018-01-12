@@ -1,0 +1,160 @@
+﻿@{
+    Layout = "";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>登陆/注册</title>
+    <meta name="keywords" content="优资平台">
+    <meta name="description" content="优秀资源平台">
+    @Html.JsFile("/lib/jquery/jquery.min.js")
+    @Html.JsFile("/lib/bootstrap/js/bootstrap.min.js")
+    @Html.CssFile("/lib/bootstrap/css/bootstrap.css")
+    @Html.CssFile("/css/hplus/font-awesome.css")
+    @Html.CssFile("/css/hplus/animate.css")
+    @Html.CssFile("/css/hplus/style.css")
+    @Html.CssFile("/css/login/login.css")
+    @Html.CssFile("/lib/icheck/skins/square/blue.css")
+    @Html.JsFile("/js/login/login.js")
+    @Html.JsFile("/lib/jquery-validation/jquery.validate.js")
+    @Html.JsFile("/lib/jquery-validation/messages_cn.js")
+    @Html.JsFile("/lib/icheck/icheck.js")
+    <!--[if lt IE 9]>
+    <meta http-equiv="refresh" content="0;ie.html" />
+    <![endif]-->
+    <script>
+        if (window.top !== window.self) {
+            window.top.location = window.location;
+        }
+    </script>
+</head>
+<body class="signin">
+    <div class="signinpanel">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="signin-info">
+                    <div class="logopanel m-b">
+                        <h1>简单页面</h1>
+                    </div>
+                    <div class="m-b"></div>
+                    <h4>欢迎来到 <strong>简单页面</strong></h4>
+                    <ul class="m-b">
+                        <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> 优势一：XXXXX</li>
+                        <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> 优势二：XXXXX</li>
+                        <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> 优势三：XXXXX</li>
+                        <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> 优势四：XXXXX</li>
+                        <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> 优势五：XXXXX</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div id="login-tab" class="tabs-container">
+                    <ul class="nav nav-tabs">
+                        <li class="active col-sm-6">
+                            <a data-toggle="tab" href="#login">登录</a>
+                        </li>
+                        <li class="col-sm-6">
+                            <a data-toggle="tab" href="#register">注册</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="login" class="tab-pane fade in active">
+                            <div class="panel-body">
+
+                                <form method="post" id="loginForm" action="/login/dologin">
+                                    @{
+                                        if (!ViewBag.loginErrorStatus)
+                                        {
+                                            <p class="m-t-md text-danger">用户名或密码错误</p>
+                                        }
+                                    }
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-user"></i></span> 
+                                            <input type="text" name="username" class="form-control" placeholder="用户名" value="@ViewBag.username">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-lock icon-lock"></i></span>
+                                            <input type="password" name="password" class="form-control" placeholder="密码" >
+                                        </div>
+                                    </div>
+                                        <p><a href="">忘记密码了？</a></p>
+                                        <button class="btn btn-success btn-block">登录</button>
+                                    <div class="btn-group login-share">
+                                        <a href="#"><i class="fa fa-qq"></i><span>QQ登录</span></a>
+                                        <a href="#"><i class="fa fa-weibo"></i><span>微博登录</span> </a>
+                                        <a href="#"><i class="fa fa-weixin"></i><span>微信登录</span> </a>
+                                    </div>
+
+</form>
+                               
+                            </div>
+                        </div>
+                        <div id="register" class="tab-pane fade">
+                            <div class="panel-body">
+                                <form method="post" id="registerForm" action="/login/doregister">
+                                    @{
+                                        if (ViewBag.regErrorStatus != null && !ViewBag.regErrorStatus)
+                                        {
+                                            <p class="m-t-md text-danger">@ViewBag.message</p>
+                                        }
+                                    }
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                            <input type="text" name="username" class="form-control" placeholder="用户名">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-mobile icon-mobile"></i></span>
+                                            <input type="text" name="mobile" class="form-control" placeholder="手机号">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-envelope-o icon-envelope-o"></i></span>
+                                            <input type="text" name="email" class="form-control" placeholder="邮箱">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-lock icon-lock"></i></span>
+                                            <input type="password" id="register_password" name="password" class="form-control" placeholder="密码">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-lock icon-lock"></i></span>
+                                            <input type="password" name="repassword" class="form-control" placeholder="确认密码">
+                                        </div>
+                                    </div>
+                                    <div class="checkbox i-checks">
+                                        <label>
+                                            <input type="checkbox" value="" checked=""><span>同意<a>注册协议</a></span>
+                                        </label>
+                                    </div>
+                                    <button class="btn btn-success btn-block">注册</button>
+
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        <input type="hidden" id="GoToTab" value="@ViewBag.tab"/>
+        <div class="signup-footer ">
+            <div class="signup-footer-text">
+                &copy; 2017 杨明宇
+            </div>
+        </div>
+    </div>
+</body>
+</html>

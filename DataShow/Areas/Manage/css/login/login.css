@@ -1,0 +1,46 @@
+﻿body {
+     background: #e9ecf3;
+}
+.tpl-login {
+  width: 100%;
+}
+.tpl-login-logo {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.tpl-login-title {
+  width: 100%;
+   margin: 0 auto;
+   font-size:30px;
+    color:#3BB4F2; 
+    text-align:center;   
+    margin-bottom:20px;
+}
+.tpl-login-content {
+  margin:10% auto 0;
+  width: 400px;
+  padding: 40px 40px 25px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.tpl-login-content-info {
+  color: #B3B3B3;
+  font-size: 14px;
+}
+
+.tpl-login-btn {
+  background-color: #32c5d2;
+  border: none;
+  padding: 10px 16px;
+  font-size: 14px;
+  line-height: 14px;
+  outline: none;
+}
+
+.color-form-group {
+    padding-top:0px;
+}
+

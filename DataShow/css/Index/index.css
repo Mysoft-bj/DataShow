@@ -1,0 +1,421 @@
+body{
+	
+	width:100%;
+	overflow:hidden;
+    background:url(/images/background/background4.gif);
+    background-size:100% 100%;
+	
+}
+
+
+
+.hide{ display:none;}
+
+.page{
+	width:100%;
+	height:100%;
+	position:absolute;
+	font-size:12px;
+	text-align:center;
+}
+
+.page .wrap{
+	height:500px;
+}
+
+.page-1-1{ background:url(/images/background/background4.gif);background-size:100% 100%;}
+/*.page-2-1{ background-color:#FFBF50;}
+.page-3-1{ background-color:#F3533C;}
+.page-4-1{ background-color:#FFBF50;}
+.page-5-1{ background-color:#083846;}
+.page-6-1{ background-color:#FFBF50;}
+.page-7-1{ background-color:#FFBF50;}
+.page-8-1{ background-color:#FFBF50;}*/
+
+.page-current{
+	z-index:1;
+}
+
+
+
+
+/*后来加*/
+.page-up
+{
+    height:20px;width:300px;
+	position:absolute;
+	left:50%;
+	bottom:3%;
+    margin-left:-150px;
+}
+.page-up-icon
+{
+   color:white;
+   font-size:26px;
+ 
+}
+.page-up-icon-last
+{
+    color:white;
+   font-size:12px;
+   animation-iteration-count:infinite;
+   -webkit-animation-iteration-count:infinite;
+   animation-duration:4s;
+   -webkit-animation-duration:4s;
+}
+
+.divChart{
+width:100%;
+height:350px;
+margin-top:5%;
+}
+.margin-left-3 {
+    margin-left:3%;
+}
+
+#div3-1 {
+    float:left;
+    margin-top:3%;
+}
+.divChart6
+{
+width:100%;
+height:350px;
+margin-left:0;
+}
+.divText
+{
+    width:100%;
+    color:#2EA0DB;
+   font-size:30px;
+}
+.divText3
+{
+    width:100%;
+    height:auto;
+    height:auto;
+    color:#2EA0DB;
+    font-size:25px;
+    float:left;
+}
+.divText-keyword
+{
+    color:#FFD700;
+   font-size:40px;
+}
+.divText-title3 {
+    width:70%;
+    text-align:center;
+    font-size:25px;
+    color:#fff;
+    float:left;
+}
+.divText-text3{
+    width:30%;
+    text-align:left;
+    font-size:25px;
+    color:#FFD700;
+    float:left;
+}
+.divText2-1 {
+    margin-top:5%;
+}
+#div3-1Span2 {
+    display:none;
+}
+#div3-1Span3 {
+    display:none;
+}
+.page-bg
+{
+    width:100%;
+	background-image: url(/images/background/index_bg2.jpg);
+	height:640px;
+	position:absolute;
+	z-index:0;
+	filter:alpha(opacity=40);  
+    -moz-opacity:0.4;  
+    -khtml-opacity:0.4;  
+    opacity: 0.4;
+}
+#canvas {
+width:100%;height:auto/*默认全屏显示 可自己设置高度640px*/;
+display:inline-block;
+vertical-align:baseline;
+position:absolute;
+z-index:-1;
+}
+
+.page-title
+{
+    width:100%;
+    position:absolute;
+    font-size:30px;
+    color:#2EA0DB;
+    top:10%;
+    animation-duration:1.5s;
+   -webkit-animation-duration:1.5s;
+   text-align:center;
+   z-index:10;
+}
+
+.pt-page-moveFromLeft
+{	
+    -webkit-animation-delay: .2s;
+	animation-delay: .2s;
+}
+
+.page-logo
+{
+    width:30px;
+    height:10px;
+    position:absolute;
+    background: url(/images/background/logo1.png) no-repeat 0 0;
+    background-size:99% 99%;
+    margin-left:20px;
+    top:2%;
+}
+
+.divTitle-left
+{
+    width:45px;
+    font-size:35px;
+     font-family:STKaiti;
+    float:right;
+    font-weight:bold;
+
+}
+.divTitle-mid
+{
+    color:white;
+    width:auto;
+    font-size:26px;
+    font-family:STKaiti;
+    float:left;
+    margin-left:33px;
+    margin-top:40px;
+    font-weight:bold;
+}
+.divTitle-mid sapn{
+    margin:0;
+}
+
+.divTitle-right
+{
+     width:60px;
+    font-size:50px;
+     font-family:STKaiti;
+    border:4px dashed #2EA0DB;
+    float:right;
+    margin-right:20%;
+     font-weight:bold;
+     
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+   margin-top:30px;
+    margin-left:20px;
+    background: #2EA0DB;
+    -moz-border-radius:75px;
+    -webkit-border-radius: 75px;
+    border-radius: 75px;
+    z-index:3;
+    /*opacity:0.5;*/
+}
+
+.page-remark {
+    width:80%;
+    height:auto;
+    left:10%;
+    position:absolute;
+    bottom:10%;
+     color:#fff;
+   
+}
+.page-remark-text {
+     width:80%;
+    font-size:16px;
+     float:left;
+     word-wrap:break-word
+}
+.page-remark-left {
+    width:10%;
+    float:left;
+    margin-top:-3px;
+    color:#EE7621;
+}
+
+.page-remark-rightIcon {
+    width:10%;
+    height:auto;
+    right:10%;
+    position:absolute;
+    bottom:9%;
+    color:#EE7621;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*loading*/
+.page-loading {
+    width:100%;
+    min-height:800px;
+    z-index:999;
+
+}
+.base {
+  height: 9em;
+  left: 50%;
+  margin: -7.5em;
+  padding: 3em;
+  position: absolute;
+  top: 50%;
+  width: 9em;
+  transform: rotateX(45deg) rotateZ(45deg);
+  transform-style: preserve-3d;
+}
+
+.cube,
+.cube:after,
+.cube:before {
+  content: '';
+  float: left;
+  height: 3em;
+  position: absolute;
+  width: 3em;
+}
+
+/* Top */
+.cube {
+  background-color: #05afd1;
+  position: relative;
+  transform: translateZ(3em);
+  transform-style: preserve-3d;
+  transition: .25s;
+  box-shadow: 13em 13em 1.5em rgba(0, 0, 0, 0.1);
+  animation: anim 1s infinite;
+}
+.cube:after {
+  background-color: #049dbc;
+  transform: rotateX(-90deg) translateY(3em);
+  transform-origin: 100% 100%;
+}
+.cube:before {
+  background-color: #048ca7;
+  transform: rotateY(90deg) translateX(3em);
+  transform-origin: 100% 0;
+}
+.cube:nth-child(1) {
+  animation-delay: 0.05s;
+}
+.cube:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.cube:nth-child(3) {
+  animation-delay: 0.15s;
+}
+.cube:nth-child(4) {
+  animation-delay: 0.2s;
+}
+.cube:nth-child(5) {
+  animation-delay: 0.25s;
+}
+.cube:nth-child(6) {
+  animation-delay: 0.3s;
+}
+.cube:nth-child(7) {
+  animation-delay: 0.35s;
+}
+.cube:nth-child(8) {
+  animation-delay: 0.4s;
+}
+.cube:nth-child(9) {
+  animation-delay: 0.45s;
+}
+
+@keyframes anim {
+  50% {
+    transform: translateZ(0.5em);
+  }
+}
+
+
+
+/*新样式*/
+.divText-text4-1 {
+    width:auto;
+    margin-top:3%;
+    margin-left:20%;
+    color:#FFD700;
+    font-size:35px;
+    text-align:left;
+
+}
+
+.divText-text4-2 {
+    width:auto;
+    margin-left:50%;
+    text-align:left;
+    color:#FFD700;
+    font-size:35px;
+     color: #EE7621
+}
+
+
+/*yao*/
+
+.counter {
+    color: #FFD700;
+    font-size: 50px;
+    margin-left:14px;
+    margin-right:14px;
+}
+
+.EMFont {
+    color: #FFD700;
+    font-size: 50px;
+    margin-left:14px;
+    margin-right:14px;
+}
+.EMFont5-1 {
+    color: #FFD700;
+    font-size: 40px;
+    margin-left:14px;
+    margin-right:14px;
+}
+
+.EMFont9-1 {
+    color: #FFD700;
+    font-size: 30px;
+    margin-left:14px;
+    margin-right:14px;
+}
+.margin_top {
+    margin-top:5%;
+}
+
+.font-size20 {
+    font-size :20px;
+}
