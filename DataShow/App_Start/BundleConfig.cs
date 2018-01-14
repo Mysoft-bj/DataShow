@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace FineSource
+namespace DataShow
 {
     public class BundleConfig
     {

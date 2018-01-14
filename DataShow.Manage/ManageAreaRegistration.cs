@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace FineSource.Areas.Manage
+namespace DataShow.Areas.Manage
 {
     public class ManageAreaRegistration : AreaRegistration
     {
@@ -15,10 +15,10 @@ namespace FineSource.Areas.Manage
         public override void RegisterArea(AreaRegistrationContext context)
         {
             context.MapRoute(
-                "Manage_default",
+                "Manage",
                 "Manage/{controller}/{action}/{id}",
                 new {controller="Home", action = "Index", id = UrlParameter.Optional },
-                namespaces: new string[] { "FineSource.Manage.Controllers.*" }
+                namespaces: new string[] { "DataShow.Manage.Controllers.*" }
             );
 
         }

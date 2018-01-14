@@ -3,3 +3,9 @@ C:\TFS\极客项目\FineSource\My.Core\obj\Debug\My.Core.csprojResolveAssemblyRe
 C:\TFS\极客项目\FineSource\My.Core\obj\Debug\My.Core.dll
 C:\TFS\极客项目\FineSource\My.Core\obj\Debug\My.Core.pdb
 C:\TFS\极客项目\FineSource\FineSource\bin\My.Core.pdb
+D:\个人项目\GIT\DataShow\FineSource\bin\My.Core.dll
+D:\个人项目\GIT\DataShow\FineSource\bin\My.Core.pdb
+D:\个人项目\GIT\DataShow\My.Core\obj\Debug\My.Core.dll
+D:\个人项目\GIT\DataShow\My.Core\obj\Debug\My.Core.pdb
+D:\个人项目\GIT\DataShow\DataShow\bin\My.Core.dll
+D:\个人项目\GIT\DataShow\DataShow\bin\My.Core.pdb

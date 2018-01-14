@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace FineSource.Manage.Controllers.Home
+namespace DataShow.Manage.Controllers.Home
 {
     public class HomeController : Controller
     {

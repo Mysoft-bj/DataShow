@@ -9,7 +9,7 @@ using My.Application;
 using My.Domain;
 using My.Application.Login;
 
-namespace FineSource.Controllers.home
+namespace DataShow.Controllers.home
 {
     public class HomeController : Controller
     {

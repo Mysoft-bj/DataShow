@@ -7,7 +7,7 @@ using System.Data;
 using My.Core;
 using System.Web.Script.Serialization;
 
-namespace FineSource.Controllers.Charts
+namespace DataShow.Controllers.Charts
 {
     public class ChartsController : Controller
     {

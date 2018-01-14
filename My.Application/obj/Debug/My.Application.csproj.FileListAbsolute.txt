@@ -3,3 +3,10 @@ C:\TFS\极客项目\FineSource\My.Application\obj\Debug\My.Application.csprojRes
 C:\TFS\极客项目\FineSource\My.Application\obj\Debug\My.Application.dll
 C:\TFS\极客项目\FineSource\My.Application\obj\Debug\My.Application.pdb
 C:\TFS\极客项目\FineSource\FineSource\bin\My.Application.pdb
+D:\个人项目\GIT\DataShow\FineSource\bin\My.Application.dll
+D:\个人项目\GIT\DataShow\FineSource\bin\My.Application.pdb
+D:\个人项目\GIT\DataShow\My.Application\obj\Debug\My.Application.csprojResolveAssemblyReference.cache
+D:\个人项目\GIT\DataShow\My.Application\obj\Debug\My.Application.dll
+D:\个人项目\GIT\DataShow\My.Application\obj\Debug\My.Application.pdb
+D:\个人项目\GIT\DataShow\DataShow\bin\My.Application.dll
+D:\个人项目\GIT\DataShow\DataShow\bin\My.Application.pdb

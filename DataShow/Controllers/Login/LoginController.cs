@@ -12,7 +12,7 @@ using My.Application;
 using My.Application.Login;
 using System.Text;
 
-namespace FineSource.Controllers.Login
+namespace DataShow.Controllers.Login
 {
     public class LoginController : Controller
     {
