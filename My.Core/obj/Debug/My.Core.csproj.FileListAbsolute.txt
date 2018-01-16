@@ -9,3 +9,4 @@ D:\个人项目\GIT\DataShow\My.Core\obj\Debug\My.Core.dll
 D:\个人项目\GIT\DataShow\My.Core\obj\Debug\My.Core.pdb
 D:\个人项目\GIT\DataShow\DataShow\bin\My.Core.dll
 D:\个人项目\GIT\DataShow\DataShow\bin\My.Core.pdb
+D:\个人项目\GIT\DataShow\My.Core\obj\Debug\My.Core.csprojResolveAssemblyReference.cache

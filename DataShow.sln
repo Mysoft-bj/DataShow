@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataShow", "DataShow\DataShow.csproj", "{BCA5E277-AD9A-410D-B979-B23C2AACFABF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "My.Mvc", "My.Mvc\My.Mvc.csproj", "{510E9689-F91D-4AA8-A660-4F3B64F77FFE}"
@@ -14,6 +16,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "My.NHibernate", "My.NHibernate\My.NHibernate.csproj", "{1DFC8F60-FE96-4B4E-959B-EF2D0BB38E6E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataShow.Manage", "DataShow.Manage\DataShow.Manage.csproj", "{5B26A8B6-0103-48B6-9C3E-C2DC170ABE73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "My.Entity", "My.Entity\My.Entity.csproj", "{DF0CC0A0-4D34-417E-9199-5CCE9EB5C881}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +53,10 @@ Global
 		{5B26A8B6-0103-48B6-9C3E-C2DC170ABE73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B26A8B6-0103-48B6-9C3E-C2DC170ABE73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B26A8B6-0103-48B6-9C3E-C2DC170ABE73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF0CC0A0-4D34-417E-9199-5CCE9EB5C881}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF0CC0A0-4D34-417E-9199-5CCE9EB5C881}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF0CC0A0-4D34-417E-9199-5CCE9EB5C881}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF0CC0A0-4D34-417E-9199-5CCE9EB5C881}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

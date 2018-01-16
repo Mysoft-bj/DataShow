@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using My.Domain;
 using My.Core;
 using System.Data;
+using Mysoft.Map.Extensions.DAL;
 
 namespace My.Application
 {
@@ -13,11 +14,8 @@ namespace My.Application
     {
         public UserService(){
         }
-        public static List<MyUser> GetUsers() {
-            var sql = "SELECT UserName,UserCode,MobilePhone from myuser";
-            DataTable userDt = MysqlDataBaseManager.GetDataBase().ExecuteDataTable(sql);
-            List<MyUser> user = ConvertHelper<MyUser>.DataTableConvertToList(userDt);
-            return user;
+        public void test() {
+                
         }
     }
 }

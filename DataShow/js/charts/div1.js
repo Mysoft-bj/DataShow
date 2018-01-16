@@ -2,7 +2,7 @@
 function GetJsonAll() {
     if (jsonAll == undefined) {
         htmlobj = $.ajax({ url: "/data/data.txt", async: false });
-        jsonAll = eval('(' + htmlobj.responseText + ')');
+        jsonAll = JSON.parse(htmlobj.responseText);
     }
 }
 // 基于准备好的dom，初始化echarts实例
