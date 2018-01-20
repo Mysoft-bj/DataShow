@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Mysoft.Map.Extensions.DAL;
 
-namespace My.Domain.Entity
+namespace My.Entity
 {
     [Serializable]
     [DataEntity(Alias = "ds_TemplatePageNodeData")]

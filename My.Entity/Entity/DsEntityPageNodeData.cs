@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Mysoft.Map.Extensions.DAL;
 
-namespace My.Domain.Entity
+namespace My.Entity
 {
     [Serializable]
     [DataEntity(Alias = "ds_EntityPageNodeData")]
@@ -35,5 +35,7 @@ namespace My.Domain.Entity
         public string DataHandleAssemble { get; set; }
         [DataColumn(IsNullable = true)]
         public string DataHandleFunction { get; set; }
+        [DataColumn(IsNullable = true)]
+        public int? Level { get; set; }
     }
 }

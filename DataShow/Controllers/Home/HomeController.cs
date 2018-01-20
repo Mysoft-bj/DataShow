@@ -9,6 +9,8 @@ using My.Application;
 using My.Domain;
 using My.Application.Login;
 using My.Core.Helper;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace DataShow.Controllers.home
 {
@@ -44,6 +46,11 @@ namespace DataShow.Controllers.home
             //newRow["Description"] = "比大话更幼稚";
             //tblDatas.Rows.Add(newRow);
             //var json=  DataTableHelper.Dtb2Json(tblDatas);
+
+
+            string jsonText = "{\"a\": \"\", 	\"b\": \"\", 	\"c\": [{ 			\"c.1\": \"\", 			\"c.2\": \"\" 		}, 		{ 			\"c.1\": \"\", 			\"c.2\": \"\" 		} 	], 	\"d\": [{ 		\"d.1\": \"\", 		\"d.2\": [{ 			\"d.2.1\": \"\", 			\"d.2.2\": \"\" 		}] 	}] }";
+            JObject jo = (JObject)JsonConvert.DeserializeObject(jsonText);
+
             return View();
         }
 
