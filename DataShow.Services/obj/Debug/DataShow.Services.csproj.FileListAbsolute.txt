@@ -1,0 +1,5 @@
+E:\GIT\DataShow\DataShow.Services\bin\Debug\DataShow.Services.dll
+E:\GIT\DataShow\DataShow.Services\bin\Debug\DataShow.Services.pdb
+E:\GIT\DataShow\DataShow.Services\bin\Debug\Mysoft.Map.Extensions.dll
+E:\GIT\DataShow\DataShow.Services\obj\Debug\DataShow.Services.dll
+E:\GIT\DataShow\DataShow.Services\obj\Debug\DataShow.Services.pdb

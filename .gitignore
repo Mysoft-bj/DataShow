@@ -1,3 +1,14 @@
 .DS_Store
 packages/
 
+.vs/config/applicationhost.config
+.vs/config/applicationhost.config
+*.config
+DataShow.Manage/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+DataShow.Manage/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+.vs/DataShow/v14/.suo
+.vs/config/applicationhost.config
+.vs/config/applicationhost.config
+.vs/config/applicationhost.config
+.vs/config/applicationhost.config
+My.Core/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
