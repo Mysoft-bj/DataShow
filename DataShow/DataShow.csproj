@@ -62,6 +62,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\My.Mvc.dll</HintPath>
     </Reference>
+    <Reference Include="Mysoft.Map.Extensions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Mysoft.Map.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="MySql.Data, Version=6.7.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\MySql.Data.dll</HintPath>
@@ -263,6 +267,7 @@
     <Content Include="js\jquery.waypoints.min.js" />
     <Content Include="js\knockout.js" />
     <Content Include="js\login\login.js" />
+    <Content Include="js\Map.Extensions.js" />
     <Content Include="js\my.js" />
     <Content Include="js\pager.js" />
     <Content Include="js\require.js" />

@@ -175,5 +175,47 @@ GO
 delete from data_dict where table_name='ds_EntityPageNodeData' ; insert into data_dict(guid , tableguid , field_name_c , field_name , width ,data_type , field_sequence, b_null , b_pk , b_sys , table_name ,	table_name_c , Description , defaultvalue , b_identity) values  ('dfd06f86-5a4d-4edf-953e-13fd8ecb7042' , 'b60007dd-3e6e-4e83-bafc-0f01ebfc9597','页面数据结构GUID','EntityPageNodeDataGUID',16,'uniqueidentifier',1,0,1,0,'ds_EntityPageNodeData','页面数据结构实例表','','',0) ; insert into data_dict(guid , tableguid , field_name_c , field_name , width ,data_type , field_sequence, b_null , b_pk , b_sys , table_name ,	table_name_c , Description , defaultvalue , b_identity) values  ('89049dd2-1a90-40fd-a02c-e5d73b7ec290' , 'b60007dd-3e6e-4e83-bafc-0f01ebfc9597','节点名称','EntityPageNodeDataName',500,'varchar',2,0,0,0,'ds_EntityPageNodeData','页面数据结构实例表','','',0) ; insert into data_dict(guid , tableguid , field_name_c , field_name , width ,data_type , field_sequence, b_null , b_pk , b_sys , table_name ,	table_name_c , Description , defaultvalue , b_identity) values  ('3cf42f17-f007-4b54-8e5b-acde77f5cff7' , 'b60007dd-3e6e-4e83-bafc-0f01ebfc9597','页面GUID','EntityPageGUID',16,'uniqueidentifier',3,0,0,0,'ds_EntityPageNodeData','页面数据结构实例表','','',0) ; insert into data_dict(guid , tableguid , field_name_c , field_name , width ,data_type , field_sequence, b_null , b_pk , b_sys , table_name ,	table_name_c , Description , defaultvalue , b_identity) values  ('776a1369-66f7-4427-8ab0-4e05b6a27bf3' , 'b60007dd-3e6e-4e83-bafc-0f01ebfc9597','当前层级Code','CurNodeCode',500,'varchar',4,0,0,0,'ds_EntityPageNodeData','页面数据结构实例表','','',0) ; insert into data_dict(guid , tableguid , field_name_c , field_name , width ,data_type , field_sequence, b_null , b_pk , b_sys , table_name ,	table_name_c , Description , defaultvalue , b_identity) values  ('35c254d9-f138-41a0-a7f3-a9d6453d1951' , 'b60007dd-3e6e-4e83-bafc-0f01ebfc9597','父级层级Code','ParentNodeCode',500,'varchar',5,0,0,0,'ds_EntityPageNodeData','页面数据结构实例表','','',0) ; insert into data_dict(guid , tableguid , field_name_c , field_name , width ,data_type , field_sequence, b_null , b_pk , b_sys , table_name ,	table_name_c , Description , defaultvalue , b_identity) values  ('7f8202f1-558f-4b7a-96ce-02375645bd5c' , 'b60007dd-3e6e-4e83-bafc-0f01ebfc9597','节点Sql','NodeSql',8000,'varchar',6,0,0,0,'ds_EntityPageNodeData','页面数据结构实例表','','',0) ; insert into data_dict(guid , tableguid , field_name_c , field_name , width ,data_type , field_sequence, b_null , b_pk , b_sys , table_name ,	table_name_c , Description , defaultvalue , b_identity) values  ('4d0038f4-69a4-4362-a37b-255b6f2e8f59' , 'b60007dd-3e6e-4e83-bafc-0f01ebfc9597','是否循环调用Sql','IfSqlExcutedLooped',4,'int',7,0,0,0,'ds_EntityPageNodeData','页面数据结构实例表','','',0) ; insert into data_dict(guid , tableguid , field_name_c , field_name , width ,data_type , field_sequence, b_null , b_pk , b_sys , table_name ,	table_name_c , Description , defaultvalue , b_identity) values  ('44aee2ba-09b0-43e2-a377-ba6fe99f1ca0' , 'b60007dd-3e6e-4e83-bafc-0f01ebfc9597','循环调用单次返回数量','SqlExcutedLoopedNum',4,'int',8,0,0,0,'ds_EntityPageNodeData','页面数据结构实例表','','',0) ; insert into data_dict(guid , tableguid , field_name_c , field_name , width ,data_type , field_sequence, b_null , b_pk , b_sys , table_name ,	table_name_c , Description , defaultvalue , b_identity) values  ('4d830052-1845-4e55-8337-b6c659579d2c' , 'b60007dd-3e6e-4e83-bafc-0f01ebfc9597','是否末级','IfEnd',4,'int',9,0,0,0,'ds_EntityPageNodeData','页面数据结构实例表','','',0) ; insert into data_dict(guid , tableguid , field_name_c , field_name , width ,data_type , field_sequence, b_null , b_pk , b_sys , table_name ,	table_name_c , Description , defaultvalue , b_identity) values  ('d5e479cd-956a-464f-af5c-376e5dc410ec' , 'b60007dd-3e6e-4e83-bafc-0f01ebfc9597','是否加工数据','IfDataHandled',4,'int',10,0,0,0,'ds_EntityPageNodeData','页面数据结构实例表','','',0) ; insert into data_dict(guid , tableguid , field_name_c , field_name , width ,data_type , field_sequence, b_null , b_pk , b_sys , table_name ,	table_name_c , Description , defaultvalue , b_identity) values  ('489ea518-d956-4769-b4c3-e11ea80b60d5' , 'b60007dd-3e6e-4e83-bafc-0f01ebfc9597','加工映射类','DataHandleAssemble',200,'varchar',11,0,0,0,'ds_EntityPageNodeData','页面数据结构实例表','','',0) ; insert into data_dict(guid , tableguid , field_name_c , field_name , width ,data_type , field_sequence, b_null , b_pk , b_sys , table_name ,	table_name_c , Description , defaultvalue , b_identity) values  ('bd329436-9025-4c42-a01e-99adfecc804b' , 'b60007dd-3e6e-4e83-bafc-0f01ebfc9597','加工映射方法','DataHandleFunction',200,'varchar',12,0,0,0,'ds_EntityPageNodeData','页面数据结构实例表','','',0) ; 
 GO 
 -------------------------------------------------【END】新增ds_EntityPageNodeData表------------------------------------------------- 
+
+IF COL_LENGTH('ds_EntityPage', 'OriginalPageNum') IS NULL 
+    BEGIN 
+        ALTER TABLE ds_EntityPage ADD OriginalPageNum INT
+        INSERT  INTO data_dict
+                ( guid ,
+                  tableguid ,
+                  field_name_c ,
+                  field_name ,
+                  width ,
+                  data_type ,
+                  field_sequence ,
+                  b_null ,
+                  b_pk ,
+                  b_sys ,
+                  table_name ,
+                  table_name_c ,
+                  DESCRIPTION ,
+                  defaultvalue ,
+                  b_identity
+                )
+                SELECT TOP 1
+                        NEWID() ,
+                        TableGUID ,
+                        '原始页面顺序' ,
+                        'OriginalPageNum' ,
+                        '' ,
+                        'int' ,
+                        field_sequence + 1 ,
+                        1 ,
+                        0 ,
+                        0 ,
+                        table_name ,
+                        table_name_c ,
+                        '' ,
+                        '' ,
+                        0
+                FROM    data_dict dd
+                WHERE   dd.table_name = 'ds_EntityPage'
+                ORDER BY dd.field_sequence DESC 
+    END 
+GO
  
  
