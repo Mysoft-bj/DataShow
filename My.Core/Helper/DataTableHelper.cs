@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -31,6 +32,22 @@ namespace My.Core.Helper
             }
             //序列化  
             return jss.Serialize(dic);
+        }
+
+        public static object Dt2Object(DataTable dt) {
+            JArray jsonArr = new JArray();
+            System.Collections.ArrayList dic = new System.Collections.ArrayList();
+            foreach (DataRow dr in dt.Rows)
+            {
+                JObject json = new JObject();
+                foreach (DataColumn dc in dt.Columns)
+                {
+                    json.Add(dc.ColumnName, dr[dc.ColumnName].ToString());
+                }
+                jsonArr.Add(json);
+
+            }
+            return jsonArr;
         }
     }
 }

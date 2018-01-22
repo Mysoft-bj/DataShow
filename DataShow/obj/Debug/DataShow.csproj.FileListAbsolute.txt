@@ -147,3 +147,8 @@ E:\GIT\DataShow\DataShow\obj\Debug\DataShow.pdb
 E:\GIT\DataShow\DataShow\bin\My.Entity.dll
 E:\GIT\DataShow\DataShow\bin\MySql.Data.xml
 E:\GIT\DataShow\DataShow\bin\My.Entity.pdb
+D:\个人项目\GIT\DataShow\DataShow\bin\DataShow.Services.dll
+D:\个人项目\GIT\DataShow\DataShow\bin\My.Entity.dll
+D:\个人项目\GIT\DataShow\DataShow\bin\DataShow.Services.pdb
+D:\个人项目\GIT\DataShow\DataShow\bin\MySql.Data.xml
+D:\个人项目\GIT\DataShow\DataShow\bin\My.Entity.pdb

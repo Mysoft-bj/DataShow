@@ -33,6 +33,9 @@
     <Reference Include="Mysoft.Map.Extensions">
       <HintPath>..\DataShow\bin\Mysoft.Map.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\DataShow\bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -44,9 +47,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Core\DataShowCore.cs" />
+    <Compile Include="DataTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\My.Core\My.Core.csproj">
+      <Project>{0c9bbcc4-ce39-454a-9308-c25df1fd7f7a}</Project>
+      <Name>My.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\My.Domain\My.Domain.csproj">
+      <Project>{edc2f611-5e43-4c6a-9dd7-2903548cae4d}</Project>
+      <Name>My.Domain</Name>
+    </ProjectReference>
     <ProjectReference Include="..\My.Entity\My.Entity.csproj">
       <Project>{df0cc0a0-4d34-417e-9199-5cce9eb5c881}</Project>
       <Name>My.Entity</Name>

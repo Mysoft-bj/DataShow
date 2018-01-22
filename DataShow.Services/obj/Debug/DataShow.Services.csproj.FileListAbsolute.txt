@@ -3,3 +3,15 @@ E:\GIT\DataShow\DataShow.Services\bin\Debug\DataShow.Services.pdb
 E:\GIT\DataShow\DataShow.Services\bin\Debug\Mysoft.Map.Extensions.dll
 E:\GIT\DataShow\DataShow.Services\obj\Debug\DataShow.Services.dll
 E:\GIT\DataShow\DataShow.Services\obj\Debug\DataShow.Services.pdb
+D:\个人项目\GIT\DataShow\DataShow.Services\bin\Debug\DataShow.Services.dll
+D:\个人项目\GIT\DataShow\DataShow.Services\bin\Debug\DataShow.Services.pdb
+D:\个人项目\GIT\DataShow\DataShow.Services\bin\Debug\My.Domain.dll
+D:\个人项目\GIT\DataShow\DataShow.Services\bin\Debug\My.Entity.dll
+D:\个人项目\GIT\DataShow\DataShow.Services\bin\Debug\Mysoft.Map.Extensions.dll
+D:\个人项目\GIT\DataShow\DataShow.Services\bin\Debug\Newtonsoft.Json.dll
+D:\个人项目\GIT\DataShow\DataShow.Services\bin\Debug\My.Domain.pdb
+D:\个人项目\GIT\DataShow\DataShow.Services\bin\Debug\My.Entity.pdb
+D:\个人项目\GIT\DataShow\DataShow.Services\bin\Debug\Newtonsoft.Json.xml
+D:\个人项目\GIT\DataShow\DataShow.Services\obj\Debug\DataShow.Services.csprojResolveAssemblyReference.cache
+D:\个人项目\GIT\DataShow\DataShow.Services\obj\Debug\DataShow.Services.dll
+D:\个人项目\GIT\DataShow\DataShow.Services\obj\Debug\DataShow.Services.pdb

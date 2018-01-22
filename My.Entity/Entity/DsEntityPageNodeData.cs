@@ -14,15 +14,15 @@ namespace My.Entity
         [DataColumn(PrimaryKey = true)]
         public Guid EntityPageNodeDataGUID { get; set; }
         [DataColumn(IsNullable = true)]
-        public string EntityPageNodeDataName { get; set; }
+        public string Name { get; set; }
         [DataColumn(IsNullable = true)]
         public Guid? EntityPageGUID { get; set; }
         [DataColumn(IsNullable = true)]
-        public string CurNodeCode { get; set; }
+        public string Code { get; set; }
         [DataColumn(IsNullable = true)]
-        public string ParentNodeCode { get; set; }
+        public string ParentCode { get; set; }
         [DataColumn(IsNullable = true)]
-        public string NodeSql { get; set; }
+        public string Sql { get; set; }
         [DataColumn(IsNullable = true)]
         public int? IfSqlExcutedLooped { get; set; }
         [DataColumn(IsNullable = true)]
@@ -37,5 +37,9 @@ namespace My.Entity
         public string DataHandleFunction { get; set; }
         [DataColumn(IsNullable = true)]
         public int? Level { get; set; }
+        [DataColumn(IsNullable = true)]
+        public int? DataType { get; set; }
+        [DataColumn(IsNullable = true)]
+        public string  StaticData { get; set; }
     }
 }
