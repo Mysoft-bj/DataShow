@@ -46,7 +46,7 @@ namespace DataShow.Core.Services
                 }
                 else
                 {
-                    json.Add(new JProperty(da.Name, CreateChildNodeObject(nodeList.Where(node => node.Code.StartsWith(da.Code + ".")).ToList())));
+                    json.Add(new JProperty(da.Name, CreateChildNodeObject(nodeList.Where(node => node.ParentCode ==da.Code ).ToList())));
                 }
             }
 
@@ -69,7 +69,7 @@ namespace DataShow.Core.Services
                 else
                 {
                     if(childNode.Where(node => node.Code.StartsWith(da.Code + ".")).Count() > 0) {
-                        childJson.Add(new JProperty(da.Name, CreateChildNodeObject(childNode.Where(node => node.Code.StartsWith(da.Code + ".")).ToList())));
+                        childJson.Add(new JProperty(da.Name, CreateChildNodeObject(childNode.Where(node => node.ParentCode == da.Code).ToList())));
                     }
                 }
             }

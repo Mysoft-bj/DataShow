@@ -48,10 +48,9 @@ namespace DataShow.Controllers.home
             //tblDatas.Rows.Add(newRow);
             //var json=  DataTableHelper.Dtb2Json(tblDatas);
 
-
-            //string jsonText = "{\"a\": \"\", 	\"b\": \"\", 	\"c\": [{ 			\"c.1\": \"\", 			\"c.2\": \"\" 		}, 		{ 			\"c.1\": \"\", 			\"c.2\": \"\" 		} 	], 	\"d\": [{ 		\"d.1\": \"\", 		\"d.2\": [{ 			\"d.2.1\": \"\", 			\"d.2.2\": \"\" 		}] 	}] }";
-            //JObject jo = (JObject)JsonConvert.DeserializeObject(jsonText);
-
+            //JsonToNodeData service = new JsonToNodeData();
+            //string jsonText = "{\"a\": \"\", 	\"b\": \"\", 	\"c\": [{ 			\"c.1\": \"\", 			\"c.2\": \"\" 		}, 		{ 			\"c.1\": \"\", 			\"c.2\": \"\" 		} 	], 	\"d\": [{ 		\"d.1\": \"\", 		\"d.2\": [{ 			\"d.2.1\": \"\", 			\"d.2.2\": \"\" 		}] 	}],\"e\":{\"e.1\":\"\",\"e.2\":\"\"} }";
+            //service.CreateNodeDataByJson(jsonText,Guid.NewGuid());
             DataShowCore service = new DataShowCore();
             service.CreateDataShowPageJson(Guid.NewGuid());
             return View();

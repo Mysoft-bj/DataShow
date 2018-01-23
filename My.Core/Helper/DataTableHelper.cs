@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web.Script.Serialization;
@@ -48,6 +49,71 @@ namespace My.Core.Helper
 
             }
             return jsonArr;
+        }
+
+
+
+        /// <summary>
+        /// DataTable转换成实体列表
+        /// </summary>
+        /// <typeparam name="T">实体 T </typeparam>
+        /// <param name="table">datatable</param>
+        /// <returns></returns>
+        public static IList<T> DataTableToList<T>(DataTable table)
+            where T : class
+        {
+
+            IList<T> list = new List<T>();
+            T model = default(T);
+            foreach (DataRow dr in table.Rows)
+            {
+                model = Activator.CreateInstance<T>();
+
+                foreach (DataColumn dc in dr.Table.Columns)
+                {
+                    object drValue = dr[dc.ColumnName];
+                    PropertyInfo pi = model.GetType().GetProperty(dc.ColumnName);
+
+                    if (pi != null && pi.CanWrite && (drValue != null && !Convert.IsDBNull(drValue)))
+                    {
+                        pi.SetValue(model, drValue, null);
+                    }
+                }
+
+                list.Add(model);
+            }
+            return list;
+        }
+
+
+        public static DataTable ToDataTable<T>(List<T> varlist)
+        {
+            DataTable dtReturn = new DataTable();
+            // column names
+            PropertyInfo[] oProps = null;
+            // Could add a check to verify that there is an element 0
+            foreach (T rec in varlist)
+            {
+                // Use reflection to get property names, to create table, Only first time, others will follow
+                if (oProps == null)
+                {
+                    oProps = ((Type)rec.GetType()).GetProperties();
+                    foreach (PropertyInfo pi in oProps)
+                    {
+                        Type colType = pi.PropertyType; if ((colType.IsGenericType) && (colType.GetGenericTypeDefinition() == typeof(Nullable<>)))
+                        {
+                            colType = colType.GetGenericArguments()[0];
+                        }
+                        dtReturn.Columns.Add(new DataColumn(pi.Name, colType));
+                    }
+                }
+                DataRow dr = dtReturn.NewRow(); foreach (PropertyInfo pi in oProps)
+                {
+                    dr[pi.Name] = pi.GetValue(rec, null) == null ? DBNull.Value : pi.GetValue(rec, null);
+                }
+                dtReturn.Rows.Add(dr);
+            }
+            return (dtReturn);
         }
     }
 }
