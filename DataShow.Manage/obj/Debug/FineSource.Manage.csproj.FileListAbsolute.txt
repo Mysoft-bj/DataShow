@@ -1,5 +1,0 @@
-C:\TFS\极客项目\FineSource\FineSource.Manage\obj\Debug\FineSource.Manage.csprojResolveAssemblyReference.cache
-C:\TFS\极客项目\FineSource\FineSource.Manage\obj\Debug\FineSource.Manage.dll
-C:\TFS\极客项目\FineSource\FineSource.Manage\obj\Debug\FineSource.Manage.pdb
-C:\TFS\极客项目\FineSource\FineSource\bin\FineSource.Manage.dll
-C:\TFS\极客项目\FineSource\FineSource\bin\FineSource.Manage.pdb

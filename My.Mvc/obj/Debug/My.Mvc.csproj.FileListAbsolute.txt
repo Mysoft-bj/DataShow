@@ -1,25 +1,5 @@
-C:\TFS\极客项目\FineSource\My.Mvc\obj\Debug\My.Mvc.csprojResolveAssemblyReference.cache
-C:\TFS\极客项目\FineSource\My.Mvc\obj\Debug\My.Mvc.dll
-C:\TFS\极客项目\FineSource\My.Mvc\obj\Debug\My.Mvc.pdb
-C:\TFS\极客项目\FineSource\FineSource\bin\zh-Hans\My.Mvc.dll
-C:\TFS\极客项目\FineSource\FineSource\bin\zh-Hans\My.Mvc.pdb
-D:\个人项目\GIT\DataShow\FineSource\bin\zh-Hans\My.Mvc.dll
-D:\个人项目\GIT\DataShow\FineSource\bin\zh-Hans\My.Mvc.pdb
-D:\个人项目\GIT\DataShow\My.Mvc\obj\Debug\My.Mvc.csprojResolveAssemblyReference.cache
-D:\个人项目\GIT\DataShow\My.Mvc\obj\Debug\My.Mvc.dll
-D:\个人项目\GIT\DataShow\My.Mvc\obj\Debug\My.Mvc.pdb
-D:\个人项目\GIT\DataShow\DataShow\bin\My.Mvc.dll
-D:\个人项目\GIT\DataShow\DataShow\bin\My.Mvc.pdb
-<<<<<<< HEAD
-F:\项目\年度账单\DataShow\DataShow\bin\My.Mvc.dll
-F:\项目\年度账单\DataShow\DataShow\bin\My.Mvc.pdb
-F:\项目\年度账单\DataShow\My.Mvc\obj\Debug\My.Mvc.csprojResolveAssemblyReference.cache
-F:\项目\年度账单\DataShow\My.Mvc\obj\Debug\My.Mvc.dll
-F:\项目\年度账单\DataShow\My.Mvc\obj\Debug\My.Mvc.pdb
-=======
 E:\GIT\DataShow\DataShow\bin\My.Mvc.dll
 E:\GIT\DataShow\DataShow\bin\My.Mvc.pdb
-E:\GIT\DataShow\My.Mvc\obj\Debug\My.Mvc.csprojResolveAssemblyReference.cache
 E:\GIT\DataShow\My.Mvc\obj\Debug\My.Mvc.dll
 E:\GIT\DataShow\My.Mvc\obj\Debug\My.Mvc.pdb
->>>>>>> e9f7285d1bd7ccc9b5074233de5815125e9be608
+E:\GIT\DataShow\My.Mvc\obj\Debug\My.Mvc.csprojResolveAssemblyReference.cache

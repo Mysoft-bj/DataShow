@@ -1,25 +1,5 @@
-C:\TFS\极客项目\FineSource\FineSource\bin\My.Domain.dll
-C:\TFS\极客项目\FineSource\My.Domain\obj\Debug\My.Domain.csprojResolveAssemblyReference.cache
-C:\TFS\极客项目\FineSource\My.Domain\obj\Debug\My.Domain.dll
-C:\TFS\极客项目\FineSource\My.Domain\obj\Debug\My.Domain.pdb
-C:\TFS\极客项目\FineSource\FineSource\bin\My.Domain.pdb
-D:\个人项目\GIT\DataShow\FineSource\bin\My.Domain.dll
-D:\个人项目\GIT\DataShow\FineSource\bin\My.Domain.pdb
-D:\个人项目\GIT\DataShow\My.Domain\obj\Debug\My.Domain.csprojResolveAssemblyReference.cache
-D:\个人项目\GIT\DataShow\My.Domain\obj\Debug\My.Domain.dll
-D:\个人项目\GIT\DataShow\My.Domain\obj\Debug\My.Domain.pdb
-D:\个人项目\GIT\DataShow\DataShow\bin\My.Domain.dll
-D:\个人项目\GIT\DataShow\DataShow\bin\My.Domain.pdb
-<<<<<<< HEAD
-F:\项目\年度账单\DataShow\DataShow\bin\My.Domain.dll
-F:\项目\年度账单\DataShow\DataShow\bin\My.Domain.pdb
-F:\项目\年度账单\DataShow\My.Domain\obj\Debug\My.Domain.csprojResolveAssemblyReference.cache
-F:\项目\年度账单\DataShow\My.Domain\obj\Debug\My.Domain.dll
-F:\项目\年度账单\DataShow\My.Domain\obj\Debug\My.Domain.pdb
-=======
 E:\GIT\DataShow\DataShow\bin\My.Domain.dll
 E:\GIT\DataShow\DataShow\bin\My.Domain.pdb
-E:\GIT\DataShow\My.Domain\obj\Debug\My.Domain.csprojResolveAssemblyReference.cache
 E:\GIT\DataShow\My.Domain\obj\Debug\My.Domain.dll
 E:\GIT\DataShow\My.Domain\obj\Debug\My.Domain.pdb
->>>>>>> e9f7285d1bd7ccc9b5074233de5815125e9be608
+E:\GIT\DataShow\My.Domain\obj\Debug\My.Domain.csprojResolveAssemblyReference.cache

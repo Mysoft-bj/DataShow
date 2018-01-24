@@ -734,15 +734,14 @@
     <Content Include="lib\Font-Awesome-3.2.1\_config.yml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Content Include="data\newData.json" />
     <None Include="Properties\PublishProfiles\datashow.pubxml" />
-=======
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\DataShow.Services\DataShow.Services.csproj">
       <Project>{d1932ebd-c2fb-4ea0-8a06-2655dec3b24e}</Project>
       <Name>DataShow.Services</Name>
     </ProjectReference>
->>>>>>> e9f7285d1bd7ccc9b5074233de5815125e9be608
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
