@@ -8,18 +8,18 @@ using Mysoft.Map.Extensions.DAL;
 namespace My.Entity
 {
     [Serializable]
-    [DataEntity(Alias = "ds_Template")]
-    public partial class DsTemplate : BaseEntity
+    [DataEntity(Alias = "ds_User")]
+    public partial class DsUser : BaseEntity
     {
         [DataColumn(PrimaryKey = true)]
-        public Guid TemplateGUID { get; set; }
+        public Guid UserGUID { get; set; }
         [DataColumn(IsNullable = true)]
-        public string TemplateName { get; set; }
+        public string UserName { get; set; }
         [DataColumn(IsNullable = true)]
-        public string TemplateMemo { get; set; }
+        public string UserCode { get; set; }
         [DataColumn(IsNullable = true)]
-        public string TemplateIcon { get; set; }
+        public string PassWord { get; set; }
         [DataColumn(IsNullable = true)]
-        public string TemplatePicSrc { get; set; }
+        public string MobilePhoto { get; set; }
     }
 }

@@ -21,5 +21,7 @@ namespace My.Entity
         public string JsonExample { get; set; }
         [DataColumn(IsNullable = true)]
         public string PageMemo { get; set; }
+        [DataColumn(IsNullable = true)]
+        public string PagePicSrc { get; set; }
     }
 }

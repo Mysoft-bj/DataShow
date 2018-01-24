@@ -16,6 +16,12 @@ namespace My.Entity
         [DataColumn(IsNullable = true)]
         public Guid? EntityRenter2TemplateGUID { get; set; }
         [DataColumn(IsNullable = true)]
+        public Guid? TemplateGUID { get; set; }
+        [DataColumn(IsNullable = true)]
+        public Guid? TemplatePageGUID { get; set; }
+        [DataColumn(IsNullable = true)]
+        public int? OriginalPageNum { get; set; }
+        [DataColumn(IsNullable = true)]
         public int? PageNum { get; set; }
         [DataColumn(IsNullable = true)]
         public string JsonExample { get; set; }

@@ -14,6 +14,8 @@ namespace My.Entity
         [DataColumn(PrimaryKey = true)]
         public Guid RenterGUID { get; set; }
         [DataColumn(IsNullable = true)]
+        public string RenterCode { get; set; }
+        [DataColumn(IsNullable = true)]
         public string RenterName { get; set; }
     }
 }
