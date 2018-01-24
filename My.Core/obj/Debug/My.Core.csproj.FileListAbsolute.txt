@@ -1,17 +1,4 @@
-C:\TFS\极客项目\FineSource\FineSource\bin\My.Core.dll
-C:\TFS\极客项目\FineSource\My.Core\obj\Debug\My.Core.csprojResolveAssemblyReference.cache
-C:\TFS\极客项目\FineSource\My.Core\obj\Debug\My.Core.dll
-C:\TFS\极客项目\FineSource\My.Core\obj\Debug\My.Core.pdb
-C:\TFS\极客项目\FineSource\FineSource\bin\My.Core.pdb
-D:\个人项目\GIT\DataShow\FineSource\bin\My.Core.dll
-D:\个人项目\GIT\DataShow\FineSource\bin\My.Core.pdb
-D:\个人项目\GIT\DataShow\My.Core\obj\Debug\My.Core.dll
-D:\个人项目\GIT\DataShow\My.Core\obj\Debug\My.Core.pdb
-D:\个人项目\GIT\DataShow\DataShow\bin\My.Core.dll
-D:\个人项目\GIT\DataShow\DataShow\bin\My.Core.pdb
-D:\个人项目\GIT\DataShow\My.Core\obj\Debug\My.Core.csprojResolveAssemblyReference.cache
 E:\GIT\DataShow\DataShow\bin\My.Core.dll
 E:\GIT\DataShow\DataShow\bin\My.Core.pdb
-E:\GIT\DataShow\My.Core\obj\Debug\My.Core.csprojResolveAssemblyReference.cache
 E:\GIT\DataShow\My.Core\obj\Debug\My.Core.dll
 E:\GIT\DataShow\My.Core\obj\Debug\My.Core.pdb

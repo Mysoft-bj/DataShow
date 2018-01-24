@@ -1366,7 +1366,7 @@
 
 .pt-page-moveUpDown {
 	-webkit-animation: moveUpDown ease 3s both infinite;
-	animation: moveUpDown ease 3s both infinite;
+	/*animation: moveUpDown ease 3s both infinite;*/
 }
 @-webkit-keyframes moveUpDown {
 	0% { -webkit-transform: translateY(0px); }

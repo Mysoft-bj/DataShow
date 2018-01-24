@@ -3,7 +3,7 @@
 var now = { row:1, col:1 }, last = { row:0, col:0};
 const towards = { up:1, right:2, down:3, left:4};
 var isAnimating = true;
-
+var ImagePreScale = 100;
 s=window.innerHeight/500;
 ss=250*(1-s);
 
@@ -12,18 +12,26 @@ $('.wrap').css('-webkit-transform','scale('+s+','+s+') translate(0px,-'+ss+'px)'
 document.addEventListener('touchmove',function(event){
 	event.preventDefault();
 },{ passive: false });
-
-$(document).swipeUp(function(){
+//上滑
+$(document).swipeUp(function () {
+    ImagePreScale = ImagePreScale + 10;
+    $("body")[0].style.backgroundSize = ImagePreScale + "%"
 	if (isAnimating) return;
 	last.row = now.row;
 	last.col = now.col;
 	if (last.row != 13) { now.row = last.row+1; now.col = 1; pageMove(towards.up);}	
 })
-
+//下滑
 $(document).swipeDown(function(){
     if (isAnimating) return;
 	last.row = now.row;
 	last.col = now.col;
+    //调节背景景深
+	(ImagePreScale < 110) ? ImagePreScale = ImagePreScale : ImagePreScale = ImagePreScale -10;
+	$("body")[0].style.backgroundSize = ImagePreScale + "%"
+    //Debugger
+	//var bgimage = document.getElementsByTagName("body")
+	//$("body")[0].style.backgroundSize = "130%"
 	if (last.row!=1) { now.row = last.row-1; now.col = 1; pageMove(towards.down);}	
 })
 
@@ -90,7 +98,7 @@ function pageMove(tw){
 	        window[fun]();
 	        window[amimat]();
 	    }catch(err){
-	    
+	        console.log(err)
 	    }
 		
 	},600);
@@ -123,7 +131,7 @@ function loadingOut() {
         $(".divTitle-left").addClass('pt-page-index-moveFromBottom');
         $(".divTitle-mid").addClass('pt-page-index-bounceIn');
         
-        $("body").css("backgroundImage", "url(/images/background/background3.gif)")
+        //$("body").css("backgroundImage", "url(/images/background/background3.gif)")
 
     }, 600);
 }

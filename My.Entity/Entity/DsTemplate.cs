@@ -17,5 +17,9 @@ namespace My.Entity
         public string TemplateName { get; set; }
         [DataColumn(IsNullable = true)]
         public string TemplateMemo { get; set; }
+        [DataColumn(IsNullable = true)]
+        public string TemplateIcon { get; set; }
+        [DataColumn(IsNullable = true)]
+        public string TemplatePicSrc { get; set; }
     }
 }

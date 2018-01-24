@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entity\DsUser.cs" />
     <Compile Include="Entity\DsEntityPage.cs" />
     <Compile Include="Entity\DsEntityPageNodeData.cs" />
     <Compile Include="Entity\DsEntityRenter2Template.cs" />
