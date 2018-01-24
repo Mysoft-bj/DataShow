@@ -16,6 +16,10 @@ namespace DataShow
     {
         protected void Application_Start()
         {
+            //注册小平台
+            string connectionString = "数据库连接字符串";
+            Mysoft.Map.Extensions.Initializer.UnSafeInit(connectionString);
+
             AreaRegistration.RegisterAllAreas();
 
             WebApiConfig.Register(GlobalConfiguration.Configuration);

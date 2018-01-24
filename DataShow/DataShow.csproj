@@ -62,6 +62,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\My.Mvc.dll</HintPath>
     </Reference>
+    <Reference Include="Mysoft.Map.Extensions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Mysoft.Map.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="MySql.Data, Version=6.7.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\MySql.Data.dll</HintPath>
@@ -268,6 +272,7 @@
     <Content Include="js\jquery.waypoints.min.js" />
     <Content Include="js\knockout.js" />
     <Content Include="js\login\login.js" />
+    <Content Include="js\Map.Extensions.js" />
     <Content Include="js\my.js" />
     <Content Include="js\pager.js" />
     <Content Include="js\require.js" />
@@ -729,8 +734,15 @@
     <Content Include="lib\Font-Awesome-3.2.1\_config.yml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Content Include="data\newData.json" />
     <None Include="Properties\PublishProfiles\datashow.pubxml" />
+=======
+    <ProjectReference Include="..\DataShow.Services\DataShow.Services.csproj">
+      <Project>{d1932ebd-c2fb-4ea0-8a06-2655dec3b24e}</Project>
+      <Name>DataShow.Services</Name>
+    </ProjectReference>
+>>>>>>> e9f7285d1bd7ccc9b5074233de5815125e9be608
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

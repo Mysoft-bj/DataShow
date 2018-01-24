@@ -8,6 +8,10 @@ using System.Web.Mvc;
 using My.Application;
 using My.Domain;
 using My.Application.Login;
+using My.Core.Helper;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using DataShow.Core.Services;
 
 namespace DataShow.Controllers.home
 {
@@ -18,17 +22,41 @@ namespace DataShow.Controllers.home
 
         public ActionResult Index()
         {
-            var user= UserInfo.GetUserInfo();
-            if (user!=null)
-            {
-                ViewBag.isLogin = true;
-                ViewBag.user = user;
-            }
-            else {
-                ViewBag.isLogin = false;  
-            }
+            //DataTable tblDatas = new DataTable("Datas");
+            //DataColumn dc = null;
+            //dc = tblDatas.Columns.Add("ID", Type.GetType("System.Int32"));
+            //dc.AutoIncrement = true;//自动增加
+            //dc.AutoIncrementSeed = 1;//起始为1
+            //dc.AutoIncrementStep = 1;//步长为1
+            //dc.AllowDBNull = false;//
+
+            //dc = tblDatas.Columns.Add("Product", Type.GetType("System.String"));
+            //dc = tblDatas.Columns.Add("Version", Type.GetType("System.String"));
+            //dc = tblDatas.Columns.Add("Description", Type.GetType("System.String"));
+
+            //DataRow newRow;
+            //newRow = tblDatas.NewRow();
+            //newRow["Product"] = "大话西游";
+            //newRow["Version"] = "2.0";
+            //newRow["Description"] = "我很喜欢";
+            //tblDatas.Rows.Add(newRow);
+
+            //newRow = tblDatas.NewRow();
+            //newRow["Product"] = "梦幻西游";
+            //newRow["Version"] = "3.0";
+            //newRow["Description"] = "比大话更幼稚";
+            //tblDatas.Rows.Add(newRow);
+            //var json=  DataTableHelper.Dtb2Json(tblDatas);
+
+            //JsonToNodeData service = new JsonToNodeData();
+            //string jsonText = "{\"a\": \"\", 	\"b\": \"\", 	\"c\": [{ 			\"c.1\": \"\", 			\"c.2\": \"\" 		}, 		{ 			\"c.1\": \"\", 			\"c.2\": \"\" 		} 	], 	\"d\": [{ 		\"d.1\": \"\", 		\"d.2\": [{ 			\"d.2.1\": \"\", 			\"d.2.2\": \"\" 		}] 	}],\"e\":{\"e.1\":\"\",\"e.2\":\"\"} }";
+            //service.CreateNodeDataByJson(jsonText,Guid.NewGuid());
+            DataShowCore service = new DataShowCore();
+            service.CreateDataShowPageJson(Guid.NewGuid());
             return View();
         }
+
+       
 
     }
 }

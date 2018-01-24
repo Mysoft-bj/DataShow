@@ -9,8 +9,17 @@ D:\个人项目\GIT\DataShow\My.Core\obj\Debug\My.Core.dll
 D:\个人项目\GIT\DataShow\My.Core\obj\Debug\My.Core.pdb
 D:\个人项目\GIT\DataShow\DataShow\bin\My.Core.dll
 D:\个人项目\GIT\DataShow\DataShow\bin\My.Core.pdb
+<<<<<<< HEAD
 F:\项目\年度账单\DataShow\DataShow\bin\My.Core.dll
 F:\项目\年度账单\DataShow\DataShow\bin\My.Core.pdb
 F:\项目\年度账单\DataShow\My.Core\obj\Debug\My.Core.csprojResolveAssemblyReference.cache
 F:\项目\年度账单\DataShow\My.Core\obj\Debug\My.Core.dll
 F:\项目\年度账单\DataShow\My.Core\obj\Debug\My.Core.pdb
+=======
+D:\个人项目\GIT\DataShow\My.Core\obj\Debug\My.Core.csprojResolveAssemblyReference.cache
+E:\GIT\DataShow\DataShow\bin\My.Core.dll
+E:\GIT\DataShow\DataShow\bin\My.Core.pdb
+E:\GIT\DataShow\My.Core\obj\Debug\My.Core.csprojResolveAssemblyReference.cache
+E:\GIT\DataShow\My.Core\obj\Debug\My.Core.dll
+E:\GIT\DataShow\My.Core\obj\Debug\My.Core.pdb
+>>>>>>> e9f7285d1bd7ccc9b5074233de5815125e9be608

@@ -10,8 +10,16 @@ D:\个人项目\GIT\DataShow\DataShow.Manage\obj\Debug\DataShow.Manage.pdb
 D:\个人项目\GIT\DataShow\DataShow\bin\DataShow.Manage.dll
 D:\个人项目\GIT\DataShow\DataShow\bin\DataShow.Manage.pdb
 D:\个人项目\GIT\DataShow\DataShow.Manage\obj\Debug\DataShow.Manage.csprojResolveAssemblyReference.cache
+<<<<<<< HEAD
 F:\项目\年度账单\DataShow\DataShow\bin\DataShow.Manage.dll
 F:\项目\年度账单\DataShow\DataShow\bin\DataShow.Manage.pdb
 F:\项目\年度账单\DataShow\DataShow.Manage\obj\Debug\DataShow.Manage.csprojResolveAssemblyReference.cache
 F:\项目\年度账单\DataShow\DataShow.Manage\obj\Debug\DataShow.Manage.dll
 F:\项目\年度账单\DataShow\DataShow.Manage\obj\Debug\DataShow.Manage.pdb
+=======
+E:\GIT\DataShow\DataShow\bin\DataShow.Manage.dll
+E:\GIT\DataShow\DataShow\bin\DataShow.Manage.pdb
+E:\GIT\DataShow\DataShow.Manage\obj\Debug\DataShow.Manage.csprojResolveAssemblyReference.cache
+E:\GIT\DataShow\DataShow.Manage\obj\Debug\DataShow.Manage.dll
+E:\GIT\DataShow\DataShow.Manage\obj\Debug\DataShow.Manage.pdb
+>>>>>>> e9f7285d1bd7ccc9b5074233de5815125e9be608

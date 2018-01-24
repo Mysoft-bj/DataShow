@@ -30,6 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Mysoft.Map.Extensions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DataShow\bin\Mysoft.Map.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -40,19 +44,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entity\Entity1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Entity.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entity\MyUser.cs" />
+    <Compile Include="DataShowDB.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Entity\Entity.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Entity1.cs</LastGenOutput>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
@@ -61,6 +54,10 @@
     <ProjectReference Include="..\My.Core\My.Core.csproj">
       <Project>{0c9bbcc4-ce39-454a-9308-c25df1fd7f7a}</Project>
       <Name>My.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\My.Entity\My.Entity.csproj">
+      <Project>{df0cc0a0-4d34-417e-9199-5cce9eb5c881}</Project>
+      <Name>My.Entity</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
