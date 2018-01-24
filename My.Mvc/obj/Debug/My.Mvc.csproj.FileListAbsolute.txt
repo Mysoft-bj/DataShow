@@ -1,5 +1,5 @@
 E:\GIT\DataShow\DataShow\bin\My.Mvc.dll
 E:\GIT\DataShow\DataShow\bin\My.Mvc.pdb
+E:\GIT\DataShow\My.Mvc\obj\Debug\My.Mvc.csprojResolveAssemblyReference.cache
 E:\GIT\DataShow\My.Mvc\obj\Debug\My.Mvc.dll
 E:\GIT\DataShow\My.Mvc\obj\Debug\My.Mvc.pdb
-E:\GIT\DataShow\My.Mvc\obj\Debug\My.Mvc.csprojResolveAssemblyReference.cache

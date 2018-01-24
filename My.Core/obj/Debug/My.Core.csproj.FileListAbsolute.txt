@@ -1,4 +1,5 @@
 E:\GIT\DataShow\DataShow\bin\My.Core.dll
 E:\GIT\DataShow\DataShow\bin\My.Core.pdb
+E:\GIT\DataShow\My.Core\obj\Debug\My.Core.csprojResolveAssemblyReference.cache
 E:\GIT\DataShow\My.Core\obj\Debug\My.Core.dll
 E:\GIT\DataShow\My.Core\obj\Debug\My.Core.pdb

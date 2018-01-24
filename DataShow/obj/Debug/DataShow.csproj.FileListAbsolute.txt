@@ -1,3 +1,4 @@
+E:\GIT\DataShow\DataShow\obj\Debug\DataShow.csprojResolveAssemblyReference.cache
 E:\GIT\DataShow\DataShow\bin\DataShow.dll.config
 E:\GIT\DataShow\DataShow\bin\DataShow.dll
 E:\GIT\DataShow\DataShow\bin\DataShow.pdb
@@ -55,6 +56,5 @@ E:\GIT\DataShow\DataShow\bin\zh-Hans\System.Web.Razor.resources.dll
 E:\GIT\DataShow\DataShow\bin\zh-Hans\System.Web.WebPages.resources.dll
 E:\GIT\DataShow\DataShow\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
 E:\GIT\DataShow\DataShow\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
-E:\GIT\DataShow\DataShow\obj\Debug\DataShow.csprojResolveAssemblyReference.cache
 E:\GIT\DataShow\DataShow\obj\Debug\DataShow.dll
 E:\GIT\DataShow\DataShow\obj\Debug\DataShow.pdb
