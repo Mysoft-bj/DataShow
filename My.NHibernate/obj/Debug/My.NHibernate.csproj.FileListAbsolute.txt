@@ -64,3 +64,9 @@ D:\个人项目\GIT\DataShow\My.NHibernate\obj\Debug\My.NHibernate.pdb
 D:\个人项目\GIT\DataShow\DataShow\bin\My.NHibernate.dll.config
 D:\个人项目\GIT\DataShow\DataShow\bin\My.NHibernate.dll
 D:\个人项目\GIT\DataShow\DataShow\bin\My.NHibernate.pdb
+F:\项目\年度账单\DataShow\DataShow\bin\My.NHibernate.dll.config
+F:\项目\年度账单\DataShow\DataShow\bin\My.NHibernate.dll
+F:\项目\年度账单\DataShow\DataShow\bin\My.NHibernate.pdb
+F:\项目\年度账单\DataShow\My.NHibernate\obj\Debug\My.NHibernate.csprojResolveAssemblyReference.cache
+F:\项目\年度账单\DataShow\My.NHibernate\obj\Debug\My.NHibernate.dll
+F:\项目\年度账单\DataShow\My.NHibernate\obj\Debug\My.NHibernate.pdb

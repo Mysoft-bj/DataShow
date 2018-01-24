@@ -189,11 +189,15 @@
     <Content Include="images\background\background3.jpg" />
     <Content Include="images\background\background4.gif" />
     <Content Include="images\background\background4.jpg" />
+    <Content Include="images\background\BGImage_BH.jpg" />
     <Content Include="images\background\index_bg1.jpg" />
     <Content Include="images\background\index_bg2.jpg" />
     <Content Include="images\background\index_bg3.jpg" />
     <Content Include="images\background\background1.jpg" />
     <Content Include="images\background\logo1.png" />
+    <Content Include="images\background\MingYuan_logo.png" />
+    <Content Include="images\background\Title_Icon.png" />
+    <Content Include="images\background\Weclome_icon.png" />
     <Content Include="images\common\social\aboutme.png" />
     <Content Include="images\common\social\amazon.png" />
     <Content Include="images\common\social\behance.png" />
@@ -233,6 +237,7 @@
     <Content Include="images\common\social\youtube.png" />
     <Content Include="images\common\social\使用必读.txt" />
     <Content Include="images\common\social\演示地址.txt" />
+    <Content Include="images\CstIcon\hechang_logo.png" />
     <Content Include="images\index_bj.jpg" />
     <Content Include="images\login\bg\login-background1.jpg" />
     <Content Include="images\login\bg\login-background2.jpg" />
@@ -722,6 +727,10 @@
     <Content Include="lib\Font-Awesome-3.2.1\src\_plugins\icon_page_generator.rb" />
     <Content Include="lib\Font-Awesome-3.2.1\src\_plugins\site.rb" />
     <Content Include="lib\Font-Awesome-3.2.1\_config.yml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="data\newData.json" />
+    <None Include="Properties\PublishProfiles\datashow.pubxml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

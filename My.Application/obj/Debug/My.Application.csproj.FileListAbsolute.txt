@@ -10,3 +10,8 @@ D:\个人项目\GIT\DataShow\My.Application\obj\Debug\My.Application.dll
 D:\个人项目\GIT\DataShow\My.Application\obj\Debug\My.Application.pdb
 D:\个人项目\GIT\DataShow\DataShow\bin\My.Application.dll
 D:\个人项目\GIT\DataShow\DataShow\bin\My.Application.pdb
+F:\项目\年度账单\DataShow\DataShow\bin\My.Application.dll
+F:\项目\年度账单\DataShow\DataShow\bin\My.Application.pdb
+F:\项目\年度账单\DataShow\My.Application\obj\Debug\My.Application.csprojResolveAssemblyReference.cache
+F:\项目\年度账单\DataShow\My.Application\obj\Debug\My.Application.dll
+F:\项目\年度账单\DataShow\My.Application\obj\Debug\My.Application.pdb

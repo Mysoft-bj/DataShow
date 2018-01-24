@@ -9,3 +9,8 @@ D:\个人项目\GIT\DataShow\My.Core\obj\Debug\My.Core.dll
 D:\个人项目\GIT\DataShow\My.Core\obj\Debug\My.Core.pdb
 D:\个人项目\GIT\DataShow\DataShow\bin\My.Core.dll
 D:\个人项目\GIT\DataShow\DataShow\bin\My.Core.pdb
+F:\项目\年度账单\DataShow\DataShow\bin\My.Core.dll
+F:\项目\年度账单\DataShow\DataShow\bin\My.Core.pdb
+F:\项目\年度账单\DataShow\My.Core\obj\Debug\My.Core.csprojResolveAssemblyReference.cache
+F:\项目\年度账单\DataShow\My.Core\obj\Debug\My.Core.dll
+F:\项目\年度账单\DataShow\My.Core\obj\Debug\My.Core.pdb

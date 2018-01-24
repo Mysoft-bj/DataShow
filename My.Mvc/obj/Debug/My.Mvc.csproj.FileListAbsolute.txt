@@ -10,3 +10,8 @@ D:\个人项目\GIT\DataShow\My.Mvc\obj\Debug\My.Mvc.dll
 D:\个人项目\GIT\DataShow\My.Mvc\obj\Debug\My.Mvc.pdb
 D:\个人项目\GIT\DataShow\DataShow\bin\My.Mvc.dll
 D:\个人项目\GIT\DataShow\DataShow\bin\My.Mvc.pdb
+F:\项目\年度账单\DataShow\DataShow\bin\My.Mvc.dll
+F:\项目\年度账单\DataShow\DataShow\bin\My.Mvc.pdb
+F:\项目\年度账单\DataShow\My.Mvc\obj\Debug\My.Mvc.csprojResolveAssemblyReference.cache
+F:\项目\年度账单\DataShow\My.Mvc\obj\Debug\My.Mvc.dll
+F:\项目\年度账单\DataShow\My.Mvc\obj\Debug\My.Mvc.pdb
