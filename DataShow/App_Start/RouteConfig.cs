@@ -20,7 +20,7 @@ namespace DataShow
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional },
                 namespaces:  new string[] { "DataShow.Controllers.*" } 
             );
-          //myRoute.DataTokens["UseNamespaceFallback"] = false;
+            myRoute.DataTokens["UseNamespaceFallback"] = false;
         }
     }
 }
