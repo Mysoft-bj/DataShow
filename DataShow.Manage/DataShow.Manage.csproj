@@ -42,10 +42,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="My.Application, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\FineSource\bin\My.Application.dll</HintPath>
-    </Reference>
     <Reference Include="My.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\FineSource\bin\My.Core.dll</HintPath>
@@ -158,6 +154,7 @@
     <Content Include="css\public\app_one.css" />
     <Content Include="css\public\nav.css" />
     <Content Include="images\User\lufei.png" />
+    <Content Include="js\login\login.js" />
     <Content Include="js\public\iscroll.js" />
     <Content Include="js\public\nav.js" />
     <Content Include="js\public\theme.js" />
