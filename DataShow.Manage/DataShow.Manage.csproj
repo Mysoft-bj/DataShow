@@ -213,6 +213,12 @@
   <ItemGroup>
     <Content Include="lib\Amazeui Color\images\未标题-2.psd" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataShow.Services\DataShow.Services.csproj">
+      <Project>{d1932ebd-c2fb-4ea0-8a06-2655dec3b24e}</Project>
+      <Name>DataShow.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
