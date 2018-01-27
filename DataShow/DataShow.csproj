@@ -257,6 +257,8 @@
     <Content Include="js\charts\echarts.min.js" />
     <Content Include="js\charts\load.js" />
     <Content Include="js\charts\macarons.js" />
+    <Content Include="js\charts\V1\1mapCharts\data.txt" />
+    <Content Include="js\charts\V1\1mapCharts\div.js" />
     <Content Include="js\charts\vintage.js" />
     <Content Include="js\common\excanvas.min.js" />
     <Content Include="js\common\respond.min.js" />
