@@ -188,11 +188,20 @@
     <Content Include="css\login\Register.css" />
     <Content Include="css\login\login.css" />
     <Content Include="data\data.txt" />
-    <Content Include="EChars\Moudle\ChinaMap\data.txt" />
-    <Content Include="EChars\Moudle\ChinaMap\Demo.html" />
-    <Content Include="EChars\Moudle\ChinaMap\option.js" />
-    <Content Include="EChars\Moudle\DashBoard\Demo.html" />
-    <Content Include="EChars\Moudle\DashBoard\option.js" />
+    <Content Include="ECharts\Moudle\HotWordChart\Demo.html" />
+    <Content Include="ECharts\Moudle\HotWordChart\echarts-wordcloud.min.js" />
+    <Content Include="ECharts\Moudle\HotWordChart\option.js" />
+    <Content Include="ECharts\Moudle\LandscapeBarChart\Demo.html" />
+    <Content Include="ECharts\Moudle\LandscapeBarChart\option.js" />
+    <Content Include="ECharts\Moudle\BarAndLineChart_2\Demo.html" />
+    <Content Include="ECharts\Moudle\BarAndLineChart_2\option.js" />
+    <Content Include="ECharts\Moudle\BarAndLineChart_1\Demo.html" />
+    <Content Include="ECharts\Moudle\BarAndLineChart_1\option.js" />
+    <Content Include="ECharts\Moudle\ChinaMap\data.txt" />
+    <Content Include="ECharts\Moudle\ChinaMap\Demo.html" />
+    <Content Include="ECharts\Moudle\ChinaMap\option.js" />
+    <Content Include="ECharts\Moudle\DashBoard\Demo.html" />
+    <Content Include="ECharts\Moudle\DashBoard\option.js" />
     <Content Include="images\background\background2.jpg" />
     <Content Include="images\background\background3.gif" />
     <Content Include="images\background\background3.jpg" />
@@ -742,8 +751,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="data\newData.json" />
-    <Content Include="EChars\Moudle\DashBoard\data.json" />
-    <Content Include="EChars\Moudle\ChinaMap\data.json" />
+    <Content Include="ECharts\Moudle\DashBoard\data.json" />
+    <Content Include="ECharts\Moudle\ChinaMap\data.json" />
+    <Content Include="ECharts\Moudle\BarAndLineChart_1\data.json" />
+    <Content Include="ECharts\Moudle\BarAndLineChart_2\data.json" />
+    <Content Include="ECharts\Moudle\LandscapeBarChart\data.json" />
+    <Content Include="ECharts\Moudle\HotWordChart\data.json" />
     <None Include="Properties\PublishProfiles\datashow.pubxml" />
   </ItemGroup>
   <ItemGroup>

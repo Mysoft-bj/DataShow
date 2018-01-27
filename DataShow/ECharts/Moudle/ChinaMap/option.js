@@ -20,7 +20,7 @@ function div2_1Load(divId) {
 
     //htmlobj = $.ajax({ url: "/data/data.txt", async: false });
     //var jsonAll = eval('(' + htmlobj.responseText + ')');
-    GetJsonAll("/EChars/Moudle/ChinaMap/data.txt");
+    GetJsonAll("/EChars/Moudle/ChinaMap/data.json");
     var jsonName;
     var jsonValue;
     var json = jsonAll.ProjMap;

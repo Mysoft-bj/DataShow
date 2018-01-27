@@ -1,0 +1,42 @@
+﻿{
+  "barandlinechart_2": {
+    "data": [
+      {
+        "name": "第一",
+        "value1": "55",
+        "value2": "88"
+
+      },
+      {
+        "name": "第二",
+         "value1": "55",
+        "value2": "88"
+
+      },
+      {
+        "name": "第三",
+         "value1": "55",
+        "value2": "88"
+
+      },
+      {
+        "name": "第三",
+          "value1": "55",
+        "value2": "88"
+
+      },
+      {
+        "name": "第三",
+         "value1": "55",
+        "value2": "88"
+
+      }
+      ,{
+        "name": "第三",
+         "value1": "55",
+        "value2": "88"
+      
+      }
+    ]
+  }
+}
