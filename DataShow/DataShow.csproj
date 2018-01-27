@@ -188,6 +188,9 @@
     <Content Include="css\login\Register.css" />
     <Content Include="css\login\login.css" />
     <Content Include="data\data.txt" />
+    <Content Include="EChars\Moudle\ChinaMap\data.txt" />
+    <Content Include="EChars\Moudle\ChinaMap\Demo.html" />
+    <Content Include="EChars\Moudle\ChinaMap\option.js" />
     <Content Include="EChars\Moudle\ThreeGauge\Demo.html" />
     <Content Include="EChars\Moudle\ThreeGauge\option.js" />
     <Content Include="images\background\background2.jpg" />
@@ -740,6 +743,7 @@
   <ItemGroup>
     <Content Include="data\newData.json" />
     <Content Include="EChars\Moudle\ThreeGauge\data.json" />
+    <Content Include="EChars\Moudle\ChinaMap\data.json" />
     <None Include="Properties\PublishProfiles\datashow.pubxml" />
   </ItemGroup>
   <ItemGroup>
