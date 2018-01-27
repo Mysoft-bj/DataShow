@@ -31,7 +31,7 @@ function div2_1Load(divId) {
 }
 
 function drawDiv2_1Pic(divId,json, jsonName, jsonValue) {
-    var myChart = echarts.init(document.getElementById("test"));
+    var myChart = echarts.init(document.getElementById(divId));
     var data = json;
     //后台需封装算法，用于获取城市经纬度
     var geoCoordMap = {
