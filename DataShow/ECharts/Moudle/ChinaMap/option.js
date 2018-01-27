@@ -18,6 +18,7 @@
 //    //    setDiv1Remark(json);
 //    //});
 
+//<<<<<<< HEAD:DataShow/EChars/Moudle/ChinaMap/option.js
 //    //htmlobj = $.ajax({ url: "/data/data.txt", async: false });
 //    //var jsonAll = eval('(' + htmlobj.responseText + ')');
 //    GetJsonAll("/EChars/Moudle/ChinaMap/data.txt");
@@ -29,6 +30,19 @@
 //    drawDiv2_1Pic(divId,json, jsonName, jsonValue,"郑州");
 //    //setDiv2_1Remark(json);
 //}
+//=======
+    //htmlobj = $.ajax({ url: "/data/data.txt", async: false });
+    //var jsonAll = eval('(' + htmlobj.responseText + ')');
+//    GetJsonAll("/EChars/Moudle/ChinaMap/data.json");
+//    var jsonName;
+//    var jsonValue;
+//    var json = jsonAll.ProjMap;
+//    jsonName = my.getJsonNameByJosn(json);
+//    jsonValue = my.getJsonValueByJosn(json);
+//    drawDiv2_1Pic(divId,json, jsonName, jsonValue);
+//    //setDiv2_1Remark(json);
+//}
+//>>>>>>> 1609a569bc18999394b8b7408def67114b1da91e:DataShow/ECharts/Moudle/ChinaMap/option.js
 
 function CreateProjMap(divId, jsonData) {
     var myChart = echarts.init(document.getElementById(divId));
