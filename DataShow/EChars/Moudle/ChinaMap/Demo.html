@@ -27,7 +27,9 @@
     <script type="text/javascript" src="/EChars/Moudle/ChinaMap/option.js" ></script>
     <script type="text/javascript">
         window.onload = function () {
-            div2_1Load("test");
+            var htmlobj = $.ajax({ url: "data.txt", async: false });
+            var json = JSON.parse(htmlobj.responseText);
+            CreateProjMap("test", json.ProjMap);
         }
     </script>
 

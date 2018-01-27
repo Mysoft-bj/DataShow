@@ -1,12 +1,18 @@
 ﻿{
-	"ProjMap": [{
-		"name": "北京",
-		"value": 20
-	}, {
-		"name": "武汉",
-		"value": 10
-	}, {
-		"name": "合肥",
-		"value": 5
-	}]
+	"ProjMap":{
+		"data":[{
+			"name": "北京",
+			"value": 10
+		}, {
+			"name": "武汉",
+			"value": 10
+		}, {
+			"name": "合肥",
+			"value": 10
+		}, {
+			"name": "郑州",
+			"value": 10
+		}],
+		"center":"郑州"
+	} 
 }
