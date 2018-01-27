@@ -25,6 +25,7 @@
     @Html.JsFile("/js/jquery-1.11.0.min.js")
     @Html.JsFile("/js/jquery.countup.js")
     @Html.JsFile("/js/jquery.waypoints.min.js")
+    @Html.JsFile("/js/charts/V1/1mapCharts/div.js")
 </head>
 <body >
     <div class="page-loading">
@@ -59,38 +60,39 @@
     </div>
 
     <div class="page page-2-1 hide">
-        <div class="optic_title_block" >
-            <div class="block_icon">
-            </div>
-            <div class="block_title">
-               售楼经理们疯狂输出
-            </div>
-            <div class="block_value">
-                688,888,888
-            </div>
-            <div class="block_mark">
-                项目成交总量（万元）
-            </div>
-            
+        @*<div class="optic_title_block" >
+        <div class="block_icon">
         </div>
-        <div class="bg_KEY_1">
-            <div class="text divText-keyword divText-keyword2-1 pt-page-zoomIn" id="div2-1Span1">
-            </div>
-            <div class="divText divText2-1 pt-page-moveFromLeft pt-page-delay600">成交量最高的项目</div>
+        <div class="block_title">
+           售楼经理们疯狂输出
         </div>
-            <div id="div2-1" class="divChart pt-page-moveFromTop pt-page-delay600 margin-left-3">
+        <div class="block_value">
+            688,888,888
+        </div>
+        <div class="block_mark">
+            项目成交总量（万元）
+        </div>
 
-            </div>
-            <div class="page-remark">
-                <div class="page-remark-left pt-page-moveFromBottom pt-page-delay2800">╔</div>
-                <div class="page-remark-text pt-page-moveFromBottom pt-page-delay2200">冠军就是我，是不一样的烟火</div>
-            </div>
-            <div class="page-remark-rightIcon pt-page-moveFromRight pt-page-delay2800 ">
-                <span class="page-remark-right">╝</span>
-            </div>
-            <div class="page-up pt-page-moveIconUp"><i class="page-up-icon icon-angle-up"></i></div>
+    </div>
+    <div class="bg_KEY_1">
+        <div class="text divText-keyword divText-keyword2-1 pt-page-zoomIn" id="div2-1Span1">
         </div>
-	
+        <div class="divText divText2-1 pt-page-moveFromLeft pt-page-delay600">成交量最高的项目</div>
+    </div>
+        <div id="div2-1" class="divChart pt-page-moveFromTop pt-page-delay600 margin-left-3">
+
+        </div>
+        <div class="page-remark">
+            <div class="page-remark-left pt-page-moveFromBottom pt-page-delay2800">╔</div>
+            <div class="page-remark-text pt-page-moveFromBottom pt-page-delay2200">冠军就是我，是不一样的烟火</div>
+        </div>
+        <div class="page-remark-rightIcon pt-page-moveFromRight pt-page-delay2800 ">
+            <span class="page-remark-right">╝</span>
+        </div>
+        <div class="page-up pt-page-moveIconUp"><i class="page-up-icon icon-angle-up"></i></div>*@
+        <div id="div2-1" class="divChart pt-page-moveFromTop pt-page-delay600 margin-left-3"></div>
+    </div>
+
     <div class="page page-3-1 hide" >
         <div class="rank_123">
             <div class="rank_fist">

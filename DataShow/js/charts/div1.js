@@ -5,6 +5,7 @@ function GetJsonAll() {
         jsonAll = JSON.parse(htmlobj.responseText);
     }
 }
+/*
 // 基于准备好的dom，初始化echarts实例
 function div2_1Load() {
     var jsonName;
@@ -112,7 +113,7 @@ function setDiv2_1Remark(json) {
     var info =tempName;
     $("#div2-1Span1").html(info);
 }
-
+*/
 
 // 基于准备好的dom，初始化echarts实例
 function div3_1Load() {
