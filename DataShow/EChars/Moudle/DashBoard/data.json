@@ -1,0 +1,10 @@
+﻿{
+  "dashboard": {
+    "backgroundColor": "",
+    "formatvalue": "%", 
+    "color": "#37a2da", 
+    "width": "10", 
+    "datavale": "80", 
+    "dataname": "干啥的"
+  }
+}

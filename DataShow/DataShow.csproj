@@ -191,8 +191,8 @@
     <Content Include="EChars\Moudle\ChinaMap\data.txt" />
     <Content Include="EChars\Moudle\ChinaMap\Demo.html" />
     <Content Include="EChars\Moudle\ChinaMap\option.js" />
-    <Content Include="EChars\Moudle\ThreeGauge\Demo.html" />
-    <Content Include="EChars\Moudle\ThreeGauge\option.js" />
+    <Content Include="EChars\Moudle\DashBoard\Demo.html" />
+    <Content Include="EChars\Moudle\DashBoard\option.js" />
     <Content Include="images\background\background2.jpg" />
     <Content Include="images\background\background3.gif" />
     <Content Include="images\background\background3.jpg" />
@@ -742,7 +742,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="data\newData.json" />
-    <Content Include="EChars\Moudle\ThreeGauge\data.json" />
+    <Content Include="EChars\Moudle\DashBoard\data.json" />
     <Content Include="EChars\Moudle\ChinaMap\data.json" />
     <None Include="Properties\PublishProfiles\datashow.pubxml" />
   </ItemGroup>
