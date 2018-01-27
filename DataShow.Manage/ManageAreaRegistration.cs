@@ -17,7 +17,7 @@ namespace DataShow.Areas.Manage
             context.MapRoute(
                 "Manage",
                 "Manage/{controller}/{action}/{id}",
-                new {controller="Home", action = "Index", id = UrlParameter.Optional },
+                new {controller= "Home", action = "Index", id = UrlParameter.Optional },
                 namespaces: new string[] { "DataShow.Manage.Controllers.*" }
             );
 

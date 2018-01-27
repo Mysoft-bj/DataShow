@@ -20,6 +20,8 @@ namespace My.Entity
         [DataColumn(IsNullable = true)]
         public string PassWord { get; set; }
         [DataColumn(IsNullable = true)]
-        public string MobilePhoto { get; set; }
+        public string MobilePhone { get; set; }
+        [DataColumn(IsNullable = true)]
+        public int? IsAdmin { get; set; }
     }
 }
