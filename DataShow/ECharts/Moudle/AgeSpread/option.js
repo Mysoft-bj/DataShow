@@ -29,12 +29,12 @@ function CreateAgeSpread(divId, jsonData) {
             {
                 name: '成交量',
                 type: 'pie',
-                radius: '55%',
+                radius: '50%',
                 center: ['50%', '60%'],
                 data: data,
                 label: {
                     normal: {
-                        formatter: "{b}({d}%)"
+                        formatter: "{b}\n({d}%)"
                     }
                 },
                 itemStyle: {
