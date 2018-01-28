@@ -188,6 +188,12 @@
     <Content Include="css\login\Register.css" />
     <Content Include="css\login\login.css" />
     <Content Include="data\data.txt" />
+    <Content Include="ECharts\Moudle\AgeSpread\data.txt" />
+    <Content Include="ECharts\Moudle\AgeSpread\Demo.html" />
+    <Content Include="ECharts\Moudle\AgeSpread\option.js" />
+    <Content Include="ECharts\Moudle\AgeTakeTime\data.txt" />
+    <Content Include="ECharts\Moudle\AgeTakeTime\Demo.html" />
+    <Content Include="ECharts\Moudle\AgeTakeTime\option.js" />
     <Content Include="ECharts\Moudle\HotWordChart\Demo.html" />
     <Content Include="ECharts\Moudle\HotWordChart\echarts-wordcloud.min.js" />
     <Content Include="ECharts\Moudle\HotWordChart\option.js" />
@@ -202,6 +208,12 @@
     <Content Include="ECharts\Moudle\ChinaMap\option.js" />
     <Content Include="ECharts\Moudle\DashBoard\Demo.html" />
     <Content Include="ECharts\Moudle\DashBoard\option.js" />
+    <Content Include="ECharts\Moudle\SingleBuyer\data.txt" />
+    <Content Include="ECharts\Moudle\SingleBuyer\Demo.html" />
+    <Content Include="ECharts\Moudle\SingleBuyer\option.js" />
+    <Content Include="ECharts\Moudle\StarSign\data.txt" />
+    <Content Include="ECharts\Moudle\StarSign\Demo.html" />
+    <Content Include="ECharts\Moudle\StarSign\option.js" />
     <Content Include="images\background\background2.jpg" />
     <Content Include="images\background\background3.gif" />
     <Content Include="images\background\background3.jpg" />

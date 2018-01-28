@@ -5,10 +5,6 @@ function CreateBarAndLineChar_1(divId, jsonData) {
       
     }
     var newData = $.extend({}, defaultOption, jsonData);
-    var dataName = [];
-    var dataA = [];
-    var dataB = [];
-    var dataAB = [];
     var data = newData.data;
     var option = {
         title: {
@@ -38,7 +34,7 @@ function CreateBarAndLineChar_1(divId, jsonData) {
         series: [{
             name: '热点分析',
             type: 'wordCloud',
-            //size: ['9%', '99%'],
+           //size: ['9%', '99%'],
             sizeRange: [6, 66],
             //textRotation: [0, 45, 90, -45],
             rotationRange: [-45, 90],
@@ -76,10 +72,10 @@ function CreateBarAndLineChar_1(divId, jsonData) {
     var myChart = echarts.init(document.getElementById(divId));
     myChart.setOption(option);
 
-    myChart.on('click', function (params) {
-        window.open('https://www.baidu.com/s?wd=' + encodeURIComponent(params.name));
+    //myChart.on('click', function (params) {
+    //    window.open('https://www.baidu.com/s?wd=' + encodeURIComponent(params.name));
 
-    });
+    //});
 }
 
 

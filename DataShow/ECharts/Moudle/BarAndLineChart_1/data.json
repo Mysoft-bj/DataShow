@@ -4,37 +4,37 @@
       {
         "name": "第一",
         "barvalue": "55",
-        "linvalue": "88"
+        "linvalue": "100"
 
       },
       {
         "name": "第二",
         "barvalue": "40",
-        "linvalue": "70"
+        "linvalue": "100"
 
       },
       {
         "name": "第三",
         "barvalue": "50",
-        "linvalue": "60"
+        "linvalue": "100"
 
       },
       {
         "name": "第三",
         "barvalue": "50",
-        "linvalue": "60"
+        "linvalue": "100"
 
       },
       {
         "name": "第三",
         "barvalue": "50",
-        "linvalue": "60"
+        "linvalue": "100"
 
       }
       ,{
         "name": "第三",
         "barvalue": "50",
-        "linvalue": "60"
+        "linvalue": "100"
       
       }
     ]

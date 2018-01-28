@@ -8,22 +8,21 @@ function CreateBarAndLineChar_1(divId, jsonData) {
     var dataName = [];
     var dataA = [];
     var dataB = [];
-    var dataAB = [];
     var data = newData.data;
     for (var i = 0; i < data.length; i++) {
         dataName.push(data[i].name);
         dataA.push(data[i].value1);
         dataB.push(data[i].value2)
-        dataAB.push(parseFloat(data[i].value1) + parseFloat(data[i].value2));
     }
     var option = {
         backgroundColor: '#0E2A43',
         legend: {
+            show:false,
             bottom: 20,
             textStyle: {
                 color: '#fff',
             },
-            data: ['钥匙量', '有效房源量']
+            data: ['异地购房数量', '总购房数量']
         },
         grid: {
             left: '3%',
@@ -55,14 +54,14 @@ function CreateBarAndLineChar_1(divId, jsonData) {
         yAxis: [
                 {
                     type: 'category',
-                    axisTick: { show: false },
+                    axisTick: { show: true },
                     axisLine: {
                         show: true,
                         lineStyle: {
                             color: '#fff',
                         }
                     },
-                    data: ['广州', '深圳', '东莞', '天津', '惠州', '北京三级', '成都', '南京', '重庆', '长沙']
+                    data: dataName
                 },
                 {
                     type: 'category',
@@ -71,44 +70,43 @@ function CreateBarAndLineChar_1(divId, jsonData) {
                     axisLabel: { show: false },
                     splitArea: { show: false },
                     splitLine: { show: false },
-                    data: ['广州', '深圳', '东莞', '天津', '惠州', '北京三级', '成都', '南京', '重庆', '长沙']
+                    data: dataName
                 },
 
         ],
         series: [
             {
-                name: '有效房源量',
+                name: '总购房数量',
                 type: 'bar',
                 yAxisIndex: 1,
-
                 itemStyle: {
                     normal: {
                         show: true,
                         color: '#277ace',
-                        barBorderRadius: 50,
+                        barBorderRadius: 0,
                         borderWidth: 0,
                         borderColor: '#333',
                     }
                 },
                 barGap: '0%',
-                barCategoryGap: '50%',
-                data: [120, 132, 101, 134, 90, 230, 210, 125, 231, 132]
+                barCategoryGap: '80%',
+                data: dataB
             },
             {
-                name: '钥匙量',
+                name: '异地购房数量',
                 type: 'bar',
                 itemStyle: {
                     normal: {
                         show: true,
                         color: '#5de3e1',
-                        barBorderRadius: 50,
+                        barBorderRadius: 0,
                         borderWidth: 0,
                         borderColor: '#333',
                     }
                 },
                 barGap: '0%',
-                barCategoryGap: '50%',
-                data: [32, 52, 41, 64, 15, 10, 32, 25, 210, 32]
+                barCategoryGap: '80%',
+                data: dataA
             }
 
         ]
