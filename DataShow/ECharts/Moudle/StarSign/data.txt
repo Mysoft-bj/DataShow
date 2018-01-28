@@ -1,0 +1,16 @@
+﻿{
+	"StarSign":{
+		"data":[{ "value": 699, "name": "天秤座" },
+		{ "value": 720, "name": "处女座" },
+		{ "value": 900, "name": "狮子座" }, 
+		{ "value": 870, "name": "双子座" },
+		{ "value": 760, "name": "射手座" },
+		{ "value": 817, "name": "白羊座" }, 
+		{ "value": 884, "name": "水瓶座" },
+		{ "value": 747, "name": "巨蟹座" },
+		{ "value": 659, "name": "魔羯座" }, 
+		{ "value": 917, "name": "天蝎座" },
+		{ "value": 833, "name": "双鱼座" },
+		{ "value": 776, "name": "金牛座" }]
+	} 
+}
