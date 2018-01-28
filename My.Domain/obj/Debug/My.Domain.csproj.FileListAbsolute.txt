@@ -13,3 +13,8 @@ D:\GIT\DataShow\DataShow\bin\My.Domain.pdb
 D:\GIT\DataShow\My.Domain\obj\Debug\My.Domain.csprojResolveAssemblyReference.cache
 D:\GIT\DataShow\My.Domain\obj\Debug\My.Domain.dll
 D:\GIT\DataShow\My.Domain\obj\Debug\My.Domain.pdb
+G:\github\DataShow\DataShow\bin\My.Domain.dll
+G:\github\DataShow\DataShow\bin\My.Domain.pdb
+G:\github\DataShow\My.Domain\obj\Debug\My.Domain.csprojResolveAssemblyReference.cache
+G:\github\DataShow\My.Domain\obj\Debug\My.Domain.dll
+G:\github\DataShow\My.Domain\obj\Debug\My.Domain.pdb
