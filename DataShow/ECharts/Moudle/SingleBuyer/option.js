@@ -224,11 +224,10 @@ function CreateBuyerTrend(divId, jsonData) {
         arrMulti.push(rateMulti);
     }
 
-
     option = {
         backgroundColor: '#394056',
         title: {
-            text: '单人购房占比走势',
+            text: '单人购房占比走势(%)',
             textStyle: {
                 fontWeight: 'normal',
                 fontSize: 16,
