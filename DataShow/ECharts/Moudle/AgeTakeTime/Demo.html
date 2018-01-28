@@ -1,0 +1,42 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type">
+    <meta content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <title>各年龄段成交周期测试</title>
+    <!--<link rel="stylesheet" type="text/css" href="res/copyright.css?1376447814" />-->
+    <Link type="text/css" href="/css/index/index.css" Rel="stylesheet" />
+    <Link type="text/css" href="/css/common/reset.css" Rel="stylesheet" />
+    <Link type="text/css" href="/lib/Font-Awesome-3.2.1/css/font-awesome.min.css" Rel="stylesheet" />
+    
+    <script src="/lib/jquery/jquery.min.js"></script>
+    <script src="/js/charts/echarts.min.js"></script>
+    <script src="/js/charts/china.js"></script>
+    <script src="/js/my.js"></script>
+    <Link type="text/css" href="/css/common/animations.css" Rel="stylesheet" />
+    <script>jQuery.noConflict()</script>
+    <script src="/js/common/zepto.min.js"></script>
+    <script src="/js/touch/touch.js"></script>
+    <script src="/js/jquery-1.11.0.min.js"></script>
+    <script src="/js/jquery.countup.js"></script>
+    <script src="/js/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="/ECharts/Moudle/AgeTakeTime/option.js" ></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            var htmlobj = $.ajax({ url: "data.txt", async: false });
+            var json = JSON.parse(htmlobj.responseText);
+            CreateAgeTakeTime("test", json.AgeTakeTime);
+        }
+    </script>
+
+</head>
+<body>
+    <div id="test" style="width:100%;height:50vh;"></div>
+</body>
+</html>
+
+
