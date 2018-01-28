@@ -1,5 +1,5 @@
 ﻿
-function CreateBarAndLineChar_1(divId, jsonData) {
+function CreateHotWordChart(divId, jsonData) {
     var defaultOption = {
         backgroundColor: ""//容器背景色，为空背景透明
       
@@ -72,10 +72,10 @@ function CreateBarAndLineChar_1(divId, jsonData) {
     var myChart = echarts.init(document.getElementById(divId));
     myChart.setOption(option);
 
-    //myChart.on('click', function (params) {
-    //    window.open('https://www.baidu.com/s?wd=' + encodeURIComponent(params.name));
+    myChart.on('click', function (params) {
+        window.open('https://www.baidu.com/s?wd=' + encodeURIComponent(params.name));
 
-    //});
+    });
 }
 
 

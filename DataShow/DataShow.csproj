@@ -195,6 +195,7 @@
     <Content Include="ECharts\Moudle\AgeTakeTime\Demo.html" />
     <Content Include="ECharts\Moudle\AgeTakeTime\option.js" />
     <Content Include="ECharts\Moudle\HotWordChart\Demo.html" />
+    <Content Include="ECharts\Moudle\HotWordChart\echarts-wordcloud.js" />
     <Content Include="ECharts\Moudle\HotWordChart\echarts-wordcloud.min.js" />
     <Content Include="ECharts\Moudle\HotWordChart\option.js" />
     <Content Include="ECharts\Moudle\LandscapeBarChart\Demo.html" />
