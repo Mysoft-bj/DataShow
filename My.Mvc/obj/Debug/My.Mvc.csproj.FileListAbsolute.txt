@@ -3,3 +3,8 @@ E:\GIT\DataShow\DataShow\bin\My.Mvc.pdb
 E:\GIT\DataShow\My.Mvc\obj\Debug\My.Mvc.csprojResolveAssemblyReference.cache
 E:\GIT\DataShow\My.Mvc\obj\Debug\My.Mvc.dll
 E:\GIT\DataShow\My.Mvc\obj\Debug\My.Mvc.pdb
+G:\github\DataShow\DataShow\bin\My.Mvc.dll
+G:\github\DataShow\DataShow\bin\My.Mvc.pdb
+G:\github\DataShow\My.Mvc\obj\Debug\My.Mvc.csprojResolveAssemblyReference.cache
+G:\github\DataShow\My.Mvc\obj\Debug\My.Mvc.dll
+G:\github\DataShow\My.Mvc\obj\Debug\My.Mvc.pdb

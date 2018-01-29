@@ -195,7 +195,6 @@
     <Content Include="ECharts\Moudle\AgeTakeTime\Demo.html" />
     <Content Include="ECharts\Moudle\AgeTakeTime\option.js" />
     <Content Include="ECharts\Moudle\HotWordChart\Demo.html" />
-    <Content Include="ECharts\Moudle\HotWordChart\echarts-wordcloud.js" />
     <Content Include="ECharts\Moudle\HotWordChart\echarts-wordcloud.min.js" />
     <Content Include="ECharts\Moudle\HotWordChart\option.js" />
     <Content Include="ECharts\Moudle\LandscapeBarChart\Demo.html" />
@@ -1110,7 +1109,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="data\newData.json" />
-    <Content Include="ECharts\Moudle\DashBoard\data.json" />
+    <Content Include="ECharts\Moudle\DashBoard\data1.json" />
     <Content Include="ECharts\Moudle\ChinaMap\data.json" />
     <Content Include="ECharts\Moudle\BarAndLineChart_1\data.json" />
     <Content Include="ECharts\Moudle\BarAndLineChart_2\data.json" />
@@ -1264,6 +1263,8 @@
     <Content Include="NewStaticIndex\data\newData.json" />
     <Content Include="NewStaticIndex\images\common\social\Thumbs.db" />
     <Content Include="NewStaticIndex\images\common\social\获得更多模板.url" />
+    <Content Include="ECharts\Moudle\DashBoard\data2.json" />
+    <Content Include="ECharts\Moudle\DashBoard\data3.json" />
     <None Include="Properties\PublishProfiles\datashow.pubxml" />
   </ItemGroup>
   <ItemGroup>
