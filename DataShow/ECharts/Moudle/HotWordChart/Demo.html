@@ -5,14 +5,13 @@
 	<title>测试</title>
     <script src="/lib/jquery/jquery.min.js"></script>
 	<script type="text/javascript" src="/js/charts/echarts.min.js" ></script>
-    <script src="https://cdn.bootcss.com/echarts/4.0.2/echarts.min.js"></script>
-    <script type="text/javascript" src="echarts-wordcloud.min.js"></script>
+    <script type="text/javascript" src="http://data-visual.cn/datav/src/js/echarts/extension/echarts-wordcloud.min.js"></script>
     <script type="text/javascript" src="option.js"></script>
 	<script type="text/javascript">
         window.onload = function () {
             var htmlobj = $.ajax({ url: "data.json", async: false });
             var json = JSON.parse(htmlobj.responseText);
-            CreateHotWordChart("test", json.hotwordchart);
+            CreateBarAndLineChar_1("test", json.hotwordchart);
           
         }
 
