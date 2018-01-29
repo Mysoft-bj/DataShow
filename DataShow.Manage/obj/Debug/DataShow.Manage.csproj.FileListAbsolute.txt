@@ -8,3 +8,8 @@ D:\个人项目\GIT\DataShow\DataShow\bin\DataShow.Manage.pdb
 D:\个人项目\GIT\DataShow\DataShow.Manage\obj\Debug\DataShow.Manage.csprojResolveAssemblyReference.cache
 D:\个人项目\GIT\DataShow\DataShow.Manage\obj\Debug\DataShow.Manage.dll
 D:\个人项目\GIT\DataShow\DataShow.Manage\obj\Debug\DataShow.Manage.pdb
+G:\github\DataShow\DataShow\bin\DataShow.Manage.dll
+G:\github\DataShow\DataShow\bin\DataShow.Manage.pdb
+G:\github\DataShow\DataShow.Manage\obj\Debug\DataShow.Manage.csprojResolveAssemblyReference.cache
+G:\github\DataShow\DataShow.Manage\obj\Debug\DataShow.Manage.dll
+G:\github\DataShow\DataShow.Manage\obj\Debug\DataShow.Manage.pdb

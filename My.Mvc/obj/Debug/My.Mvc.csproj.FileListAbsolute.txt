@@ -3,8 +3,16 @@ E:\GIT\DataShow\DataShow\bin\My.Mvc.pdb
 E:\GIT\DataShow\My.Mvc\obj\Debug\My.Mvc.csprojResolveAssemblyReference.cache
 E:\GIT\DataShow\My.Mvc\obj\Debug\My.Mvc.dll
 E:\GIT\DataShow\My.Mvc\obj\Debug\My.Mvc.pdb
+<<<<<<< HEAD
 D:\个人项目\GIT\DataShow\DataShow\bin\My.Mvc.dll
 D:\个人项目\GIT\DataShow\DataShow\bin\My.Mvc.pdb
 D:\个人项目\GIT\DataShow\My.Mvc\obj\Debug\My.Mvc.csprojResolveAssemblyReference.cache
 D:\个人项目\GIT\DataShow\My.Mvc\obj\Debug\My.Mvc.dll
 D:\个人项目\GIT\DataShow\My.Mvc\obj\Debug\My.Mvc.pdb
+=======
+G:\github\DataShow\DataShow\bin\My.Mvc.dll
+G:\github\DataShow\DataShow\bin\My.Mvc.pdb
+G:\github\DataShow\My.Mvc\obj\Debug\My.Mvc.csprojResolveAssemblyReference.cache
+G:\github\DataShow\My.Mvc\obj\Debug\My.Mvc.dll
+G:\github\DataShow\My.Mvc\obj\Debug\My.Mvc.pdb
+>>>>>>> 21379f4c9d03e3441979da25c06b2c0de6e51c04
