@@ -1389,15 +1389,15 @@ function CreateAgeTakeTime(divId, jsonData) {
 
 // 基于准备好的dom，初始化echarts实例
 function div7_1Load() {
-    var htmlobj1 = $.ajax({ url: "../../../../ECharts/Moudle/DashBoard/data1.json", async: false });
+    var htmlobj1 = $.ajax({ url: "../../../../ECharts/Moudle/DashBoard/data1.txt", async: false });
     var json1 = JSON.parse(htmlobj1.responseText);
-    var htmlobj2 = $.ajax({ url: "../../../../ECharts/Moudle/DashBoard/data2.json", async: false });
+    var htmlobj2 = $.ajax({ url: "../../../../ECharts/Moudle/DashBoard/data2.txt", async: false });
     var json2 = JSON.parse(htmlobj2.responseText);
-    var htmlobj3 = $.ajax({ url: "../../../../ECharts/Moudle/DashBoard/data3.json", async: false });
+    var htmlobj3 = $.ajax({ url: "../../../../ECharts/Moudle/DashBoard/data3.txt", async: false });
     var json3 = JSON.parse(htmlobj3.responseText);
     CreateDashBoard("div7-1-1", json1.dashboard);
     CreateDashBoard("div7-1-2", json2.dashboard);
-    CreateDashBoard("div7-1-3", json3.dashboard);
+  
    
 }
 
@@ -1405,7 +1405,7 @@ function CreateDashBoard(divId, jsonData) {
     var defaultOption = {
         backgroundColor: "", //容器背景色，为空背景透明
         formatvalue: "%", //格式化显示配置,会加在数据显示后面
-        color: "#37a2da", //仪表盘及标题显示颜色
+        color: "#b2975a", //仪表盘及标题显示颜色
         width: "10", //表盘弧形宽度
         datavale: "50", //数据值
         dataname: "XX"//显示名称
@@ -1444,31 +1444,230 @@ function CreateDashBoard(divId, jsonData) {
 
 // 基于准备好的dom，初始化echarts实例
 function div8_1Load() {
-    //var jsonName;
-    //var jsonValue;
-    //var json;
-    //var jsonMax;
-    //$.post("/Charts/GetDiffProductCnt", "", function (result) {
-    //    json = eval('(' + result + ')');
-    //    jsonName = my.getJsonName(result);
-    //    jsonValue = my.getJsonValue(result);
-    //    $.post("/Charts/GetMaxProductCnt", "", function (result1) {
-    //        jsonMax = eval('(' + result1 + ')');
-    //        drawDiv4Pic(json, jsonName, jsonValue, jsonMax);
-    //        setDiv4Remark(json);
-    //    });        
-    //});
-    //htmlobj = $.ajax({ url: "/data/data.txt", async: false });
-    //var jsonAll = eval('(' + htmlobj.responseText + ')');
+   
     GetJsonAll();
     var jsonName;
     var jsonValue;
     var json = jsonAll.AvgWomenPercentage;
     jsonName = my.getJsonNameByJosn(json);
     jsonValue = my.getJsonValueByJosn(json);
-    drawDiv8_1Pic(json, jsonName, jsonValue);
+  
+
+    var htmlobj = $.ajax({ url: "../../../../ECharts/Moudle/BarAndLineChart_2/data.txt", async: false });
+    var json = JSON.parse(htmlobj.responseText);
+    CreateBarAndLineChar_1("div8-1", json.barandlinechart_2);
     setDiv8_1Remark(json);
 }
+
+
+function CreateBarAndLineChar_1(divId, jsonData) {
+    var defaultOption = {
+        backgroundColor: ""//容器背景色，为空背景透明
+
+    }
+    var newData = $.extend({}, defaultOption, jsonData);
+    var dataName = [];
+    var dataA = [];
+    var dataB = [];
+    var dataAB = [];
+    var data = newData.data;
+    for (var i = 0; i < data.length; i++) {
+        dataName.push(data[i].name);
+        dataA.push(data[i].value1);
+        dataB.push(data[i].value2)
+        dataAB.push(parseFloat(data[i].value1) + parseFloat(data[i].value2));
+    }
+    var option = {
+        backgroundColor: "#344b58",
+        title: {
+            show: false,
+            text: "本年商场顾客男女人数统计",
+            subtext: "BY Wang Dingding",
+            x: "4%",
+
+            textStyle: {
+                color: '#fff',
+                fontSize: '22'
+            },
+            subtextStyle: {
+                color: '#90979c',
+                fontSize: '16',
+
+            },
+        },
+        tooltip: {
+            trigger: "axis",
+            axisPointer: {
+                type: "shadow",
+                textStyle: {
+                    color: "#fff"
+                }
+
+            },
+        },
+        grid: {
+            "borderWidth": 0,
+            "top": 10,
+            "bottom": 40,
+            textStyle: {
+                color: "#fff"
+            }
+        },
+        legend: {
+            show: false,
+            x: '4%',
+            top: '11%',
+            textStyle: {
+                color: '#90979c',
+            },
+            data: ['女', '男', '平均']
+        },
+
+
+        calculable: true,
+        xAxis: [{
+            show: true,
+            type: "category",
+            axisLine: {
+                lineStyle: {
+                    color: '#90979c'
+                }
+            },
+            splitLine: {
+                show: false
+            },
+            axisTick: {
+                show: false
+            },
+            splitArea: {
+                show: false
+            },
+            axisLabel: {
+                interval: 0,
+
+            },
+            data: dataName,
+        }],
+        yAxis: [{
+            show: false,
+            type: "value",
+            splitLine: {
+                show: false
+            },
+            axisLine: {
+                lineStyle: {
+                    color: '#90979c'
+                }
+            },
+            axisTick: {
+                show: false
+            },
+            axisLabe: {
+                interval: 0,
+
+            },
+            splitArea: {
+                show: false
+            },
+
+        }],
+        dataZoom: [{
+            show: false,
+            height: 30,
+            xAxisIndex: [
+                0
+            ],
+            bottom: 30,
+            start: 0,
+            end: 50,
+            handleIcon: 'path://M306.1,413c0,2.2-1.8,4-4,4h-59.8c-2.2,0-4-1.8-4-4V200.8c0-2.2,1.8-4,4-4h59.8c2.2,0,4,1.8,4,4V413z',
+            handleSize: '110%',
+            handleStyle: {
+                color: "#d3dee5",
+
+            },
+            textStyle: {
+                color: "#fff"
+            },
+            borderColor: "#90979c"
+
+
+        }, {
+            type: "inside",
+            show: true,
+            height: 15,
+            start: 1,
+            end: 35
+        }],
+        series: [{
+            name: "大户型",
+            type: "bar",
+            stack: "总量",
+            barMaxWidth: 15,
+            barGap: "10%",
+            itemStyle: {
+                normal: {
+                    color: "rgba(255,144,128,1)",
+                    label: {
+                        show: true,
+                        textStyle: {
+                            color: "#fff"
+                        },
+                        position: "insideTop",
+                        formatter: function (p) {
+                            return p.value > 0 ? (p.value) : '';
+                        }
+                    }
+                }
+            },
+            data: dataA,
+        },
+
+            {
+                name: "小户型",
+                type: "bar",
+                stack: "总量",
+                itemStyle: {
+                    normal: {
+                        color: "rgba(0,191,183,1)",
+                        barBorderRadius: 0,
+                        label: {
+                            show: true,
+                            position: "top",
+                            formatter: function (p) {
+                                return p.value > 0 ? (p.value) : '';
+                            }
+                        }
+                    }
+                },
+                data: dataB
+            }, {
+                name: "总户数",
+                type: "line",
+                stack: "总量",
+                symbolSize: 10,
+                symbol: 'circle',
+                itemStyle: {
+                    normal: {
+                        color: "rgba(252,230,48,1)",
+                        barBorderRadius: 0,
+                        label: {
+                            show: true,
+                            position: "top",
+                            formatter: function (p) {
+                                return p.value > 0 ? (p.value) : '';
+                            }
+                        }
+                    }
+                },
+                data: dataAB
+            },
+        ]
+    };
+    var myChart = echarts.init(document.getElementById(divId));
+    myChart.setOption(option);
+}
+
 
 function drawDiv8_1Pic(json, jsonName, jsonValue) {
     var myChart = echarts.init(document.getElementById('div8-1'));
@@ -1627,22 +1826,7 @@ function setDiv8_1Remark(json) {
 
 // 基于准备好的dom，初始化echarts实例
 function div9_1Load() {
-    //var jsonName;
-    //var jsonValue;
-    //var json;
-    //var jsonMax;
-    //$.post("/Charts/GetDiffProductCnt", "", function (result) {
-    //    json = eval('(' + result + ')');
-    //    jsonName = my.getJsonName(result);
-    //    jsonValue = my.getJsonValue(result);
-    //    $.post("/Charts/GetMaxProductCnt", "", function (result1) {
-    //        jsonMax = eval('(' + result1 + ')');
-    //        drawDiv4Pic(json, jsonName, jsonValue, jsonMax);
-    //        setDiv4Remark(json);
-    //    });        
-    //});
-    //htmlobj = $.ajax({ url: "/data/data.txt", async: false });
-    //var jsonAll = eval('(' + htmlobj.responseText + ')');
+    
     GetJsonAll();
     var jsonName;
     var jsonValue;
@@ -1650,8 +1834,132 @@ function div9_1Load() {
     var jsonMax = jsonAll.MaxProductCnt;
     jsonName = my.getJsonNameByJosn(json);
     jsonValue = my.getJsonValueByJosn(json);
-    drawDiv9_1Pic(json, jsonName, jsonValue, jsonMax);
+    //drawDiv9_1Pic(json, jsonName, jsonValue, jsonMax);
+    var htmlobj = $.ajax({ url: "../../../../ECharts/Moudle/LandscapeBarChart/data.txt", async: false });
+    var json = JSON.parse(htmlobj.responseText);
+    CreateBarAndLineChar_2("div9-1", json.landscapebarchart);
     setDiv9_1Remark(json);
+    //提前加载下一个引用js
+    $.getScript("../../../../ECharts/Moudle/HotWordChart/echarts-wordcloud.min.js", function () {  //加载test.js,成功后，并执行回调函数
+        console.log("加载js文件");
+    });
+
+}
+
+function CreateBarAndLineChar_2(divId, jsonData) {
+    var defaultOption = {
+        backgroundColor: ""//容器背景色，为空背景透明
+
+    }
+    var newData = $.extend({}, defaultOption, jsonData);
+    var dataName = [];
+    var dataA = [];
+    var dataB = [];
+    var data = newData.data;
+    for (var i = 0; i < data.length; i++) {
+        dataName.push(data[i].name);
+        dataA.push(data[i].value1);
+        dataB.push(data[i].value2)
+    }
+    var option = {
+        backgroundColor: '#0E2A43',
+        legend: {
+            show: false,
+            bottom: 20,
+            textStyle: {
+                color: '#fff',
+            },
+            data: ['异地购房数量', '总购房数量']
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '10%',
+            containLabel: true
+        },
+
+        tooltip: {
+            show: "true",
+            trigger: 'axis',
+            axisPointer: { // 坐标轴指示器，坐标轴触发有效
+                type: 'shadow' // 默认为直线，可选为：'line' | 'shadow'
+            }
+        },
+        xAxis: {
+            type: 'value',
+            axisTick: { show: false },
+            axisLine: {
+                show: false,
+                lineStyle: {
+                    color: '#fff',
+                }
+            },
+            splitLine: {
+                show: false
+            },
+        },
+        yAxis: [
+                {
+                    type: 'category',
+                    axisTick: { show: true },
+                    axisLine: {
+                        show: true,
+                        lineStyle: {
+                            color: '#fff',
+                        }
+                    },
+                    data: dataName
+                },
+                {
+                    type: 'category',
+                    axisLine: { show: false },
+                    axisTick: { show: false },
+                    axisLabel: { show: false },
+                    splitArea: { show: false },
+                    splitLine: { show: false },
+                    data: dataName
+                },
+
+        ],
+        series: [
+            {
+                name: '总购房数量',
+                type: 'bar',
+                yAxisIndex: 1,
+                itemStyle: {
+                    normal: {
+                        show: true,
+                        color: '#277ace',
+                        barBorderRadius: 0,
+                        borderWidth: 0,
+                        borderColor: '#333',
+                    }
+                },
+                barGap: '0%',
+                barCategoryGap: '80%',
+                data: dataB
+            },
+            {
+                name: '异地购房数量',
+                type: 'bar',
+                itemStyle: {
+                    normal: {
+                        show: true,
+                        color: '#5de3e1',
+                        barBorderRadius: 0,
+                        borderWidth: 0,
+                        borderColor: '#333',
+                    }
+                },
+                barGap: '0%',
+                barCategoryGap: '80%',
+                data: dataA
+            }
+
+        ]
+    };;
+    var myChart = echarts.init(document.getElementById(divId));
+    myChart.setOption(option);
 }
 
 function drawDiv9_1Pic(json, jsonName, jsonValue, jsonMax) {
@@ -1722,28 +2030,99 @@ function setDiv9_1Remark(json) {
 
 // 基于准备好的dom，初始化echarts实例
 function div10_1Load() {
-    //var jsonName;
-    //var jsonValue;
-    //var json;
-    //var jsonMax;
-    //$.post("/Charts/GetMediaOppCnt", "", function (result) {
-    //    json = eval('(' + result + ')');
-    //    jsonName = my.getJsonName(result);
-    //    jsonValue = my.getJsonValue(result);
-    //    drawDiv5Pic(json, jsonName, jsonValue);
-    //    setDiv5Remark(json);
-    //});
-    //htmlobj = $.ajax({ url: "/data/data.txt", async: false });
-    //var jsonAll = eval('(' + htmlobj.responseText + ')');
+
     GetJsonAll();
     var jsonName;
     var jsonValue;
     var json = jsonAll.MediaOppCnt;
     jsonName = my.getJsonNameByJosn(json);
     jsonValue = my.getJsonValueByJosn(json);
-    drawDiv10_1Pic(json, jsonName, jsonValue);
+    //drawDiv10_1Pic(json, jsonName, jsonValue);
     setDiv10_1Remark(json);
+    var htmlobj = $.ajax({ url: "../../../../ECharts/Moudle/HotWordChart/data.txt", async: false });
+    var json = JSON.parse(htmlobj.responseText);
+    CreateHotWordChart("div10-1", json.hotwordchart);
 }
+
+
+function CreateHotWordChart(divId, jsonData) {
+    var defaultOption = {
+        backgroundColor: ""//容器背景色，为空背景透明
+
+    }
+    var newData = $.extend({}, defaultOption, jsonData);
+    var data = newData.data;
+    var option = {
+        title: {
+            text: '热点分析',
+            link: 'https://www.baidu.com/s?wd=' + encodeURIComponent('ECharts'),
+            x: 'center',
+            textStyle: {
+                fontSize: 23
+            }
+
+        },
+        backgroundColor: '#F7F7F7',
+        opacity:'0.7',
+        tooltip: {
+            show: true
+        },
+        toolbox: {
+            feature: {
+                saveAsImage: {
+                    iconStyle: {
+                        normal: {
+                            color: '#FFFFFF'
+                        }
+                    }
+                }
+            }
+        },
+        series: [{
+            name: '热点分析',
+            type: 'wordCloud',
+            //size: ['9%', '99%'],
+            sizeRange: [6, 66],
+            //textRotation: [0, 45, 90, -45],
+            rotationRange: [-45, 90],
+            //shape: 'circle',
+            textPadding: 0,
+            autoSize: {
+                enable: true,
+                minSize: 6
+            },
+            textStyle: {
+                normal: {
+                    color: function () {
+                        return 'rgb(' + [
+                            Math.round(Math.random() * 160),
+                            Math.round(Math.random() * 160),
+                            Math.round(Math.random() * 160)
+                        ].join(',') + ')';
+                    }
+                },
+                emphasis: {
+                    shadowBlur: 10,
+                    shadowColor: '#333'
+                }
+            },
+            data: [{
+                name: "Jayfee",
+                value: 666
+            }, {
+                name: "Nancy",
+                value: 520
+            }]
+        }]
+    };
+    option.series[0].data = data;
+    var myChart = echarts.init(document.getElementById(divId));
+    myChart.setOption(option);
+
+   
+}
+
+
 
 function drawDiv10_1Pic(json, jsonName, jsonValue) {
     var myChart = echarts.init(document.getElementById('div10-1'));

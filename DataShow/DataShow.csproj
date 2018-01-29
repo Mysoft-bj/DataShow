@@ -1109,7 +1109,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="data\newData.json" />
-    <Content Include="ECharts\Moudle\DashBoard\data1.json" />
+    <Content Include="ECharts\Moudle\DashBoard\data1.txt" />
     <Content Include="ECharts\Moudle\ChinaMap\data.json" />
     <Content Include="ECharts\Moudle\BarAndLineChart_1\data.json" />
     <Content Include="ECharts\Moudle\BarAndLineChart_2\data.json" />
@@ -1263,8 +1263,8 @@
     <Content Include="NewStaticIndex\data\newData.json" />
     <Content Include="NewStaticIndex\images\common\social\Thumbs.db" />
     <Content Include="NewStaticIndex\images\common\social\获得更多模板.url" />
-    <Content Include="ECharts\Moudle\DashBoard\data2.json" />
-    <Content Include="ECharts\Moudle\DashBoard\data3.json" />
+    <Content Include="ECharts\Moudle\DashBoard\data2.txt" />
+    <Content Include="ECharts\Moudle\DashBoard\data3.txt" />
     <None Include="Properties\PublishProfiles\datashow.pubxml" />
   </ItemGroup>
   <ItemGroup>

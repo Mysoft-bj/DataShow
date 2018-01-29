@@ -128,10 +128,39 @@ body {
      top: 5vh;
     width: 100vw;
     position: relative;
+    
+}
+
+.chart_7_1 {
+  
+    width: 70%;
+    height: 35vh;
+    margin: 0 auto;
+
+
+}
+.chart_7_2 {
+      width: 70%;
+    height: 35vh;
+    margin: 0 auto;
+}
+.chart_7_3 {
+     width: 70%;
+    height: 35vh;
+    margin: 0 auto;
+}
+.chart_8 {
+    width:100vw;
+     margin: 0 auto;
+    height: 35vh;
+    opacity: 0.7;
+    top:7vh;
+    padding-top: 5vh;
 }
 .chart_9 {
     top: 13vh;
     width: 100vw;
+    height: 35vh;
     position: relative;
 }
 
