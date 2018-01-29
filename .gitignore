@@ -5,5 +5,8 @@ packages/
 *.dll
 !Mysoft.Map.Extensions.dll
 !MySql.Data.dll
+!RouteDebug.dll
 *.pdb
 *.cache
+*/obj/Debug/
+*/bin/*.xml
