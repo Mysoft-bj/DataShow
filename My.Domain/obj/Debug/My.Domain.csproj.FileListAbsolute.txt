@@ -1,5 +1,0 @@
-E:\GIT\DataShow\DataShow\bin\My.Domain.dll
-E:\GIT\DataShow\DataShow\bin\My.Domain.pdb
-E:\GIT\DataShow\My.Domain\obj\Debug\My.Domain.dll
-E:\GIT\DataShow\My.Domain\obj\Debug\My.Domain.pdb
-E:\GIT\DataShow\My.Domain\obj\Debug\My.Domain.csprojResolveAssemblyReference.cache

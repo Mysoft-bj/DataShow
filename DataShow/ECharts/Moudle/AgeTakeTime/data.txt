@@ -1,0 +1,48 @@
+﻿{
+	"AgeTakeTime":{
+		"data":[{
+			"name": "50后",
+			"value": 3.5
+		}, {
+			"name": "60后",
+			"value": 3
+		}, {
+			"name": "70后",
+			"value": 2
+		}, {
+			"name": "80后",
+			"value": 1
+		}, {
+			"name": "90后",
+			"value": 6
+		}, {
+			"name": "00后",
+			"value": 0.5
+		}, {
+			"name": "10后",
+			"value": 0.1
+		}],
+		"maxdata":[{
+			"name": "50后",
+			"max": 9
+		}, {
+			"name": "60后",
+			"max": 9
+		}, {
+			"name": "70后",
+			"max": 9
+		}, {
+			"name": "80后",
+			"max": 9
+		}, {
+			"name": "90后",
+			"max": 9
+		}, {
+			"name": "00后",
+			"max": 9
+		}, {
+			"name": "10后",
+			"max": 9
+		}]
+	} 
+}

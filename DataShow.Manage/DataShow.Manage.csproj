@@ -42,10 +42,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="My.Application, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\FineSource\bin\My.Application.dll</HintPath>
-    </Reference>
     <Reference Include="My.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\FineSource\bin\My.Core.dll</HintPath>
@@ -158,6 +154,7 @@
     <Content Include="css\public\app_one.css" />
     <Content Include="css\public\nav.css" />
     <Content Include="images\User\lufei.png" />
+    <Content Include="js\login\login.js" />
     <Content Include="js\public\iscroll.js" />
     <Content Include="js\public\nav.js" />
     <Content Include="js\public\theme.js" />
@@ -215,6 +212,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="lib\Amazeui Color\images\未标题-2.psd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataShow.Services\DataShow.Services.csproj">
+      <Project>{d1932ebd-c2fb-4ea0-8a06-2655dec3b24e}</Project>
+      <Name>DataShow.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

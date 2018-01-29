@@ -1,5 +1,5 @@
 ﻿@{
-    Layout = "";
+    Layout = null;
 }
 
 <!DOCTYPE html>
@@ -7,9 +7,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <title>登陆/注册</title>
-    <meta name="keywords" content="优资平台">
-    <meta name="description" content="优秀资源平台">
+    <title>登陆</title>
+    <meta name="keywords" content="数据微场景展示">
+    <meta name="description" content="数据微场景展示">
    @Html.CssFile("/Areas/Manage/lib/Amaze UI/css/amazeui.min.css")
     @Html.CssFile("/Areas/Manage/lib/Amazeui Color/color.min.css")
     @Html.CssFile("/Areas/Manage/css/public/public.css")
@@ -17,6 +17,7 @@
     @Html.JsFile("/lib/jquery/jquery.min.js")
     @Html.JsFile("/Areas/Manage/lib/Amaze UI/js/amazeui.min.js")
     @Html.JsFile("/Areas/Manage/lib/Amazeui Color/color.min.js")
+    @Html.JsFile("/Areas/Manage/js/login/login.js")
     <!--[if lt IE 9]>
     <meta http-equiv="refresh" content="0;ie.html" />
     <![endif]-->
@@ -33,21 +34,24 @@
                         <span class="color-form-control-ico">
                             <i class="am-icon-user"></i>
                         </span>
-                        <input class="color-form-control color-form-control-ico-input-left" placeholder="邮箱/用户名/已验证手机" type="text">
-                        <span class="color-form-control-help">邮箱/用户名/已验证手机</span>
+                        <input id="username" class="color-form-control color-form-control-ico-input-left" placeholder="用户名" type="text">
+                        <span id="usernametip" class="color-form-control-help">输入用户名</span>
                     </div>
 
                     <div class="color-form-group color-form-line">
                         <span class="color-form-control-ico">
                             <i class="am-icon-key"></i>
                         </span>
-                        <input class="color-form-control color-form-control-ico-input-left" placeholder="密码" type="text">
-                        <span class="color-form-control-help">请输入密码</span>
+                        <input id="password" class="color-form-control color-form-control-ico-input-left" placeholder="密码" type="text">
+                        <span  id="passwordtip" class="color-form-control-help">请输入密码</span>
+                    </div>
+                    <div class="color-form-group">
+                        <span id="errortip" style="color:red"></span>
                     </div>
 
-                    <div class="am-form-group">
-                        <button type="button" class="am-btn am-btn-primary  am-btn-block tpl-btn-bg-color-success  tpl-login-btn">登录</button>
-                    </div>
+                        <div class="am-form-group">
+                            <button id="loginButton" type="button" class="am-btn am-btn-primary  am-btn-block tpl-btn-bg-color-success  tpl-login-btn"><span>登录</span></button>
+                        </div>
                 </form>
             </div>
         </div>

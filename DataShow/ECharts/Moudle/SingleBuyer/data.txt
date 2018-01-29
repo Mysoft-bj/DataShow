@@ -1,0 +1,22 @@
+﻿{
+	"SingleBuyer":{
+		"data":[{ "value": 234, "name": "male","year":2012 },
+		{ "value": 121, "name": "female" ,"year":2012},
+		{ "value": 354, "name": "multi" ,"year":2012},
+		{ "value": 454, "name": "male","year":2013 },
+		{ "value": 233, "name": "female" ,"year":2013},
+		{ "value": 655, "name": "multi" ,"year":2013},
+		{ "value": 565, "name": "male","year":2014 },
+		{ "value": 324, "name": "female" ,"year":2014},
+		{ "value": 776, "name": "multi" ,"year":2014},
+		{ "value": 675, "name": "male","year":2015 },
+		{ "value": 445, "name": "female" ,"year":2015},
+		{ "value": 767, "name": "multi" ,"year":2015},
+		{ "value": 888, "name": "male","year":2016 },
+		{ "value": 657, "name": "female" ,"year":2016},
+		{ "value": 999, "name": "multi" ,"year":2016},
+		{ "value": 1023, "name": "male","year":2017 },
+		{ "value": 704, "name": "female" ,"year":2017},
+		{ "value": 1498, "name": "multi" ,"year":2017}]
+	} 
+}

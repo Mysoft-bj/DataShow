@@ -1,5 +1,0 @@
-E:\GIT\DataShow\DataShow.Services\obj\Debug\DataShow.Services.csprojResolveAssemblyReference.cache
-E:\GIT\DataShow\DataShow\bin\DataShow.Services.dll
-E:\GIT\DataShow\DataShow\bin\DataShow.Services.pdb
-E:\GIT\DataShow\DataShow.Services\obj\Debug\DataShow.Services.dll
-E:\GIT\DataShow\DataShow.Services\obj\Debug\DataShow.Services.pdb

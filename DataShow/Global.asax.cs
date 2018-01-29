@@ -28,7 +28,9 @@ namespace DataShow
             //BundleConfig.RegisterBundles(BundleTable.Bundles);
 
             //路由调试
-           // RouteDebug.RouteDebugger.RewriteRoutesForTesting(RouteTable.Routes);
+            if (System.Web.Configuration.WebConfigurationManager.AppSettings["IsEnableRouteDebug"].ToString() == "true") {
+                RouteDebug.RouteDebugger.RewriteRoutesForTesting(RouteTable.Routes);
+            }
         }
     }
 }
