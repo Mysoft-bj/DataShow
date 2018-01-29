@@ -1,5 +1,5 @@
 ﻿
-function CreateBarAndLineChar_1(divId, jsonData) {
+function CreateHotWordChart(divId, jsonData) {
     var defaultOption = {
         backgroundColor: ""//容器背景色，为空背景透明
       

@@ -32,3 +32,6 @@ DataShow/DataShow.csproj
 DataShow/ECharts/Moudle/ChinaMap/option.js
 DataShow/ECharts/Moudle/ChinaMap/option.js
 DataShow/ECharts/Moudle/ChinaMap/option.js
+*.dll
+*.pdb
+*.cache
