@@ -54,7 +54,7 @@ function CreateBarAndLineChar_1(divId, jsonData) {
             name: 'line',
             type: 'line',
             smooth: true,
-            showAllSymbol: true,
+            showAllSymbol: false,
             symbol: 'emptyCircle',
             symbolSize: 15,
             data: lineData
@@ -97,13 +97,14 @@ function CreateBarAndLineChar_1(divId, jsonData) {
         }, {
             name: 'dotted',
             type: 'pictorialBar',
+           
             symbol: 'rect',
             itemStyle: {
                 normal: {
                     color: '#0f375f'
                 }
             },
-            symbolRepeat: true,
+            symbolRepeat: false,
             symbolSize: [12, 4],
             symbolMargin: 1,
             z: -10,

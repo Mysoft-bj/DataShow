@@ -18,9 +18,10 @@ function CreateBarAndLineChar_1(divId, jsonData) {
     }
     var option = {
         backgroundColor: "#344b58",
-        "title": {
-            "text": "本年商场顾客男女人数统计",
-            "subtext": "BY Wang Dingding",
+        title: {
+            show:false,
+            text: "本年商场顾客男女人数统计",
+            subtext: "BY Wang Dingding",
             x: "4%",
 
             textStyle: {
@@ -33,90 +34,91 @@ function CreateBarAndLineChar_1(divId, jsonData) {
 
             },
         },
-        "tooltip": {
-            "trigger": "axis",
-            "axisPointer": {
-                "type": "shadow",
+        tooltip: {
+            trigger: "axis",
+            axisPointer: {
+                type: "shadow",
                 textStyle: {
                     color: "#fff"
                 }
 
             },
         },
-        "grid": {
+        grid: {
             "borderWidth": 0,
-            "top": 110,
-            "bottom": 95,
+            "top": 10,
+            "bottom": 40,
             textStyle: {
                 color: "#fff"
             }
         },
-        "legend": {
+        legend: {
+            show:false,
             x: '4%',
             top: '11%',
             textStyle: {
                 color: '#90979c',
             },
-            "data": ['女', '男', '平均']
+            data: ['女', '男', '平均']
         },
 
 
-        "calculable": true,
-        "xAxis": [{
-            show: false,
-            "type": "category",
-            "axisLine": {
+        calculable: true,
+        xAxis: [{
+            show: true,
+            type: "category",
+            axisLine: {
                 lineStyle: {
                     color: '#90979c'
                 }
             },
-            "splitLine": {
-                "show": false
+            splitLine: {
+                show: false
             },
-            "axisTick": {
-                "show": false
+            axisTick: {
+                show: false
             },
-            "splitArea": {
-                "show": false
+            splitArea: {
+                show: false
             },
-            "axisLabel": {
-                "interval": 0,
+            axisLabel: {
+                interval: 0,
 
             },
-            "data": dataName,
+            data: dataName,
         }],
-        "yAxis": [{
+        yAxis: [{
             show: false,
-            "type": "value",
-            "splitLine": {
-                "show": false
+            type: "value",
+            splitLine: {
+                show: false
             },
-            "axisLine": {
+            axisLine: {
                 lineStyle: {
                     color: '#90979c'
                 }
             },
-            "axisTick": {
-                "show": false
+            axisTick: {
+                show: false
             },
-            "axisLabel": {
-                "interval": 0,
+            axisLabe: {
+                interval: 0,
 
             },
-            "splitArea": {
-                "show": false
+            splitArea: {
+                show: false
             },
 
         }],
-        "dataZoom": [{
-            "show": false,
-            "height": 30,
-            "xAxisIndex": [
+        dataZoom: [{
+            show: false,
+            height: 30,
+            xAxisIndex: [
                 0
             ],
             bottom: 30,
-            "start": 0,
-            "end": 10000,
+            start: 0,
+            end: 50,
             handleIcon: 'path://M306.1,413c0,2.2-1.8,4-4,4h-59.8c-2.2,0-4-1.8-4-4V200.8c0-2.2,1.8-4,4-4h59.8c2.2,0,4,1.8,4,4V413z',
             handleSize: '110%',
             handleStyle: {
@@ -130,74 +132,74 @@ function CreateBarAndLineChar_1(divId, jsonData) {
 
 
         }, {
-            "type": "inside",
-            "show": true,
-            "height": 15,
-            "start": 1,
-            "end": 35
+            type: "inside",
+            show: true,
+            height: 15,
+            start: 1,
+            end: 35
         }],
-        "series": [{
-            "name": "女",
-            "type": "bar",
-            "stack": "总量",
-            "barMaxWidth": 35,
-            "barGap": "10%",
-            "itemStyle": {
-                "normal": {
-                    "color": "rgba(255,144,128,1)",
-                    "label": {
-                        "show": true,
-                        "textStyle": {
-                            "color": "#fff"
+        series: [{
+            name: "大户型",
+            type: "bar",
+            stack: "总量",
+            barMaxWidth: 15,
+            barGap: "10%",
+            itemStyle: {
+                normal: {
+                    color: "rgba(255,144,128,1)",
+                    label: {
+                        show: true,
+                        textStyle: {
+                            color: "#fff"
                         },
-                        "position": "insideTop",
+                        position: "insideTop",
                         formatter: function (p) {
                             return p.value > 0 ? (p.value) : '';
                         }
                     }
                 }
             },
-            "data": dataA,
+            data: dataA,
         },
 
             {
-                "name": "男",
-                "type": "bar",
-                "stack": "总量",
-                "itemStyle": {
-                    "normal": {
-                        "color": "rgba(0,191,183,1)",
-                        "barBorderRadius": 0,
-                        "label": {
-                            "show": true,
-                            "position": "top",
+                name: "小户型",
+                type: "bar",
+                stack: "总量",
+                itemStyle: {
+                    normal: {
+                        color: "rgba(0,191,183,1)",
+                        barBorderRadius: 0,
+                        label: {
+                            show: true,
+                            position: "top",
                             formatter: function (p) {
                                 return p.value > 0 ? (p.value) : '';
                             }
                         }
                     }
                 },
-                "data": dataB
+                data: dataB
             }, {
-                "name": "总数",
-                "type": "line",
-                "stack": "总量",
+                name: "总户数",
+                type: "line",
+                stack: "总量",
                 symbolSize: 10,
                 symbol: 'circle',
-                "itemStyle": {
-                    "normal": {
-                        "color": "rgba(252,230,48,1)",
-                        "barBorderRadius": 0,
-                        "label": {
-                            "show": true,
-                            "position": "top",
+                itemStyle: {
+                    normal: {
+                        color: "rgba(252,230,48,1)",
+                        barBorderRadius: 0,
+                        label: {
+                            show: true,
+                            position: "top",
                             formatter: function (p) {
                                 return p.value > 0 ? (p.value) : '';
                             }
                         }
                     }
                 },
-                "data": dataAB
+                data: dataAB
             },
         ]
     };
