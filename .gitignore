@@ -1,8 +1,9 @@
 ﻿.DS_Store
 packages/
 .vs/
-bin/
 *.config
 *.dll
+!Mysoft.Map.Extensions.dll
+!MySql.Data.dll
 *.pdb
 *.cache
