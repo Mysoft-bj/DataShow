@@ -16,6 +16,10 @@ namespace DataShow
     {
         protected void Application_Start()
         {
+            //注册小平台
+            string connectionString = "数据库连接字符串";
+            Mysoft.Map.Extensions.Initializer.UnSafeInit(connectionString);
+
             AreaRegistration.RegisterAllAreas();
 
             WebApiConfig.Register(GlobalConfiguration.Configuration);
@@ -24,7 +28,9 @@ namespace DataShow
             //BundleConfig.RegisterBundles(BundleTable.Bundles);
 
             //路由调试
-           // RouteDebug.RouteDebugger.RewriteRoutesForTesting(RouteTable.Routes);
+            if (System.Web.Configuration.WebConfigurationManager.AppSettings["IsEnableRouteDebug"].ToString() == "true") {
+                RouteDebug.RouteDebugger.RewriteRoutesForTesting(RouteTable.Routes);
+            }
         }
     }
 }

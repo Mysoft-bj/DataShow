@@ -25,6 +25,7 @@
     @Html.JsFile("/js/jquery-1.11.0.min.js")
     @Html.JsFile("/js/jquery.countup.js")
     @Html.JsFile("/js/jquery.waypoints.min.js")
+    @Html.JsFile("/js/charts/V1/1mapCharts/div.js")
 </head>
 <body >
     <div class="page-loading">
@@ -44,25 +45,43 @@
     <div class="page page-1-1 hide">
         <div class="page-index " >
             <div class="circle pt-page-index-moveCircle"></div>
-            <div id="divTitle" class="page-title">
-                <div class="divTitle-right ">报告</div>
-                <div class="divTitle-left">大数据</div>
-                <div class="divTitle-mid  ">
-                    <span class="">2017</span>
-                    <span class=""></span>
-                    <span class="">年</span>
-                    <span class="">度</span>
-                </div>
+            <div id="divTitle" class="divTitle">
+                <div class="divTitle-right "></div>
+                <div class="divTitle-left"></div>
+            </div>
+            <div class="divTitle-mid ">
+                <h1 class="h1_line1">欢迎您到来</h1>
+                <h1 class="h1_line2">年度数据已经</h1><h1 class="h1_line2_impor">就位</h1>
             </div>
         </div>
+        <div class="mingyuanLOGO"></div>
        @* <div  class="page-title "></div>*@
         <div class="page-up pt-page-moveIconUp"><i class="page-up-icon icon-angle-up"></i></div>
     </div>
 
     <div class="page page-2-1 hide">
-        <div id="div2-1" class="divChart pt-page-moveFromTop pt-page-delay600 margin-left-3"></div>
-        <div class="text divText-keyword divText-keyword2-1 pt-page-zoomIn" id="div2-1Span1"></div>
+        @*<div class="optic_title_block" >
+        <div class="block_icon">
+        </div>
+        <div class="block_title">
+           售楼经理们疯狂输出
+        </div>
+        <div class="block_value">
+            688,888,888
+        </div>
+        <div class="block_mark">
+            项目成交总量（万元）
+        </div>
+
+    </div>
+    <div class="bg_KEY_1">
+        <div class="text divText-keyword divText-keyword2-1 pt-page-zoomIn" id="div2-1Span1">
+        </div>
         <div class="divText divText2-1 pt-page-moveFromLeft pt-page-delay600">成交量最高的项目</div>
+    </div>
+        <div id="div2-1" class="divChart pt-page-moveFromTop pt-page-delay600 margin-left-3">
+
+        </div>
         <div class="page-remark">
             <div class="page-remark-left pt-page-moveFromBottom pt-page-delay2800">╔</div>
             <div class="page-remark-text pt-page-moveFromBottom pt-page-delay2200">冠军就是我，是不一样的烟火</div>
@@ -70,13 +89,42 @@
         <div class="page-remark-rightIcon pt-page-moveFromRight pt-page-delay2800 ">
             <span class="page-remark-right">╝</span>
         </div>
-        <div class="page-up pt-page-moveIconUp"><i class="page-up-icon icon-angle-up"></i></div>
+        <div class="page-up pt-page-moveIconUp"><i class="page-up-icon icon-angle-up"></i></div>*@
+        <div id="div2-1" class="divChart pt-page-moveFromTop pt-page-delay600 margin-left-3"></div>
     </div>
-	
+
     <div class="page page-3-1 hide" >
-       
-        <div id="div3-1" class="divChart pt-page-moveFromTop pt-page-delay600 margin-left-3"></div>
-        <div class="divText3">
+        <div class="rank_123">
+            <div class="rank_fist">
+                <div class="rank_mark">
+                    最大购房年龄
+                </div>
+                <div class="rank_value"  id="div3-1Span2">
+                </div>
+                <div class="rank_icon">
+                </div>
+            </div>
+            <div class="rank_second">
+                <div class="rank_mark">
+                    最大购房年龄
+                </div>
+                <div class="rank_value" id="div3-1Span1">
+                </div>
+                <div class="rank_icon">
+                </div>
+            </div>
+            <div class="rank_thirdly">
+                <div class="rank_mark">
+                    最小购房年龄
+                </div>
+                <div class="rank_value"  id="div3-1Span3">
+                </div>
+                <div class="rank_icon">
+                </div>
+            </div>
+        </div>
+
+        @*<div class="divText3">
             <div class="divText-title3 pt-page-moveFromLeft pt-page-delay600">购买力最强</div>
             <div class="text divText-text3 pt-page-moveFromRight pt-page-delay1300" id="div3-1Span1"></div>
         </div>
@@ -87,7 +135,11 @@
         <div class="divText3">
             <div class="divText-title3  pt-page-moveFromLeft pt-page-delay600">最小购房年龄</div>
             <div class="text divText-text3" id="div3-1Span3"></div>
+        </div>*@
+        <div class="margin-left-3 bg_chart_2">
         </div>
+             <div id="div3-1" class="divChart pt-page-moveFromTop pt-page-delay600 chart_2"></div>
+       
         <div class="page-remark">
             <div class="page-remark-left pt-page-moveFromBottom pt-page-delay2800">╔</div>
             <div class="page-remark-text pt-page-moveFromBottom pt-page-delay2200">小小年纪，大有钱途</div>
@@ -99,9 +151,17 @@
     </div>
     
     <div class="page page-4-1 hide">
-        <div id="div4-1" class="divChart pt-page-moveFromLeft"></div>
-        <div class="divText-text4-1 pt-page-rotateInDownLeft pt-page-delay700" id="div4-1Span1"></div>
-        <div class="divText-text4-2 pt-page-rotateInUpRight pt-page-delay700">最有钱</div>
+        <h3>这个eChart图太几把丑了，调不了，必须换</h3>
+        <div id="div4-1" class="divChart pt-page-moveFromLeft chart_3"></div>
+        <div class='is-animate Jump_block style1'>
+            <div class="Jump_txt">天</div>
+            <div class="Jump_txt">蟹</div>
+            <div class="Jump_txt">最</div>
+            <div class="Jump_txt">有</div>
+            <div class="Jump_txt">钱</div>
+        </div>
+        @*<div class="divText-text4-1 pt-page-rotateInDownLeft pt-page-delay700" id="div4-1Span1"></div>
+        <div class="divText-text4-2 pt-page-rotateInUpRight pt-page-delay700">最有钱</div>*@
 
         <div class="page-remark">
             <div class="page-remark-left pt-page-moveFromBottom pt-page-delay1900">╔</div>
@@ -115,6 +175,7 @@
     </div>
     
     <div class="page page-5-1 hide">
+        <h3>这个eChart图太几把丑了，调不了，必须换</h3>
         <div id="div5-1" class="divChart pt-page-9-moveFromLeft"></div>
         <div class="divText"><span class="text" id="div5-1Span1"></span></div>
 
@@ -129,8 +190,21 @@
     </div>
 
     <div class="page page-6-1 hide">
-        <div id="div6-1" class="divChart6 pt-page-moveFromLeft"></div>
-        <div class="divText"><span class="text" id="div6-1Span1"></span></div>
+        <div id="div6-1" class="divChart6 pt-page-moveFromLeft chart_4"></div>
+        <div class="optic_title_block ">
+            <div class="block_icon_Champion ">
+            </div>
+            <div class="block_title">
+                全场销售MVP
+            </div>
+            <div class="block_value">
+                莉莉
+            </div>
+            <div class="block_mark">
+                成交佣金额最高
+            </div>
+            <div class="divText"><span class="text" id="div6-1Span1"></span></div>
+        </div>
         <div class="page-remark">
             <div class="page-remark-left pt-page-moveFromBottom pt-page-delay1900">╔</div>
             <div class="page-remark-text pt-page-moveFromBottom pt-page-delay1300">人脉就是钱脉                                                                 </div>
@@ -144,8 +218,17 @@
    
 
     <div class="page page-7-1 hide">
-        <div id="div7-1" class="divChart pt-page-moveFromLeft margin-left-3"></div>
-        <div class="divText"><span class="text" id="div7-1Span1"></span></div>
+        <div class="chart_5 bg_chart_5">
+        </div>
+        <div id="div7-1" class="divChart pt-page-moveFromLeft chart_5"></div>
+
+        <div class='is-animate Jump_block style2'>
+            <div class="Jump_txt">越</div>
+            <div class="Jump_txt">来</div>
+            <div class="Jump_txt">越</div>
+            <div class="Jump_txt">普</div>
+            <div class="Jump_txt">及</div>
+        </div>
         <div class="page-remark">
             <div class="page-remark-left pt-page-moveFromBottom pt-page-delay1900">╔</div>
             <div class="page-remark-text pt-page-moveFromBottom pt-page-delay1300">论婚前财产的重要性                                                                </div>
@@ -171,7 +254,23 @@
 
 
     <div class="page  page-9-1 hide">
-        <div id="div9-1" class="divChart pt-page-moveFromLeft"></div>
+        <h1>  建设中..</h1>
+        <div class="chart_9 bg_chart_9">
+        </div>
+        <div id="div9-1" class="divChart pt-page-moveFromLeft chart_9"></div>
+        <div class="double_rank">
+            <div class="rank_max">
+                <div clss="rank_max_value">
+                    建设中..
+                </div>
+            </div>
+            <div class="rank_max_testpomxiaj">
+                <div>
+                    建设中..
+                </div>
+            </div>
+        </div>
+
         <div class="divText"><span class="text" id="div9-1Span1"></span></div>
         <div class="page-remark">
             <div class="page-remark-left pt-page-moveFromBottom pt-page-delay1900">╔</div>
@@ -241,5 +340,5 @@
    
     
 </body>
- @Html.JsFile("/js/index/index_bg.js")
+ @*@Html.JsFile("/js/index/index_bg.js")*@
 </html>

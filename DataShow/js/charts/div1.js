@@ -2,9 +2,10 @@
 function GetJsonAll() {
     if (jsonAll == undefined) {
         htmlobj = $.ajax({ url: "/data/data.txt", async: false });
-        jsonAll = eval('(' + htmlobj.responseText + ')');
+        jsonAll = JSON.parse(htmlobj.responseText);
     }
 }
+/*
 // 基于准备好的dom，初始化echarts实例
 function div2_1Load() {
     var jsonName;
@@ -38,7 +39,7 @@ function drawDiv2_1Pic(json, jsonName, jsonValue) {
             text: '项目成交量TOP3',
             x: 'center',
             textStyle:{
-                color: "#099CDF"
+                color: "#eacb20"
             }
         },
         tooltip: {},
@@ -50,7 +51,7 @@ function drawDiv2_1Pic(json, jsonName, jsonValue) {
             axisLabel: {
                 interval: 0,
                 textStyle: {
-                    color: "#099CDF"
+                    color: "#eacb20"
                 }
             }
         },
@@ -112,7 +113,7 @@ function setDiv2_1Remark(json) {
     var info =tempName;
     $("#div2-1Span1").html(info);
 }
-
+*/
 
 // 基于准备好的dom，初始化echarts实例
 function div3_1Load() {
@@ -146,7 +147,7 @@ function drawDiv3_1Pic(json, jsonName, jsonValue) {
             text: '各年龄段购买比例',
             x: 'center',
             textStyle: {
-                color: "#099CDF"
+                color: "#eacb20"
             }
         },
         tooltip: {
@@ -317,7 +318,7 @@ function drawDiv4_1Pic(json, jsonName, jsonValue) {
             left: '50%',
             textAlign: 'center',
             textStyle: {
-                color: "#099CDF"
+                color: "#eacb20"
             }
         },
         color: ['#22C3AA'],
@@ -454,7 +455,7 @@ function drawDiv5_1Pic(json, jsonName, jsonValue, jsonMost, jsonLeast) {
     }
     var labelBottom = {
         normal: {
-            color: '#099CDF',
+            color: '#eacb20',
             label: {
                 show: true,
                 position: 'center'
@@ -606,7 +607,7 @@ function drawDiv6_1Pic(json, jsonName, jsonValue, jsonMost, jsonLeast) {
             },
             axisLabel: {
                 textStyle: {
-                    color: "#099CDF"
+                    color: "#eacb20"
                 }
             },
             data: ['肖丽', '陈冲', '王爱梅', '李达', '黄友程']
@@ -624,7 +625,7 @@ function drawDiv6_1Pic(json, jsonName, jsonValue, jsonMost, jsonLeast) {
                 }
             },
             textStyle: {
-                color: "#099CDF"
+                color: "#eacb20"
             },
             nameTextStyle:{
                 color: "white"
@@ -709,7 +710,7 @@ function setDiv6_1Remark(json, jsonMost, jsonLeast) {
             tempValueLeast = obj[i].value;
         }
     }
-    var info = "<div class='pt-page-zoomIn11'>本期销冠<span class='EMFont'>肖丽</span></div><div class=''>佣金提取：<span class = 'counter'>212548</span></div>";
+    var info = "<span class = 'key_numb counter'>888888</span><span class = 'key_unit'>元</span>";
     $("#div6-1Span1").html(info);
 }
 
@@ -751,7 +752,7 @@ function drawDiv7_1Pic(json, jsonName, jsonValue) {
             left: 'center',
             text: '单身/婚后首套房购买情况',
             textStyle: {
-                color: "#099CDF"
+                color: "#eacb20"
             }
         }],
         tooltip: {
@@ -761,7 +762,7 @@ function drawDiv7_1Pic(json, jsonName, jsonValue) {
             data: [2012, 2013, 2014, 2015, 2016],
             axisLabel: {
                 textStyle: {
-                    color: "#099CDF"
+                    color: "#eacb20"
                 }
             }
         }],
@@ -1071,7 +1072,7 @@ function drawDiv9_1Pic(json, jsonName, jsonValue, jsonMax) {
         title: {
             text: '各产品类型成交量',
             textStyle: {
-                color: "#099CDF"
+                color: "#eacb20"
             }
         },
         tooltip: {},
@@ -1163,7 +1164,7 @@ function drawDiv10_1Pic(json, jsonName, jsonValue) {
             text: '各媒体类型机会情况',
             subtext: '',
             textStyle: {
-                color: "#099CDF"
+                color: "#eacb20"
             },
             x: 'center',
         },
@@ -1287,7 +1288,7 @@ function drawDiv11_1Pic(json, jsonName, jsonValue) {
             text: '各月份成交量',
             subtext: '',
             textStyle: {
-                color: "#099CDF"
+                color: "#eacb20"
             }
         },
         tooltip: {
@@ -1309,7 +1310,7 @@ function drawDiv11_1Pic(json, jsonName, jsonValue) {
             axisLabel: {
                 interval: 0,
                 textStyle: {
-                    color: "#099CDF"
+                    color: "#eacb20"
                 }
             }
         },
@@ -1744,7 +1745,7 @@ function drawDiv13_1Pic(json) {
 
                 left: 'center',
                 textStyle: {
-                    color: "#099CDF"
+                    color: "#eacb20"
                 }
             },
             {

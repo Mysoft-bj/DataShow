@@ -65,6 +65,7 @@
     <Reference Include="System.Runtime.Caching" />
     <Reference Include="System.Transactions" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -97,6 +98,7 @@
     <Compile Include="Helper\AssemblyHelper.cs" />
     <Compile Include="Helper\BigInteger.cs" />
     <Compile Include="Helper\ConvertHelper .cs" />
+    <Compile Include="Helper\DataTableHelper.cs" />
     <Compile Include="Helper\EmailHelper.cs" />
     <Compile Include="Helper\EnumHelper.cs" />
     <Compile Include="Helper\HttpHelper.cs" />

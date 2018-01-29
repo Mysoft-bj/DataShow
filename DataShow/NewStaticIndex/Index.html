@@ -1,0 +1,383 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn" class="no-js">
+	<head>
+	<meta http-equiv="Content-Type">
+	<meta content="text/html; charset=utf-8">
+	<meta charset="utf-8">
+    <!-- 控制viwport比例和是否缩放 -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="email=no">
+    <title>ECharts</title>
+    <Link type="text/css" href="css/common/reset.css" Rel="stylesheet" />
+    <Link type="text/css" href="lib/Font-Awesome-3.2.1/css/font-awesome.min.css" Rel="stylesheet" />
+    <link href="css/charts/div2.css" rel="stylesheet" />
+    <link href="css/index/index.css" rel="stylesheet" />
+    <link href="css/common/animations.css" rel="stylesheet" />
+
+  
+</head>
+<body >
+    <!-- loading动画 -->
+    <div class="page-loading">
+            <div class="base">
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
+                <div class="cube"></div>
+            </div>
+    </div>
+    <!-- 背景占位 -->
+    <div class="page-bg"><canvas id="canvas"></canvas></div>
+    <!-- 页面1 首页-->
+    <div class="page page-1-1 hide">
+        <div class="page-index " >
+            <div class="circle pt-page-index-moveCircle"></div>
+              <div id="divTitle" class="divTitle"> 
+                <!-- 大数据分析整体 -->
+                <div class="divTitle-right "></div>
+              
+            </div>
+            <!-- 欢迎语 -->
+            <div class="divTitle-mid ">
+                <h1 class="h1_line1">欢迎您到来</h1>
+                <h1 class="h1_line2">年度数据已经</h1><h1 class="h1_line2_impor">就位</h1>
+            </div>
+        </div>
+        <!-- 公司logo -->
+        <div class="mingyuanLOGO"></div>
+        <!-- 下滑符 -->
+        <div class="page-up pt-page-moveIconUp"><i class="page-up-icon icon-angle-up"></i></div>
+    </div>
+    <!-- 页面2 -->
+    <div class="page page-2-1 hide">
+      
+        <!-- echart容器 -->
+        <div class="bg_KEY_1">
+            <div class ="bg_KEY_1_icon"></div>
+            <div class="text divText-keyword divText-keyword2-1 pt-page-zoomIn" id="div2-1Span1">
+            </div>
+           <!--  <div class="divText divText2-1 pt-page-moveFromLeft pt-page-delay600">成交量最高的项目</div> -->
+        </div>
+            <div id="div2-1" class="divChart pt-page-moveFromLeft chart_2">
+            </div>
+            <!-- 页面标语 -->
+            <div class="page-remark">
+                <div class="page-remark-left pt-page-moveFromBottom pt-page-delay2800">╔</div>
+                <div class="page-remark-text pt-page-moveFromBottom pt-page-delay2200">雨露均沾</div>
+            </div>
+            <div class="page-remark-rightIcon pt-page-moveFromRight pt-page-delay2800 ">
+                <span class="page-remark-right">╝</span>
+            </div>
+            <!-- 下滑符 -->
+            <div class="page-up pt-page-moveIconUp"><i class="page-up-icon icon-angle-up"></i></div>
+        </div>
+	<!-- 页面3 -->
+    <div class="page page-3-1 hide" >
+        <!-- 无名次前三排行榜 -->
+        <div class="rank_123">
+            <!-- 第一 -->
+            <div class="rank_fist">
+                <div class="rank_mark">
+                    最大购房年龄
+                </div>
+                <!-- class定义样式，id绑定动态数字动画 -->
+                <div class="rank_value"  id="div3-1Span2">
+                </div>
+                <div class="rank_icon">
+                </div>
+            </div>
+            <div class="rank_second">
+                <div class="rank_mark">
+                    最大购房年龄
+                </div>
+                <div class="rank_value" id="div3-1Span1">
+                </div>
+                <div class="rank_icon">
+                </div>
+            </div>
+            <div class="rank_thirdly">
+                <div class="rank_mark">
+                    最小购房年龄
+                </div>
+                <div class="rank_value"  id="div3-1Span3">
+                </div>
+                <div class="rank_icon">
+                </div>
+            </div>
+        </div>
+
+        <!-- echart背景 -->
+        <div class="margin-left-3 bg_chart_2">
+        </div>
+        <!-- echart容器 -->
+             <div id="div3-1" class="divChart pt-page-moveFromTop pt-page-delay600 chart_3"></div>
+       <!-- 页面标语 -->
+        <div class="page-remark">
+            <div class="page-remark-left pt-page-moveFromBottom pt-page-delay2800">╔</div>
+            <div class="page-remark-text pt-page-moveFromBottom pt-page-delay2200">小小年纪，大有钱途</div>
+        </div>
+        <div class="page-remark-rightIcon pt-page-moveFromRight pt-page-delay2800 ">
+            <span class="page-remark-right">╝</span>
+        </div>
+        <!-- 上滑符 -->
+         <div class="page-up pt-page-moveIconUp"><i class="page-up-icon icon-angle-up"></i></div>
+    </div>
+    
+    <div class="page page-4-1 hide">
+        
+        <div id="div4-1" class="divChart pt-page-moveFromLeft chart_4"></div>
+        <!-- 跳跃标语 -->
+        <div class='is-animate Jump_block style1'>
+            <div class="Jump_txt">天</div>
+            <div class="Jump_txt">蟹</div>
+            <div class="Jump_txt">最</div>
+            <div class="Jump_txt">有</div>
+            <div class="Jump_txt">钱</div>
+        </div>
+     
+        <div class="page-remark">
+            <div class="page-remark-left pt-page-moveFromBottom pt-page-delay1900">╔</div>
+            <div class="page-remark-text pt-page-moveFromBottom pt-page-delay1300">一朝穷成狗，来牵天蝎手                                                                  </div>
+        </div>
+        <div class="page-remark-rightIcon pt-page-moveFromRight pt-page-delay1900 ">
+            <span class="page-remark-right">╝</span>
+        </div>
+        <div class="page-up pt-page-moveIconUp"><i class="page-up-icon icon-angle-up"></i></div>
+      
+    </div>
+    
+    <div class="page page-5-1 hide">
+        <div class="chart_5 bg_chart_5">
+        </div>
+        <div id="div5-1-1" class="divChart pt-page-moveFromLeft chart_5_1"></div>
+
+        <!--<div class='is-animate Jump_block style2'>
+            <div class="Jump_txt">越</div>
+            <div class="Jump_txt">来</div>
+            <div class="Jump_txt">越</div>
+            <div class="Jump_txt">普</div>
+            <div class="Jump_txt">及</div>
+        </div>-->
+        <div id="div5-1-2" class="divChart pt-page-moveFromLeft chart_5_2"></div>
+        <div class="page-remark">
+            <div class="page-remark-left pt-page-moveFromBottom pt-page-delay1900">╔</div>
+            <div class="page-remark-text pt-page-moveFromBottom pt-page-delay1300">论婚前财产的重要性                                                                </div>
+        </div>
+        <div class="page-remark-rightIcon pt-page-moveFromRight pt-page-delay1900 ">
+            <span class="page-remark-right">╝</span>
+        </div>
+         <div class="page-up pt-page-moveIconUp"><i class="page-up-icon icon-angle-up"></i></div>   
+    </div>
+
+    <div class="page page-6-1 hide">
+        <div id="div6-1" class="divChart6 pt-page-moveFromLeft chart_6"></div>
+        <div class="optic_title_block ">
+            <div class="block_icon_Champion ">
+            </div>
+            <div class="block_title">
+                买房子手速最快
+            </div>
+            <div class="block_value">
+                00后
+            </div>
+            <div class="block_mark">
+                成交周期最短
+            </div>
+            <div class="divText"><span class="text" id="div6-1Span1"></span></div>
+        </div>
+        <div class="page-remark">
+            <div class="page-remark-left pt-page-moveFromBottom pt-page-delay1900">╔</div>
+            <div class="page-remark-text pt-page-moveFromBottom pt-page-delay1300">人脉就是钱脉                                                                 </div>
+        </div>
+        <div class="page-remark-rightIcon pt-page-moveFromRight pt-page-delay1900 ">
+            <span class="page-remark-right">╝</span>
+        </div>
+         <div class="page-up pt-page-moveIconUp"><i class="page-up-icon icon-angle-up"></i></div>
+    </div>
+
+   
+
+    <div class="page page-7-1 hide">
+        
+        <div class="chart_5 bg_chart_5">
+        </div>
+        <div id="div7-1-1" class="divChart pt-page-moveFromLeft chart_7_1"></div>
+        <div id="div7-1-2" class="divChart pt-page-moveFromLeft chart_7_2"></div>
+        <div id="div7-1-3" class="divChart pt-page-moveFromLeft chart_7_3"></div>
+
+        <div class='is-animate Jump_block style2'>
+            <div class="Jump_txt">越</div>
+            <div class="Jump_txt">来</div>
+            <div class="Jump_txt">越</div>
+            <div class="Jump_txt">普</div>
+            <div class="Jump_txt">及</div>
+        </div>
+        <div class="page-remark">
+            <div class="page-remark-left pt-page-moveFromBottom pt-page-delay1900">╔</div>
+            <div class="page-remark-text pt-page-moveFromBottom pt-page-delay1300">论婚前财产的重要性                                                                </div>
+        </div>
+        <div class="page-remark-rightIcon pt-page-moveFromRight pt-page-delay1900 ">
+            <span class="page-remark-right">╝</span>
+        </div>
+         <div class="page-up pt-page-moveIconUp"><i class="page-up-icon icon-angle-up"></i></div>   
+    </div>
+
+    <div class="page  page-8-1 hide">
+        <div id="div8-1" class="divChart pt-page-moveFromLeft"></div>
+        <div class="divText"><span class="text" id="div8-1Span1"></span></div>
+        <div class="page-remark">
+            <div class="page-remark-left pt-page-moveFromBottom pt-page-delay1900">╔</div>
+            <div class="page-remark-text pt-page-moveFromBottom pt-page-delay1300">财富要慢慢累积                                                              </div>
+        </div>
+        <div class="page-remark-rightIcon pt-page-moveFromRight pt-page-delay1900 ">
+            <span class="page-remark-right">╝</span>
+        </div>
+         <div class="page-up pt-page-moveIconUp"><i class="page-up-icon icon-angle-up"></i></div>
+    </div>
+
+
+    <div class="page  page-9-1 hide">
+        <h1>  建设中..</h1>
+        <div class="chart_9 bg_chart_9">
+        </div>
+        <div id="div9-1" class="divChart pt-page-moveFromLeft chart_9"></div>
+        <div class="double_rank">
+            <div class="rank_max">
+                 <div clss="rank_max_icon">
+                    建设中..
+                </div>
+                <div clss="rank_max_text">
+                    建设中..
+                </div>
+                 <div clss="rank_max_value">
+                    建设中..
+                </div>
+            </div>
+            <div class="rank_mini">
+                <div class="rank_max">
+                 <div clss="rank_max_icon">
+                    建设中..
+                </div>
+                <div clss="rank_max_text">
+                    建设中..
+                </div>
+                 <div clss="rank_max_value">
+                    建设中..
+                </div>
+            </div>
+        </div>
+
+        <div class="divText"><span class="text" id="div9-1Span1"></span></div>
+        <div class="page-remark">
+            <div class="page-remark-left pt-page-moveFromBottom pt-page-delay1900">╔</div>
+            <div class="page-remark-text pt-page-moveFromBottom pt-page-delay1300">卖得少怪我咯                                                                </div>
+        </div>
+        <div class="page-remark-rightIcon pt-page-moveFromRight pt-page-delay1900 ">
+            <span class="page-remark-right">╝</span>
+        </div>
+        <div class="page-up pt-page-moveIconUp"><i class="page-up-icon icon-angle-up"></i></div>
+    </div>
+
+
+    <div class="page  page-10-1 hide">
+        <div id="div10-1" class="divChart pt-page-moveFromLeft"></div>
+        <div class="divText"><span class="text" id="div10-1Span1"></span></div>
+        <div class="page-remark">
+            <div class="page-remark-left pt-page-moveFromBottom pt-page-delay1900">╔</div>
+            <div class="page-remark-text pt-page-moveFromBottom pt-page-delay1300">还是野外比较爽                                                                </div>
+        </div>
+        <div class="page-remark-rightIcon pt-page-moveFromRight pt-page-delay1900 ">
+            <span class="page-remark-right">╝</span>
+        </div>
+        <div class="page-up pt-page-moveIconUp"><i class="page-up-icon icon-angle-up"></i></div>
+    </div>
+
+    
+    
+    <div class="page  page-11-1 hide">
+        <div id="div11-1" class="divChart pt-page-moveFromLeft"></div>
+        <div class="divText"><span class="text" id="div11-1Span1"></span></div>
+        <div class="page-remark">
+            <div class="page-remark-left pt-page-moveFromBottom pt-page-delay1900">╔</div>
+            <div class="page-remark-text pt-page-moveFromBottom pt-page-delay1300">房地产也来双十一？                                                            </div>
+        </div>
+        <div class="page-remark-rightIcon pt-page-moveFromRight pt-page-delay1900 ">
+            <span class="page-remark-right">╝</span>
+        </div>
+        <div class="page-up pt-page-moveIconUp"><i class="page-up-icon icon-angle-up"></i></div>
+    </div>
+   
+    <div class="page  page-12-1 hide">
+        <div id="div12-1" class="divChart pt-page-moveFromLeft"></div>
+        <div class="divText"><span class="text" id="div12-1Span1"></span></div>
+        <div class="page-remark">
+            <div class="page-remark-left pt-page-moveFromBottom pt-page-delay1900">╔</div>
+            <div class="page-remark-text pt-page-moveFromBottom pt-page-delay1300">革命尚未成功，同志仍需努力                                                            </div>
+        </div>
+        <div class="page-remark-rightIcon pt-page-moveFromRight pt-page-delay1900 ">
+            <span class="page-remark-right">╝</span>
+        </div>
+        <div class="page-up pt-page-moveIconUp"><i class="page-up-icon icon-angle-up"></i></div>
+    </div>
+    <div class="page page-13-1 hide">
+         <!--  冠军模板
+        黑底板 -->
+        <div class="optic_title_block" >
+            <!-- 冠军图标 -->
+            <div class="block_icon">
+            </div>
+            <!-- 冠军标题 -->
+            <div class="block_title">
+               售楼经理们疯狂输出
+            </div>
+            <!-- 冠军值 -->
+            <div class="block_value">
+                688,888,888
+            </div>
+            冠军注释
+            <div class="block_mark">
+                项目成交总量（万元）
+            </div>
+        </div>
+         <div class="bg_KEY_1">
+            <div class="text divText-keyword divText-keyword2-1 pt-page-zoomIn" id="div2-1Span1">
+            </div>
+            <div class="divText divText2-1 pt-page-moveFromLeft pt-page-delay600">成交量最高的项目</div>
+        </div>
+        <div id="div13-1" class="divChart pt-page-moveFromLeft"></div>
+        <div class="divText pt-page-zoomIn12"><span class="text" id="div13-1Span1"></span></div>
+        <div class="page-remark">
+            <div class="page-remark-left pt-page-moveFromBottom pt-page-delay1900">╔</div>
+            <div class="page-remark-text pt-page-moveFromBottom pt-page-delay1300">雨露均沾                                                            </div>
+        </div>
+        <div class="page-remark-rightIcon pt-page-moveFromRight pt-page-delay1900 ">
+            <span class="page-remark-right">╝</span>
+        </div>
+        <div class="page-up"><span class="page-up-icon-last flash">- 以上技术来源于明源云 -</span></div>
+    </div>
+   
+
+   
+    
+</body>
+   
+</html>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="js/charts/echarts.min.js"></script>
+<script src="js/charts/china.js"></script>
+<script src="js/my.js"></script>
+<script src="js/charts/div1.js"></script>
+<script>jQuery.noConflict()</script>
+<script src="js/common/zepto.min.js"></script>
+<script src="js/touch/touch.js"></script>
+<script src="js/index/index.js"></script>
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/jquery.countup.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+	 
