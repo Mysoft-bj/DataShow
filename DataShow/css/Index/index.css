@@ -72,7 +72,13 @@ body {
 }
 
 .divChart {
-    width: 70%;
+    width: 100%;
+    height: 50vh;
+    margin: 0 auto;
+}
+
+.divChart1 {
+    width: 100%;
     height: 35vh;
     margin: 0 auto;
 }

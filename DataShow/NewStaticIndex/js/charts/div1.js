@@ -111,7 +111,7 @@ function CreateProjMap(divId, jsonData) {
     option = {
         backgroundColor: '',
         title: {
-            text: '全国落地城市',
+            text: '',
             subtext: '',
             left: 'center',
             textStyle: {
@@ -141,7 +141,7 @@ function CreateProjMap(divId, jsonData) {
             roam: true,
             itemStyle: {
                 normal: {
-                    areaColor: '#323c48',
+                    areaColor: '#8B8378',
                     //color:'自适应',
                     borderColor: '#111'
                     //,opacity:0.2
@@ -230,8 +230,8 @@ function CreateProjMap(divId, jsonData) {
 function setDiv2_1Remark(json) {
     var data = json;
     var JSON_count = data.length;
-    var info = "<span class ='first-words'>已在<span class = 'counter'>" + JSON_count + "</span>城市落地项目</span>";
-
+    //var info = "<span class ='first-words'>已在<span class = 'counter'>" + JSON_count + "</span>城市落地项目</span>";
+    var info = "<span class ='first-words'>项目全国落地城市</span>";
     //if (JSON_count < 3) {
     //    info += "芝麻开花节节高，未来的不久全国各地将遍地开花";
     //}
