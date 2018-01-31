@@ -1,6 +1,6 @@
 ﻿{
   "dashboard": {
-    "color": "#37a2da", 
+    "color": "rgba(243, 200, 103, 0.7)", 
     "datavale": "20", 
     "dataname": "公寓"
   }

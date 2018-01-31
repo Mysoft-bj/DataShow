@@ -855,7 +855,7 @@ function CreateBuyerTrend(divId, jsonData) {
     }
 
     option = {
-        backgroundColor: '#394056',
+        backgroundColor: '',
         title: {
             text: '单人购房占比走势(%)',
             textStyle: {
@@ -918,6 +918,7 @@ function CreateBuyerTrend(divId, jsonData) {
                 }
             },
             splitLine: {
+                show:false,
                 lineStyle: {
                     color: '#57617B'
                 }
@@ -2062,7 +2063,7 @@ function CreateHotWordChart(divId, jsonData) {
             }
 
         },
-        backgroundColor: '#F7F7F7',
+        backgroundColor: '',
         opacity:'0.7',
         tooltip: {
             show: true
