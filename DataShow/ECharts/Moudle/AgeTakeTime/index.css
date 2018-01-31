@@ -990,6 +990,7 @@ body {
 .title-BG—img{
       position: fixed;
         width: 100vw;
+          z-index: : 99;
         height: 14vh;
 }
 .title-words {
@@ -997,31 +998,32 @@ body {
    
     color: #f9d9ae;
     font-size: 1.87em;
+      z-index: : 99;
 }
 
 .title-words-1 {
      position: fixed;
     left: 23.3988%;
-    top: 7.9678%;
+    top: 7.8078%;
     z-index: : 99;
 }
 
 .title-words-2 {
     position: fixed;
     left: 38.4684vw;
-   top: 7.9678%;
+   top: 7.8078%;
 }
 
 .title-words-3 {
     position: fixed;
     left: 53.5604%;
-    top: 7.9678%;
+    top: 7.8078%;
 }
 
 .title-words-4 {
     position: fixed;
     left:68.1604%;
-    top: 7.9678%;
+    top: 7.8078%;
 }
 
 
