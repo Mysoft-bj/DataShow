@@ -9,7 +9,10 @@ body {
     -moz-transition: all 1s;
     -o-transition: all 1s;
 }
-
+* {
+    padding:0;
+    margin:0;
+}
 
  
 .hide {
@@ -535,7 +538,7 @@ body {
 .page-remark {
     width: 80%;
     height: auto;
-    left: 10%;
+    left: 13.68vw;
     position: absolute;
     bottom: 10%;
     color: #fff;
@@ -998,27 +1001,27 @@ body {
 
 .title-words-1 {
      position: fixed;
-    left: 25.6988%;
-    top: 7.9678%;
+    left: 23.3988%;
+    top: 8.1678%;
     z-index: : 99;
 }
 
 .title-words-2 {
     position: fixed;
-    left: 40.1684vw;
-    top: 7.9678%;
+    left: 38.4684vw;
+    top: 8.1678%;
 }
 
 .title-words-3 {
     position: fixed;
-    left: 55.7684%;
-    top: 7.9678%;
+    left: 53.7604%;
+    top: 8.1678%;
 }
 
 .title-words-4 {
     position: fixed;
-    left:69.9684%;
-    top: 7.9678%;
+    left:68.3604%;
+     top: 8.1678%;
 }
 
 
