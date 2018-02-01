@@ -114,8 +114,7 @@ $(window).on('load', function () {
     setTimeout(function(){
         isAnimating = false;
     },4600)
-   
-       //alert(1)
+
     });
 function loadingOut() {
     $(".page-1-1").removeClass("hide");

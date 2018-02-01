@@ -26,7 +26,7 @@ function div2_1Load() {
     //jsonName = my.getJsonNameByJosn(json);
     //jsonValue = my.getJsonValueByJosn(json);
     //drawDiv2_1Pic(json);
-   
+
     var htmlobj = $.ajax({ url: "../../../../ECharts/Moudle/ChinaMap/data.txt", async: false });
     var json = JSON.parse(htmlobj.responseText);
     setDiv2_1Remark(json.ProjMap.data);
@@ -282,7 +282,7 @@ function drawDiv13_1Pic(json, jsonName, jsonValue) {
         title: {
             text: '项目成交量TOP3',
             x: 'center',
-            textStyle:{
+            textStyle: {
                 color: "#eacb20"
             }
         },
@@ -329,7 +329,7 @@ function drawDiv13_1Pic(json, jsonName, jsonValue) {
             }
         }
     };
-    
+
 
     // 使用刚指定的配置项和数据显示图表。
     myChart.setOption(option);
@@ -354,20 +354,20 @@ function setDiv13_1Remark(json) {
             tempValue = obj[i].value;
         }
     }
-    var info =tempName;
+    var info = tempName;
     $("#div13-1Span1").html(info);
 }
 
 
 // 基于准备好的dom，初始化echarts实例
 function div3_1Load() {
-  
+
     GetJsonAll();
     var jsonName;
     var jsonValue;
     var json = jsonAll.DiffAgeBuy;
 
-   
+
     //jsonName = my.getJsonNameByJosn(json);
     //jsonValue = my.getJsonValueByJosn(json);
     //drawDiv3_1Pic(json, jsonName, jsonValue);
@@ -511,7 +511,7 @@ function div4_1Load() {
 
 
 function CreateStarSign(divId, jsonData) {
-     
+
     var myChart = echarts.init(document.getElementById(divId));
     var data = jsonData.data;
     var jsonName = my.getJsonNameByJosn(data);
@@ -600,7 +600,7 @@ function setDiv4_1Remark(json) {
             tempValue = obj[i].value;
         }
     }
-    var info =  tempName ;
+    var info = tempName;
     $("#div4-1Span1").html(info);
 }
 
@@ -608,7 +608,7 @@ function setDiv4_1Remark(json) {
 
 // 基于准备好的dom，初始化echarts实例
 function div5_1Load() {
-  
+
     GetJsonAll();
     var jsonName;
     var jsonValue;
@@ -622,14 +622,14 @@ function div5_1Load() {
 
     var htmlobj = $.ajax({ url: "../../../../ECharts/Moudle/SingleBuyer/data.txt", async: false });
     var json = JSON.parse(htmlobj.responseText);
-     
+
     CreateSingleBuyer("div5-1-1", json.SingleBuyer);
     CreateBuyerTrend("div5-1-2", json.SingleBuyer);
 }
 
 
 function CreateSingleBuyer(divId, jsonData) {
-     
+
     var myChart = echarts.init(document.getElementById(divId));
     var data = jsonData.data;
     var jsonName = my.getJsonNameByJosn(data);
@@ -918,7 +918,7 @@ function CreateBuyerTrend(divId, jsonData) {
                 }
             },
             splitLine: {
-                show:false,
+                show: false,
                 lineStyle: {
                     color: '#57617B'
                 }
@@ -1079,7 +1079,7 @@ function drawDiv5_1Pic(json, jsonName, jsonValue, jsonMost, jsonLeast) {
                 color: "#DC143C"
             }
         },
-        
+
         series: [
              {
                  type: 'pie',
@@ -1101,7 +1101,7 @@ function drawDiv5_1Pic(json, jsonName, jsonValue, jsonMost, jsonLeast) {
                  itemStyle: labelFromatter,
                  data: [
                 { name: 'other', value: jsonLeast[0].value, itemStyle: labelBottom },
-                { name: '最低-'+jsonLeast[1].name, value: jsonLeast[1].value, itemStyle: labelTop }
+                { name: '最低-' + jsonLeast[1].name, value: jsonLeast[1].value, itemStyle: labelTop }
                  ]
              },
              {
@@ -1216,7 +1216,7 @@ function drawDiv6_1Pic(json, jsonName, jsonValue, jsonMost, jsonLeast) {
             textStyle: {
                 color: "#eacb20"
             },
-            nameTextStyle:{
+            nameTextStyle: {
                 color: "white"
             }
         }, {
@@ -1265,7 +1265,7 @@ function drawDiv6_1Pic(json, jsonName, jsonValue, jsonMost, jsonLeast) {
                     position: 'top'
                 }
             },
-            data: [212548,198745,176545,142352,130125]
+            data: [212548, 198745, 176545, 142352, 130125]
         }]
     };
     // 使用刚指定的配置项和数据显示图表。
@@ -1398,8 +1398,8 @@ function div7_1Load() {
     var json3 = JSON.parse(htmlobj3.responseText);
     CreateDashBoard("div7-1-1", json1.dashboard);
     CreateDashBoard("div7-1-2", json2.dashboard);
-  
-   
+
+
 }
 
 function CreateDashBoard(divId, jsonData) {
@@ -1445,14 +1445,14 @@ function CreateDashBoard(divId, jsonData) {
 
 // 基于准备好的dom，初始化echarts实例
 function div8_1Load() {
-   
+
     GetJsonAll();
     var jsonName;
     var jsonValue;
     var json = jsonAll.AvgWomenPercentage;
     jsonName = my.getJsonNameByJosn(json);
     jsonValue = my.getJsonValueByJosn(json);
-  
+
 
     var htmlobj = $.ajax({ url: "../../../../ECharts/Moudle/BarAndLineChart_2/data.txt", async: false });
     var json = JSON.parse(htmlobj.responseText);
@@ -1703,7 +1703,7 @@ function drawDiv8_1Pic(json, jsonName, jsonValue) {
             y: 'bottom',
             data: ['3套以上平均年龄', '3套平均年龄', '2套平均年龄', '首套平均年龄'],
             textStyle: {
-                color:['#85b6b2', '#6d4f8d', '#cd5e7e', '#e38980', '#f7db88']
+                color: ['#85b6b2', '#6d4f8d', '#cd5e7e', '#e38980', '#f7db88']
             }
         },
         series: [
@@ -1827,7 +1827,7 @@ function setDiv8_1Remark(json) {
 
 // 基于准备好的dom，初始化echarts实例
 function div9_1Load() {
-    
+
     GetJsonAll();
     var jsonName;
     var jsonValue;
@@ -2064,7 +2064,7 @@ function CreateHotWordChart(divId, jsonData) {
 
         },
         backgroundColor: '',
-        opacity:'0.7',
+        opacity: '0.7',
         tooltip: {
             show: true
         },
@@ -2120,7 +2120,7 @@ function CreateHotWordChart(divId, jsonData) {
     var myChart = echarts.init(document.getElementById(divId));
     myChart.setOption(option);
 
-   
+
 }
 
 
@@ -2146,7 +2146,7 @@ function drawDiv10_1Pic(json, jsonName, jsonValue) {
             y: 'bottom',
             data: jsonName,
             textStyle: {
-                color:"white"
+                color: "white"
             }
         },
         toolbox: {
@@ -2266,7 +2266,7 @@ function drawDiv11_1Pic(json, jsonName, jsonValue) {
         legend: {
             data: ['成交量'],
             textStyle: {
-                color:"#D53A35"
+                color: "#D53A35"
             }
         },
         toolbox: {
@@ -2299,7 +2299,7 @@ function drawDiv11_1Pic(json, jsonName, jsonValue) {
                 data: jsonValue,
                 label: {
                     normal: {
-                        show:true
+                        show: true
                     }
                 },
                 markPoint: {
@@ -2359,7 +2359,7 @@ function setDiv11_1Remark(json) {
     //    //+ "，金三银四魔咒仍然未打破";
     //}
 
-    
+
     $("#div11-1Span1").html(info);
 }
 
@@ -2399,7 +2399,7 @@ function drawDiv12_1Pic(json, jsonName, jsonValue) {
             {
                 name: '去化率',
                 type: 'gauge',
-                detail: { show:false,formatter: '{value}%' },
+                detail: { show: false, formatter: '{value}%' },
                 data: json
             }
         ]
@@ -2501,9 +2501,9 @@ function animatExtend2_1() {
 
 //移除底部文字通用样式
 function removeAnimatRemark(ele) {
-   $(ele).find(".page-remark-left").removeClass("pt-page-moveFromBottom");
-   $(ele).find(".page-remark-text").removeClass("pt-page-moveFromBottom");
-   $(ele).find(".page-remark-rightIcon").removeClass("pt-page-moveFromRight");
+    $(ele).find(".page-remark-left").removeClass("pt-page-moveFromBottom");
+    $(ele).find(".page-remark-text").removeClass("pt-page-moveFromBottom");
+    $(ele).find(".page-remark-rightIcon").removeClass("pt-page-moveFromRight");
 }
 var isNew3 = true;
 function animatExtend3_1() {
@@ -2512,7 +2512,7 @@ function animatExtend3_1() {
             $('#div3-1Span2').show();
             $('#div3-1Span2').countUp()
         }
-     }, 1200)
+    }, 1200)
     setTimeout(function () {
         if (isNew3) {
             $('#div3-1Span3').show();
