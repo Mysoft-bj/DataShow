@@ -8,15 +8,12 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="format-detection" content="email=no">
     <title>各年龄段成交周期测试</title>
-    <!--<link rel="stylesheet" type="text/css" href="res/copyright.css?1376447814" />-->
     <Link type="text/css" href="index.css" Rel="stylesheet" />
-    <script src="/js/charts/echarts.min.js"></script>
+    <script src="/lib/jquery/jquery.min.js"></script>
+    <script src="/lib/echarts-4.0.2/echarts.min.js"></script>
     <script src="/js/charts/china.js"></script>
-    <script src="/js/my.js"></script>
-
-    <script src="/js/jquery-1.11.0.min.js"></script>
-    <script src="/js/jquery.countup.js"></script>
-
+    <script src="/js/helper/my.js"></script>
+    <script src="/js/helper/jquery.countup.js"></script>
     <script type="text/javascript" src="option.js" ></script>
     <script type="text/javascript">
         window.onload = function () {
@@ -44,44 +41,48 @@
 <body>
     <!-- 音乐播放 -->
     <div class="music">
-        <img id="music" class="play" src="images/background/music_disc.png">
+        <img id="music" class="play" src="images/music_disc.png">
     </div>
-    <!-- 页面标题 -->
-       <img  src ="images/background/NewBannerTitle.png" class = "title-BG—img"> </img>
-        <span class ="title-words ChinaSpringThemeWords title-words-1">年 </span>
-        <span class = "title-words ChinaSpringThemeWords title-words-2">龄</span>
-        <span class = "title-words ChinaSpringThemeWords title-words-3">分</span>
-        <span class = "title-words ChinaSpringThemeWords title-words-4">布</span>
-   <!-- 为上面的fixed标题进行占位 -->
-    <div class="page-title">
-        <div class="title-BG">
-        </div>
-    </div>
-
-    <!-- 图表 -->
-    <div class="page-chart">
-        <div class="chart-BG">
-            <!-- Echart容器 -->
-            <div id="chart-contian" class="chart-contian">
-                 <!-- <div id="test"></div> -->
+    <div id="page">
+        <!-- 页面标题 -->
+        <img src="images/NewBannerTitle.png" class="title-BG—img" />
+        <span class="title-words ChinaSpringThemeWords title-words-1">年 </span>
+        <span class="title-words ChinaSpringThemeWords title-words-2">龄</span>
+        <span class="title-words ChinaSpringThemeWords title-words-3">分</span>
+        <span class="title-words ChinaSpringThemeWords title-words-4">布</span>
+        <!-- 为上面的fixed标题进行占位 -->
+        <div class="page-title">
+            <div class="title-BG">
             </div>
-            <!-- 结论语句 -->
-             <div class="chart-mark">
-                 <div class="mark-BG">
-                     <div class="mark-words_line1 ChinaSpringThemeWords">单身已成为购房主力</div>
-                     <div class="mark-words_line2 ChinaSpringThemeWords">新生代女性购买力不容小觑</div>
-                 </div>
-             </div>
         </div>
-    </div>
-    <!-- 一句调侃 -->
-     <div class="page-remark">
+
+        <!-- 图表 -->
+        <div class="page-chart">
+            <div class="chart-BG">
+                <!-- Echart容器 -->
+                <div id="chart-contian" class="chart-contian">
+                    <!-- <div id="test"></div> -->
+                </div>
+                <!-- 结论语句 -->
+                <div class="chart-mark">
+                    <div class="mark-BG">
+                        <div class="mark-words_line1 ChinaSpringThemeWords">单身已成为购房主力</div>
+                        <div class="mark-words_line2 ChinaSpringThemeWords">新生代女性购买力不容小觑</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 一句调侃 -->
+        <div class="page-remark">
             <div class="page-remark-left pt-page-moveFromBottom pt-page-delay2800">╔</div>
             <div class="ChinaSpringThemeWords page-remark-text pt-page-moveFromBottom pt-page-delay2200">雨露均沾</div>
         </div>
         <div class="page-remark-rightIcon pt-page-moveFromRight pt-page-delay2800 ">
             <span class="page-remark-right">╝</span>
         </div>
+
+    </div>
+
         <!-- 下滑符 -->
         <div class="page-up pt-page-moveIconUp"><i class="page-up-icon icon-angle-up"></i></div>
         <!-- 背景音乐资源 -->

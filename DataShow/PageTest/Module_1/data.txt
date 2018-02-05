@@ -44,5 +44,21 @@
 			"name": "10后",
 			"max": 9
 		}]
-	} 
+	},
+	
+	"dashboard": [{
+		"color": "rgba(243, 200, 103, 0.5)", 
+		"datavale": "10", 
+		"dataname": "小高层"
+		},
+		{
+		"color": "rgba(243, 200, 103, 0.5)", 
+		"datavale": "50", 
+		"dataname": "高层"
+		},{
+		"color": "rgba(243, 200, 103, 0.5)", 
+		"datavale": "60", 
+		"dataname": "洋房"
+		}
+	]
 }

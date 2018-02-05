@@ -1,6 +1,6 @@
 ﻿{
   "dashboard": {
-    "color": "rgba(243, 200, 103, 0.5)", 
+    "color": "#37a2da", 
     "datavale": "10", 
     "dataname": "小高层"
   }
