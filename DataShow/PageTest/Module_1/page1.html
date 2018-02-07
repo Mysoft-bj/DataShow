@@ -1,0 +1,95 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type">
+    <meta content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <title>各年龄段成交周期测试</title>
+    <Link type="text/css" href="index.css" Rel="stylesheet" />
+    <script src="/lib/jquery/jquery.min.js"></script>
+    <script src="/lib/echarts-4.0.2/echarts.min.js"></script>
+    <script src="/js/charts/china.js"></script>
+    <script src="/js/helper/my.js"></script>
+    <script src="/js/helper/jquery.countup.js"></script>
+    <script type="text/javascript" src="option.js" ></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            var htmlobj = $.ajax({ url: "data.txt", async: false });
+            var json = JSON.parse(htmlobj.responseText);
+            CreateAgeTakeTime("chart-contian", json.AgeTakeTime);
+            // 音乐播放
+            var music=document.getElementById("music");
+            var audio=document.getElementsByTagName("audio")[0];
+            audio.volume = 0.6;
+           // 音乐控制
+            music.addEventListener("touchstart",function(event){
+                if(audio.paused){
+                    audio.play();
+                    this.setAttribute("class","play");
+                    }else{
+                    audio.pause();
+                    this.setAttribute("class","");
+                    }
+            },false);}
+        
+    </script>
+
+</head>
+<body>
+    <!-- 音乐播放 -->
+    <div class="music">
+        <img id="music" class="play" src="images/music_disc.png">
+    </div>
+    <div id="page">
+        <!-- 页面标题 -->
+        <img src="images/NewBannerTitle.png" class="title-BG—img" />
+        <span class="title-words ChinaSpringThemeWords title-words-1">年 </span>
+        <span class="title-words ChinaSpringThemeWords title-words-2">龄</span>
+        <span class="title-words ChinaSpringThemeWords title-words-3">分</span>
+        <span class="title-words ChinaSpringThemeWords title-words-4">布</span>
+        <!-- 为上面的fixed标题进行占位 -->
+        <div class="page-title">
+            <div class="title-BG">
+            </div>
+        </div>
+
+        <!-- 图表 -->
+        <div class="page-chart">
+            <div class="chart-BG">
+                <!-- Echart容器 -->
+                <div id="chart-contian" class="chart-contian">
+                    <!-- <div id="test"></div> -->
+                </div>
+                <!-- 结论语句 -->
+                <div class="chart-mark">
+                    <div class="mark-BG">
+                        <div class="mark-words_line1 ChinaSpringThemeWords">单身已成为购房主力</div>
+                        <div class="mark-words_line2 ChinaSpringThemeWords">新生代女性购买力不容小觑</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 一句调侃 -->
+        <div class="page-remark">
+            <div class="page-remark-left pt-page-moveFromBottom pt-page-delay2800">╔</div>
+            <div class="ChinaSpringThemeWords page-remark-text pt-page-moveFromBottom pt-page-delay2200">雨露均沾</div>
+        </div>
+        <div class="page-remark-rightIcon pt-page-moveFromRight pt-page-delay2800 ">
+            <span class="page-remark-right">╝</span>
+        </div>
+
+    </div>
+
+        <!-- 下滑符 -->
+        <div class="page-up pt-page-moveIconUp"><i class="page-up-icon icon-angle-up"></i></div>
+        <!-- 背景音乐资源 -->
+        <audio autoplay="true">
+        <source src="audio/TheLuckComing.mp3" type="audio/mpeg">
+        </audio>
+   </body>
+</html>
+
+

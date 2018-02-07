@@ -8,7 +8,7 @@
     <script type="text/javascript" src="option.js"></script>
 	<script type="text/javascript">
         window.onload = function () {
-            var htmlobj = $.ajax({ url: "data.json", async: false });
+            var htmlobj = $.ajax({ url: "data1.txt", async: false });
             var json = JSON.parse(htmlobj.responseText);
             CreateDashBoard("test", json.dashboard);
           
