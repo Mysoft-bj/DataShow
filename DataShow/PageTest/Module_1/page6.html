@@ -19,7 +19,7 @@
         window.onload = function () {
             var htmlobj = $.ajax({ url: "data.txt", async: false });
             var json = JSON.parse(htmlobj.responseText);
-            CreateDashBoard("chart-contian", json.dashboard[0]);
+            CreateAgeTakeTime("chart-contian", json.AgeTakeTime);
             // 音乐播放
            // var music=document.getElementById("music");
            // var audio=document.getElementsByTagName("audio")[0];
@@ -42,15 +42,15 @@
 <body>
     <!-- 音乐播放 -->
     <div class="music">
-        <img id="music" class="play" src="images/music_disc.png">
+        <!--<img id="music" class="play" src="images/music_disc.png">-->
     </div>
     <div id="page">
         <!-- 页面标题 -->
-        <img src="images/NewBannerTitle.png" class="title-BG—img" />
-        <span class="title-words ChinaSpringThemeWords title-words-1">X</span>
-        <span class="title-words ChinaSpringThemeWords title-words-2">X</span>
-        <span class="title-words ChinaSpringThemeWords title-words-3">X</span>
-        <span class="title-words ChinaSpringThemeWords title-words-4">X</span>
+        <img src="images/NewBannerTitle.png" class="title-BG-img" />
+        <span class="title-words title-words-1">成</span>
+        <span class="title-words title-words-2">交</span>
+        <span class="title-words title-words-3">周</span>
+        <span class="title-words title-words-4">期</span>
         <!-- 为上面的fixed标题进行占位 -->
         <div class="page-title">
             <div class="title-BG">
@@ -67,7 +67,7 @@
                 <!-- 结论语句 -->
                 <div class="chart-mark">
                     <div class="mark-BG">
-                        <div class="mark-words_line1 ChinaSpringThemeWords">单身已成为购房主力</div>
+                        <div class="mark-words_line1 ChinaSpringThemeWords">急切买房的80后</div>
                         <div class="mark-words_line2 ChinaSpringThemeWords">新生代女性购买力不容小觑</div>
                     </div>
                 </div>
@@ -76,7 +76,7 @@
         <!-- 一句调侃 -->
         <div class="page-remark">
             <div class="page-remark-left pt-page-moveFromBottom pt-page-delay2800">╔</div>
-            <div class="ChinaSpringThemeWords page-remark-text pt-page-moveFromBottom pt-page-delay2200">雨露均沾</div>
+            <div class="ChinaSpringThemeWords page-remark-text pt-page-moveFromBottom pt-page-delay2200">谁是深思熟虑的一代</div>
         </div>
         <div class="page-remark-rightIcon pt-page-moveFromRight pt-page-delay2800 ">
             <span class="page-remark-right">╝</span>
@@ -86,10 +86,10 @@
 
         <!-- 下滑符 -->
         <div class="page-up pt-page-moveIconUp"><i class="page-up-icon icon-angle-up"></i></div>
-        <!-- 背景音乐资源
+        <!-- 背景音乐资源 -->
         <audio autoplay="false">
-        <source src="audio/TheLuckComing.mp3" type="audio/mpeg">
-        </audio> -->
+        <!--<source src="audio/TheLuckComing.mp3" type="audio/mpeg">-->
+        </audio>
    </body>
 </html>
 

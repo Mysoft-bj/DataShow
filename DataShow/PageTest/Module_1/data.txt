@@ -60,5 +60,63 @@
 		"datavale": "60", 
 		"dataname": "洋房"
 		}
-	]
+	],
+	"AgeSpread":{
+		"data":[{
+			"name": "50后",
+			"value": 418
+		}, {
+			"name": "60后",
+			"value": 1200
+		}, {
+			"name": "70后",
+			"value": 1945
+		}, {
+			"name": "80后",
+			"value": 2069
+		}, {
+			"name": "90后",
+			"value": 391
+		}, {
+			"name": "00后",
+			"value": 77
+		}, {
+			"name": "10后",
+			"value": 17
+		}]
+	},
+	"StarSign":{
+		"data":[{ "value": 699, "name": "天秤座" },
+		{ "value": 720, "name": "处女座" },
+		{ "value": 900, "name": "狮子座" }, 
+		{ "value": 870, "name": "双子座" },
+		{ "value": 760, "name": "射手座" },
+		{ "value": 817, "name": "白羊座" }, 
+		{ "value": 884, "name": "水瓶座" },
+		{ "value": 747, "name": "巨蟹座" },
+		{ "value": 659, "name": "魔羯座" }, 
+		{ "value": 917, "name": "天蝎座" },
+		{ "value": 833, "name": "双鱼座" },
+		{ "value": 776, "name": "金牛座" }]
+	} ,
+	"SingleBuyer":{
+		"data":[{ "value": 234, "name": "male","year":2012 },
+		{ "value": 121, "name": "female" ,"year":2012},
+		{ "value": 354, "name": "multi" ,"year":2012},
+		{ "value": 454, "name": "male","year":2013 },
+		{ "value": 233, "name": "female" ,"year":2013},
+		{ "value": 655, "name": "multi" ,"year":2013},
+		{ "value": 565, "name": "male","year":2014 },
+		{ "value": 324, "name": "female" ,"year":2014},
+		{ "value": 776, "name": "multi" ,"year":2014},
+		{ "value": 675, "name": "male","year":2015 },
+		{ "value": 445, "name": "female" ,"year":2015},
+		{ "value": 767, "name": "multi" ,"year":2015},
+		{ "value": 888, "name": "male","year":2016 },
+		{ "value": 657, "name": "female" ,"year":2016},
+		{ "value": 999, "name": "multi" ,"year":2016},
+		{ "value": 1023, "name": "male","year":2017 },
+		{ "value": 704, "name": "female" ,"year":2017},
+		{ "value": 1498, "name": "multi" ,"year":2017}]
+	} 
 }

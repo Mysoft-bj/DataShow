@@ -554,6 +554,7 @@
     <Content Include="NewStaticIndex\css\hplus\font-awesome.min.css" />
     <Content Include="NewStaticIndex\css\hplus\style.css" />
     <Content Include="NewStaticIndex\css\Index\index.css" />
+    <Content Include="NewStaticIndex\css\Index\Page.css" />
     <Content Include="NewStaticIndex\css\login\login.css" />
     <Content Include="NewStaticIndex\css\login\Register.css" />
     <Content Include="NewStaticIndex\data\data.txt" />
@@ -891,6 +892,8 @@
     <Content Include="PageTest\Module_1\images\NewBG.jpg" />
     <Content Include="PageTest\Module_1\index.css" />
     <Content Include="PageTest\Module_1\option.js" />
+    <Content Include="PageTest\Module_1\page3.html" />
+    <Content Include="PageTest\Module_1\page4.html" />
     <Content Include="PageTest\Module_1\page7.html" />
     <Content Include="PageTest\Module_1\page1.html" />
     <Content Include="Web.config">

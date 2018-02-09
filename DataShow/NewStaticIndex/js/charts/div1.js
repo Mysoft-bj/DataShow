@@ -141,7 +141,7 @@ function CreateProjMap(divId, jsonData) {
             roam: true,
             itemStyle: {
                 normal: {
-                    areaColor: '#8B8378',
+                    areaColor: '#CC6666',
                     //color:'自适应',
                     borderColor: '#111'
                     //,opacity:0.2
