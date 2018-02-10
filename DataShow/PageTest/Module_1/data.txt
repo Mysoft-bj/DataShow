@@ -1,4 +1,35 @@
 ﻿{
+	"ProjMap":{
+		"data":[{
+			"name": "北京",
+			"value": 10
+		}, {
+			"name": "武汉",
+			"value": 10
+		}, {
+			"name": "合肥",
+			"value": 10
+		}, {
+			"name": "郑州",
+			"value": 10
+		},{
+			"name": "长春",
+			"value": 10
+		},{
+			"name": "成都",
+			"value": 10
+		},{
+			"name": "西安",
+			"value": 10
+		},{
+			"name": "广州",
+			"value": 10
+		},{
+			"name": "乌鲁木齐",
+			"value": 10
+		}],
+		"center":"郑州"
+	} ,
 	"AgeTakeTime":{
 		"data":[{
 			"name": "50后",

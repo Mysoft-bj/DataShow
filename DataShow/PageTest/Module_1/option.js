@@ -1,4 +1,203 @@
-﻿
+﻿function CreateProjMap(divId, jsonData) {
+    var myChart = echarts.init(document.getElementById(divId));
+    var data = jsonData.data;
+    var center = jsonData.center;
+    //后台需封装算法，用于获取城市经纬度
+    var geoCoordMap = {
+        '北京': [116.46, 39.92],
+        '武汉': [114.31, 30.52],
+        '合肥': [117.27, 31.86],
+        '郑州': [113.65, 34.76],
+        '长春': [125.35, 43.88],
+        '成都': [104.06, 30.67],
+        '西安': [108.56, 34.15],
+        '广州': [113.30, 23.20],
+        '乌鲁木齐':[87.68,43.77]
+    };
+    var CenterData = function (data, center) {
+        var res = [];
+        var resChild1 = [];
+        resChild1.push({
+            name: center
+        });
+        for (var i = 0; i < data.length; i++) {
+            if (data[i].name == center) { continue; }
+            var geoCoord = geoCoordMap[data[i].name];
+            var resChild2 = [];
+            if (geoCoord) {
+                resChild2.push({
+                    name: data[i].name,
+                    value: data[i].value
+                });
+                res.push(new Array(resChild1, resChild2));
+            }
+        }
+        return res;
+    }
+    var lineData = CenterData(data, center);
+    // 指定图表的配置项和数据
+
+    var convertData = function (data) {
+        var res = [];
+        for (var i = 0; i < data.length; i++) {
+            var geoCoord = geoCoordMap[data[i].name];
+            if (geoCoord) {
+                res.push({
+                    name: data[i].name,
+                    value: geoCoord.concat(data[i].value)
+                    //, color: rangeColor(data, data[i].name)
+                });
+            }
+        }
+        return res;
+    };
+    var rangeColor = function (data, dataName) {
+        var arrColor = ['#ff3333', 'orange', 'yellow', 'lime', 'aqua', '#C0FF3E', '#90EE90'];
+        for (var i = 0; i < data.length; i++) {
+            if (data[i].name == dataName) {
+                return arrColor[i];
+            }
+        }
+        return arrColor[0];
+    };
+    var convertLineData = function (data) {
+        var res = [];
+        for (var i = 0; i < data.length; i++) {
+            var dataItem = data[i];
+            var fromCoord = geoCoordMap[dataItem[0][0].name];
+            var toCoord = geoCoordMap[dataItem[1][0].name];
+            if (fromCoord && toCoord) {
+                res.push({
+                    fromName: dataItem[0][0].name,
+                    toName: dataItem[1][0].name,
+                    coords: [fromCoord, toCoord]
+                    //,color: rangeColor(data, data[i].name)
+                });
+            }
+        }
+        return res;
+    };
+
+    option = {
+        backgroundColor: '',
+        title: {
+            text: '',
+            subtext: '',
+            left: 'center',
+            textStyle: {
+                color: '#eacb20'
+            }
+        },
+        tooltip: {
+            trigger: 'item'
+        },
+        legend: {
+            orient: 'vertical',
+            y: 'bottom',
+            x: 'right',
+            data: [],
+            textStyle: {
+                color: '#fff'
+            }
+        },
+        color: ['#ff3333', 'orange', 'yellow', 'lime', 'aqua'],
+        geo: {
+            map: 'china',
+            label: {
+                emphasis: {
+                    show: false
+                }
+            },
+            roam: true,
+            itemStyle: {
+                normal: {
+                    areaColor: '#CC6666',
+                    //color:'自适应',
+                    borderColor: '#111'
+                    //,opacity:0.2
+                },
+                emphasis: {
+                    areaColor: '#2a333d'
+                }
+            },
+            zoom: 1.2
+        },
+        series: [
+        {
+            name: '',
+            type: 'effectScatter',
+            coordinateSystem: 'geo',
+            data: convertData(data),
+            symbol: 'circle',
+            symbolSize: function (val) {
+                return 0.5;
+            },
+            showEffectOn: 'render',
+            rippleEffect: {
+                brushType: 'stroke',
+                scale: 35,
+                period: 5
+            },
+            hoverAnimation: true,
+            label: {
+                normal: {
+                    formatter: '{b}',
+                    position: 'right',
+                    show: true
+                }
+            },
+            itemStyle: {
+                normal: {
+                    //color: val.color,
+                    //color: '#f4e925',
+                    color: function (val) {
+                        return rangeColor(data, val.name);
+                    },
+                    shadowBlur: 0,
+                    shadowColor: '#333'
+                }
+            },
+            zlevel: 1
+        },
+    {
+        name: '',
+        type: 'lines',
+        zlevel: 2,
+        symbol: ['none', 'arrow'],
+        symbolSize: 7,
+        effect: {
+            show: true,
+            period: 2,
+            trailLength: 0,
+            symbol: ['arrow'],
+            symbolSize: 5
+        },
+        lineStyle: {
+            normal: {
+                //color: "#fff",
+                color: function (val) {
+                    return rangeColor(data, val.data.toName);
+                },
+                width: 1,
+                opacity: 0.6,
+                curveness: 0.2
+            }
+        },
+        data: convertLineData(lineData)
+    }
+        ]
+    };
+
+
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+    setTimeout(function () {
+        $('.counter').countUp()
+        , 2000
+    }
+)
+}
+
 function CreateAgeTakeTime(divId, jsonData) {
     var myChart = echarts.init(document.getElementById(divId));
     var data = jsonData.data;
@@ -140,6 +339,8 @@ function CreateAgeSpread(divId, jsonData) {
     var data = jsonData.data;
     var jsonName = my.getJsonNameByJosn(data);
     option = {
+        //color: ['#5FD9CD', '#EAF786', '#FFB5A1', '#B8FFB8', '#B8F4FF', '#C0C0C0', '#F5F5DC'],
+        //color: ['#279B00', '#DEB259', '#912928', '#6695AF', '#C58D50', '#B7968D', '#2E3D5C'],
         title: {
             text: '',
             subtext: '',
@@ -221,7 +422,7 @@ function CreateStarSign(divId, jsonData) {
                 label: {
                     normal: {
                         formatter: "{b}\n({d}%)",
-                        backgroundColor: 'rgb(5,13,2)',
+                        backgroundColor: '#D86246',
                         borderColor: '#00FFFF',
                         borderWidth: 1,
                         borderRadius: 4,

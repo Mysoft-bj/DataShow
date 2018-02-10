@@ -1,0 +1,63 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type">
+    <meta content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <title>项目分布</title>
+    <Link type="text/css" href="index.css" Rel="stylesheet" />
+    <script src="/lib/jquery/jquery.min.js"></script>
+    <script src="/lib/echarts-4.0.2/echarts.min.js"></script>
+    <script src="/js/charts/china.js"></script>
+    <script src="/js/helper/my.js"></script>
+    <script src="/js/helper/jquery.countup.js"></script>
+    <script type="text/javascript" src="option.js" ></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            var htmlobj = $.ajax({ url: "data.txt", async: false });
+            var json = JSON.parse(htmlobj.responseText);
+            CreateProjMap("chart-contian", json.ProjMap);
+        }
+        
+    </script>
+
+</head>
+<body>
+    <!-- 音乐播放 -->
+    <div class="music">
+        <!--<img id="music" class="play" src="images/music_disc.png">-->
+    </div>
+    <div id="page">
+        <!-- 页面标题 -->
+        <img src="images/NewBannerTitle.png" class="title-BG-img2" />
+        <span class="title-words title-words-1">项</span>
+        <span class="title-words title-words-2">目</span>
+        <span class="title-words title-words-3">分</span>
+        <span class="title-words title-words-4">布</span>
+        <!-- 为上面的fixed标题进行占位 -->
+        <div id="chart-contian" class="divChart2 pt-page-moveFromLeft">
+        </div>
+        <!-- 一句调侃 -->
+        <div class="page-remark">
+            <div class="page-remark-left pt-page-moveFromBottom pt-page-delay2800">╔</div>
+            <div class="ChinaSpringThemeWords page-remark-text pt-page-moveFromBottom pt-page-delay2200">雨露均沾</div>
+        </div>
+        <div class="page-remark-rightIcon pt-page-moveFromRight pt-page-delay2800 ">
+            <span class="page-remark-right">╝</span>
+        </div>
+
+    </div>
+
+        <!-- 下滑符 -->
+        <div class="page-up pt-page-moveIconUp"><i class="page-up-icon icon-angle-up"></i></div>
+        <!-- 背景音乐资源 -->
+        <audio autoplay="false">
+        <!--<source src="audio/TheLuckComing.mp3" type="audio/mpeg">-->
+        </audio>
+   </body>
+</html>
+
+
