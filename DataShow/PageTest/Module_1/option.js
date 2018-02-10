@@ -288,7 +288,11 @@ function CreateDashBoard(divId, jsonData) {
         backgroundColor: "", //容器背景色，为空背景透明
         formatvalue: "%", //格式化显示配置,会加在数据显示后面
         color: "#b2975a", //仪表盘及标题显示颜色
-        width: "5", //表盘弧形宽度
+        width: "3", //表盘弧形宽度
+        axisTickLength: "8",//小刻度长度
+        splitLine: "12",//大刻度长度
+        pointerWidth: "3",//指针宽度
+        pointerLength:"50",//指针长度
         datavale: "50", //数据值
         dataname: "XX"//显示名称
     }
@@ -298,9 +302,7 @@ function CreateDashBoard(divId, jsonData) {
         series: [{
             name: '',
             type: 'gauge',
-            detail: {
-                formatter: '{value}' + newData.formatvalue
-            },
+            //表盘样式
             axisLine: {
                 show: true,
                 lineStyle: {
@@ -311,21 +313,40 @@ function CreateDashBoard(divId, jsonData) {
                     ]
                 }
             },
+            //小标记刻度
             axisTick: {            // 坐标轴小标记
-                length: 12,        // 属性length控制线长
+                length: newData.axisTickLength,        // 属性length控制线长
                 lineStyle: {       // 属性lineStyle控制线条样式
                     color: 'auto'
                 }
             },
+            //大分割刻度
             splitLine: {           // 分隔线
-                length: 20,         // 属性length控制线长
+                length: newData.splitLine,         // 属性length控制线长
                 lineStyle: {       // 属性lineStyle（详见lineStyle）控制线条样式
                     color: 'auto'
                 }
             },
+            //指针控制
+            pointer: {
+                width: newData.pointerWidth,
+                length: newData.pointerLength
+            },
+            //上标题配置
+            title: {
+                fontSize: 16,
+                color: newData.color
+            },
+            //下面描述配置
+            detail: {
+                fontWeight: 'bolder',
+                fontSize: 16,
+                formatter: '{value}' + newData.formatvalue
+            },
+            //数据
             data: [{
                 value: newData.datavale,
-                name: newData.dataname,
+                name: newData.dataname
             }]
 
         }]

@@ -21,67 +21,94 @@ body {
 .hide {
     display: none;
 }
+/*上部分标题*/
+.page-title {
+    position:fixed;
+    width: 100vw;
+}
+.page-title-img {
+    position:fixed;
+    width: 100vw;
+    top:5vh;
+}
 
+.title-words {
+    position:fixed;
+    width: 10vw;
+    top:7.5vh;
+    color: #F3C867;
+    font-size: 1.87em;
+    z-index: 99;
+}
+
+.title-words-1 {
+    left:25vw;
+}
+
+.title-words-2 {
+   left:39vw;
+}
+
+.title-words-3 {
+    left:54vw;
+}
+
+.title-words-4 {
+   left:69vw;
+}
 
 /*底部结语*/
 .page-remark {
-    width: 80%;
-    height: auto;
-    left: 13.68vw;
-    position: absolute;
-    bottom: 10%;
+    width: 100vw;
+    height: 5vh;
+    position:fixed;
+    bottom: 6vh;
     color: #fff;
 }
 
 .page-remark-text {
-    width: 80%;
-    font-size: 0.684em;
-    letter-spacing: 0.268em;
-    color: #f9d9ae;
-    /* float: left; */
-    text-align: center;
-    word-wrap: break-word;
+   position:fixed;
+    width: 60vw;
+    left:20vw;
+    bottom: 7vh;
+    text-align:center;
+    color: #F3C867;
+    letter-spacing: 0.0826em;
+    font-family: myFirstFont;
 }
 
-.page-remark-left {
-    width: 10%;
-    float: left;
-    margin-top: -3px;
-    color: #EE7621;
+.page-remark-leftIcon {
+    position:fixed;
+    width: 10vw;
+    left:10vw;
+    bottom: 7.5vh;
+    text-align:center;
+    color: #F3C867;
 }
 
 .page-remark-rightIcon {
-    width: 10%;
-    height: auto;
-    right: 10%;
-    position: absolute;
-    bottom: 9%;
-    color: #EE7621;
+    position:fixed;
+    width: 10vw;
+    right:10vw;
+    bottom: 6.6vh;
+    text-align:center;
+    color: #F3C867;
 }
 
 /*上滑*/
 .page-up {
-    height: 20px;
-    width: 300px;
-    position: absolute;
-    left: 50%;
-    bottom: 3%;
-    margin-left: -150px;
+    height: 4vh;
+    width: 100vw;
+    position: fixed;
+    bottom: 2vh;
+    text-align:center;
 }
 
 .page-up-icon {
-    color: white;
+    color: rgba(243, 200, 103, 1);
     font-size: 26px;
 }
 
-.page-up-icon-last {
-    color: white;
-    font-size: 12px;
-    animation-iteration-count: infinite;
-    -webkit-animation-iteration-count: infinite;
-    animation-duration: 4s;
-    -webkit-animation-duration: 4s;
-}
 
 /*music*/
 .music{
@@ -165,54 +192,7 @@ body {
     src: url('font/HuawenzhongsongBold.TTF') format('truetype');
 }*/
 
-.page-title {
-    position: relative;
-    overflow: hidden;
-    margin-top: 5.2748vh;
-}
 
-    .page-title > .title-BG {
-        position: relative;
-        width: 100vw;
-        height: 14vh;
-    }
-
-.title-BG-img {
-   position: fixed;
-    width: 100vw;
-    z-index: 99;
-}
-
-.title-words {
-    color: #f9d9ae;
-    font-size: 1.87em;
-    z-index: 99;
-}
-
-.title-words-1 {
-    position: fixed;
-    left: 23.3988%;
-    top: 7.8078%;
-    z-index:99;
-}
-
-.title-words-2 {
-    position: fixed;
-    left: 38.4684vw;
-    top: 7.8078%;
-}
-
-.title-words-3 {
-    position: fixed;
-    left: 53.5604%;
-    top: 7.8078%;
-}
-
-.title-words-4 {
-    position: fixed;
-    left: 68.1604%;
-    top: 7.8078%;
-}
 
 
 .page-chart {
@@ -222,12 +202,12 @@ body {
 
 .chart-contian {
     padding-top: 0.8452vh;
-    width: 100%;
+    width: 100vw;
     height: 45vh;
 }
 
 .page-chart > .chart-BG {
-    position: :relative;
+    position: relative;
     margin: 0 auto;
     border-width: 2px;
     border-style: solid;
@@ -276,6 +256,9 @@ body {
     /* font-weight: bold; */
 }
 
+/*页面公共*/
+
+
 /* ---------------------------------公共样式end----------------------------------------*/
 /* ---------------------------------page2 begin----------------------------------------*/
 .divChart2 {
@@ -296,3 +279,31 @@ body {
     height: 30vh;
 }
 /* ---------------------------------page5 end----------------------------------------*/
+
+
+
+/* ---------------------------------page7 begin----------------------------------------*/
+#chart-contian-page7-1 {
+    position:fixed;
+    top:16vh;
+    width: 80vw;
+    height:35vh;
+    left:10vw;
+}
+
+#chart-contian-page7-2 {
+    position:fixed;
+    top:38vh;
+    width: 60vw;
+    height:30vh;
+    left:-8vw;
+}
+#chart-contian-page7-3 {
+   position:fixed;
+    top:38vh;
+    width: 60vw;
+    height:30vh;
+    right:-8vw;
+}
+/* ---------------------------------page7 end----------------------------------------*/
+

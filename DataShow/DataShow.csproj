@@ -892,8 +892,11 @@
     <Content Include="PageTest\Module_1\images\NewBG.jpg" />
     <Content Include="PageTest\Module_1\index.css" />
     <Content Include="PageTest\Module_1\option.js" />
+    <Content Include="PageTest\Module_1\page2.html" />
     <Content Include="PageTest\Module_1\page3.html" />
     <Content Include="PageTest\Module_1\page4.html" />
+    <Content Include="PageTest\Module_1\page5.html" />
+    <Content Include="PageTest\Module_1\page6.html" />
     <Content Include="PageTest\Module_1\page7.html" />
     <Content Include="PageTest\Module_1\page1.html" />
     <Content Include="Web.config">
