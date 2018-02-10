@@ -47,18 +47,18 @@
 	},
 	
 	"dashboard": [{
-		"color": "rgba(243, 200, 103, 0.5)", 
+		"color": "rgba(243, 200, 103, 0.8)", 
 		"datavale": "10", 
-		"dataname": "小高层"
+		"dataname": "一套"
 		},
 		{
-		"color": "rgba(243, 200, 103, 0.5)", 
+		"color": "rgba(243, 200, 103, 0.8)", 
 		"datavale": "50", 
-		"dataname": "高层"
+		"dataname": "二套"
 		},{
-		"color": "rgba(243, 200, 103, 0.5)", 
+		"color": "rgba(243, 200, 103, 0.8)", 
 		"datavale": "60", 
-		"dataname": "洋房"
+		"dataname": "三套"
 		}
 	],
 	"AgeSpread":{
