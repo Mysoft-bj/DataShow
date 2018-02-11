@@ -149,5 +149,44 @@
 		{ "value": 1023, "name": "male","year":2017 },
 		{ "value": 704, "name": "female" ,"year":2017},
 		{ "value": 1498, "name": "multi" ,"year":2017}]
-	} 
+	},
+	"landscapebarchart": {
+    "data": [
+      {
+        "name": "北京市",
+        "value1": "600",
+        "value2": "3000"
+
+      },
+      {
+        "name": "天津市",
+        "value1": "700",
+         "value2": "4000"
+
+      },
+      {
+        "name": "湖北省",
+        "value1": "555",
+        "value2": "2850"
+
+      },
+      {
+        "name": "湖南省",
+        "value1": "999",
+        "value2": "4526"
+
+      },
+      {
+        "name": "深圳市",
+        "value1": "555",
+         "value2": "8884"
+
+      },
+      {
+        "name": "上海市",
+        "value1": "888",
+         "value2": "5154"
+      }
+    ]
+  } 
 }

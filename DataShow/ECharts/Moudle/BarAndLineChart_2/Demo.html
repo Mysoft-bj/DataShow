@@ -8,7 +8,7 @@
     <script type="text/javascript" src="option.js"></script>
 	<script type="text/javascript">
         window.onload = function () {
-            var htmlobj = $.ajax({ url: "data.json", async: false });
+            var htmlobj = $.ajax({ url: "data.txt", async: false });
             var json = JSON.parse(htmlobj.responseText);
             CreateBarAndLineChar_1("test", json.barandlinechart_2);
           
